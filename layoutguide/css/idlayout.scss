@@ -4,14 +4,33 @@
 	misc styles for the demo.
 
 */
+
+body {
+	background: #EEE;
+}
+
 footer {
 	height:300px;
 }
 
-div.id-info {
-	height:300px;	
+.bg-white {
+	background: white;
 }
 
 div.thirdparty {
-	height:300px;	
+	height: 199px;
+	margin-bottom: 24px;
+}
+
+div.id-info {
+	height: 285px;	
+	margin-bottom: 24px;
+}
+
+div.id-header {
+	background: #666;
+	padding: 0px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	color: white;
 }
