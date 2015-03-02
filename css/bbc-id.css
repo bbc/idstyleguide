@@ -17,16 +17,15 @@ body {
   padding: 10px;
   border-bottom: 1px solid gray; }
 
-.bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox {
-  background-color: #999;
-  padding: 20px;
+.bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+  background-color: #CCC;
+  padding: 16px;
   min-width: 240px;
   min-height: 100px; }
 
 /*
 
-	FORM CTA's
-	_cta._css
+	FORM INPUTS & LABELS
 
 */
 .id-form-group {
