@@ -1,0 +1,332 @@
+/*
+	styleguide - variables
+*/
+body {
+  background-color: #DCEAF3; }
+
+.bbcid-styleguide-container {
+  margin: 16px;
+  min-width: 240px; }
+
+.bbcid-styleguide-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 16px; }
+
+.bbcid-styleguide-type-sample {
+  padding: 10px;
+  border-bottom: 1px solid gray; }
+
+.bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox {
+  background-color: #999;
+  padding: 20px;
+  min-width: 240px;
+  min-height: 100px; }
+
+/*
+
+	FORM CTA's
+	_cta._css
+
+*/
+.id-form-group {
+  margin-bottom: 16px; }
+  .id-form-group .id-input {
+    border: 1px solid black;
+    padding: 8px;
+    width: 94%;
+    max-width: 30em; }
+  .id-form-group label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 8px; }
+
+/*------------------------------------*\
+    #GEL TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * GEL Typography proposes using four groups to apply a scale appropriately across
+ * a range of devices. We take a `Touch First` approach to typography, adjustments
+ * are then made based on if a primary input other than touch has been detected
+ *
+ */
+.gel-canon,
+.gel-canon-bold {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 32px;
+  line-height: 2rem; }
+  .gel-canon-bold {
+    font-weight: bold;
+    letter-spacing: -1px;
+    letter-spacing: -0.0625rem; }
+
+.gel-trafalgar,
+.gel-trafalgar-bold {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
+  .gel-trafalgar-bold {
+    font-weight: bold;
+    letter-spacing: -1px;
+    letter-spacing: -0.0625rem; }
+
+.gel-double-pica,
+.gel-double-pica-bold {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
+  .gel-double-pica-bold {
+    font-weight: bold;
+    letter-spacing: -1px;
+    letter-spacing: -0.0625rem; }
+
+.gel-great-primer,
+.gel-great-primer-bold {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 20px;
+  line-height: 1.25rem; }
+  .gel-great-primer-bold {
+    font-weight: bold; }
+
+.gel-pica,
+.gel-pica-bold {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem; }
+  .gel-pica-bold {
+    font-weight: bold; }
+
+.gel-long-primer,
+.gel-long-primer-bold {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 18px;
+  line-height: 1.125rem; }
+  .gel-long-primer-bold {
+    font-weight: bold; }
+
+.gel-brevier,
+.gel-brevier-bold {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 16px;
+  line-height: 1rem; }
+  .gel-brevier-bold {
+    font-weight: bold; }
+
+.gel-minion,
+.gel-minion-bold {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 16px;
+  line-height: 1rem;
+  text-transform: uppercase; }
+  .gel-minion-bold {
+    font-weight: bold; }
+
+@media all and (min-width: 20em) {
+  .gel-canon,
+  .gel-canon-bold {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 36px;
+    line-height: 2.25rem; }
+
+  .gel-trafalgar,
+  .gel-trafalgar-bold {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 28px;
+    line-height: 1.75rem; }
+
+  .gel-great-primer,
+  .gel-great-primer-bold {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+    .gel-great-primer-bold {
+      letter-spacing: -1px;
+      letter-spacing: -0.0625rem; }
+
+  .gel-pica,
+  .gel-pica-bold {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 22px;
+    line-height: 1.375rem; }
+
+  .gel-long-primer,
+  .gel-long-primer-bold {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    line-height: 1.25rem; } }
+@media all and (min-width: 37.5em) {
+  .gel-canon,
+  .gel-canon-bold {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 56px;
+    line-height: 3.5rem; }
+
+  .gel-trafalgar,
+  .gel-trafalgar-bold {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 40px;
+    line-height: 2.5rem; }
+
+  .gel-double-pica,
+  .gel-double-pica-bold {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 32px;
+    line-height: 2rem; }
+
+  .gel-great-primer,
+  .gel-great-primer-bold {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 28px;
+    line-height: 1.75rem; }
+
+  .gel-pica,
+  .gel-pica-bold {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+
+  .gel-long-primer,
+  .gel-long-primer-bold {
+    line-height: 22px;
+    line-height: 1.375rem; }
+
+  .gel-minion,
+  .gel-minion-bold {
+    font-size: 13px;
+    font-size: 0.8125rem; }
+
+  .no-touch .gel-canon,
+  .no-touch .gel-canon-bold {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 48px;
+    line-height: 3rem; }
+  .no-touch .gel-trafalgar,
+  .no-touch .gel-trafalgar-bold {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 32px;
+    line-height: 2rem; }
+  .no-touch .gel-double-pica,
+  .no-touch .gel-double-pica-bold {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+  .no-touch .gel-great-primer,
+  .no-touch .gel-great-primer-bold {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 20px;
+    line-height: 1.25rem; }
+  .no-touch .gel-pica,
+  .no-touch .gel-pica-bold {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 22px;
+    line-height: 1.375rem; }
+  .no-touch .gel-long-primer,
+  .no-touch .gel-long-primer-bold {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    line-height: 1.125rem; }
+  .no-touch .gel-brevier,
+  .no-touch .gel-brevier-bold {
+    font-size: 13px;
+    font-size: 0.8125rem; }
+  .no-touch .gel-minion,
+  .no-touch .gel-minion-bold {
+    font-size: 12px;
+    font-size: 0.75rem; } }
+/*------------------------------------*\
+    # LAYOUT
+\*------------------------------------*/
+/**
+ * The GEL Layout system is based on the the Harry Roberts inuitcss layout system with
+ * modifications applied to ensure it adheres to the GEL guidelines. It uses `box-sizing: border-box;`
+ * and `display: inline-block;` to create an extremely powerful, flexible alternative
+ * to the traditional grid system.
+ */
+/**
+ * Grid container
+ *
+ * 1. IE8 doesn't apply border-box box-sizing logic correctly on (min|max)-(width|height) properties.
+ *    As we serve IE8 a none responsive layout, lets just use the `width` property
+ */
+.gel-wrap {
+  max-width: 1008px;
+  margin: 0 auto;
+  padding-right: 8px;
+  padding-left: 8px; }
+  @media all and (min-width: 25em) {
+    .gel-wrap {
+      padding-left: 16px;
+      padding-right: 16px; }
+      .lt-ie9 .gel-wrap {
+        width: 1008px;
+        /* [1] */ } }
+
+/**
+ * Begin a layout group.
+ *
+ * 1. Remove any margin and padding which may effect our layout
+ * 2. Remove any default list styling if the layout is applied to a list
+ */
+.gel-layout {
+  margin-right: 0;
+  /* [1] */
+  margin-left: -8px;
+  padding-right: 0;
+  /* [1] */
+  padding-left: 0;
+  /* [1] */
+  list-style: none;
+  /* [2] */ }
+  @media all and (min-width: 37.5em) {
+    .gel-layout {
+      margin-left: -16px; } }
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Full-width unless told to behave otherwise.
+ * 3. Space columns apart.
+ * 4. Align columns to the tops of each other.
+ */
+.gel-layout__item {
+  display: inline-block;
+  /* [1] */
+  width: 100%;
+  /* [2] */
+  padding-left: 8px;
+  /* [3] */
+  vertical-align: top;
+  /* [4] */ }
+  @media all and (min-width: 37.5em) {
+    .gel-layout__item {
+      padding-left: 16px;
+      /* [3] */ } }
+
+/**
+
+
+
+**/

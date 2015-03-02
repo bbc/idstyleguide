@@ -1,0 +1,31 @@
+.bbcid-panel-form {
+	background-color: #999;
+	padding:20px;
+	min-width: 240px;
+	min-height: 100px;
+}
+
+.bbcid-panel-message {
+	@extend .bbcid-panel-form;
+}
+
+.bbcid-panel-3rdparty {
+	@extend .bbcid-panel-form;
+}
+
+.bbcid-panel-informationbox {
+	@extend .bbcid-panel-form;
+}
+
+
+@media all and (min-width: 20em) {
+
+}
+
+@media all and (min-width: 25em) {
+
+}
+
+@media all and (min-width: 37.5em) {
+
+}

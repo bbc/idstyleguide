@@ -1,0 +1,43 @@
+@import 'id_styleguide_vars';
+
+
+body {
+	background-color: $bgblue;
+}
+
+.bbcid-styleguide-container {
+	margin: 16px;
+	min-width: 240px;
+}
+.bbcid-styleguide-section {
+	background-color:white;
+	padding: 20px;
+	margin-bottom: 16px;
+}
+.bbcid-styleguide-type-sample {
+	padding: 10px;
+	border-bottom: 1px solid gray;
+}
+
+// FOUNDATION
+@import 'layout_panel';
+
+// FORM ELEMENTS
+@import 'form_input';
+
+// GEL FRAMEWORK
+@import '../public/components/gel-settings/globals';
+
+@import '../public/components/sass-mq/mq';
+
+@import '../public/components/gel-tools/math';
+@import '../public/components/gel-tools/rem';
+
+@import '../public/components/gel-typography/typography';
+@import '../public/components/gel-layout/layout';
+
+/**
+
+
+
+**/

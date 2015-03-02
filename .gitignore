@@ -1,2 +1,4 @@
-
 *.scssc
+*.kit
+config.codekit
+public/
