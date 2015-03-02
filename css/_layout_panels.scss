@@ -2,7 +2,6 @@
 	background-color: #CCC;
 	padding: 16px;
 	min-width: 240px;
-	min-height: 100px;
 }
 
 .bbcid-panel-message {
@@ -28,13 +27,21 @@
 
 
 @media all and (min-width: 20em) {
-
+	.bbcid-panel-form {
+		max-width: 20em;
+	}
 }
 
 @media all and (min-width: 25em) {
+	.bbcid-panel-form {
+		max-width: 25em;
+	}
 
 }
 
 @media all and (min-width: 37.5em) {
+	.bbcid-panel-form {
+		max-width: 30em;
+	}
 
 }
