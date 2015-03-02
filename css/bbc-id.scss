@@ -7,11 +7,11 @@ body {
 
 .bbcid-styleguide-container {
 	margin: 16px;
-	min-width: 240px;
+	min-width: 304px;
 }
 .bbcid-styleguide-section {
 	background-color:white;
-	padding: 20px;
+	padding: 16px;
 	margin-bottom: 16px;
 }
 .bbcid-styleguide-type-sample {
@@ -21,6 +21,7 @@ body {
 
 // FOUNDATION
 @import 'layout_panels';
+@import 'layout_headers';
 
 // FORM ELEMENTS
 @import 'form_input';
