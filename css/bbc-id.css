@@ -6,11 +6,11 @@ body {
 
 .bbcid-styleguide-container {
   margin: 16px;
-  min-width: 240px; }
+  min-width: 304px; }
 
 .bbcid-styleguide-section {
   background-color: white;
-  padding: 20px;
+  padding: 16px;
   margin-bottom: 16px; }
 
 .bbcid-styleguide-type-sample {
@@ -20,8 +20,34 @@ body {
 .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
   background-color: #CCC;
   padding: 16px;
-  min-width: 240px;
-  min-height: 100px; }
+  min-width: 240px; }
+
+@media all and (min-width: 20em) {
+  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+    max-width: 20em; } }
+@media all and (min-width: 25em) {
+  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+    max-width: 25em; } }
+@media all and (min-width: 37.5em) {
+  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+    max-width: 30em; } }
+/**
+
+	LAYOUT - HEADERS
+// _layout_headers.scss
+
+**/
+.bbcid-header {
+  background: url("img/sprite.png") no-repeat scroll 7px -194px #1790CF;
+  padding: 0px 7px;
+  min-height: 64px;
+  letter-spacing: -0.03em;
+  overflow: hidden;
+  max-height: 64px; }
+  .bbcid-header h1 {
+    font-family: "Gill Sans";
+    font-weight: 500;
+    color: white; }
 
 /*
 
