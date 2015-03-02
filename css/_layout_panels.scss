@@ -1,6 +1,6 @@
 .bbcid-panel-form {
-	background-color: #999;
-	padding:20px;
+	background-color: #CCC;
+	padding: 16px;
 	min-width: 240px;
 	min-height: 100px;
 }
@@ -14,6 +14,15 @@
 }
 
 .bbcid-panel-informationbox {
+	@extend .bbcid-panel-form;
+}
+
+.bbcid-panel-form-message {
+	@extend .bbcid-panel-form;
+
+}
+
+.bbcid-panel-settings {
 	@extend .bbcid-panel-form;
 }
 
