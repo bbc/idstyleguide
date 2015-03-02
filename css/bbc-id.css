@@ -1,0 +1,48 @@
+/*
+	styleguide - variables
+*/
+body {
+  background-color: #DCEAF3; }
+
+.bbcid-styleguide-container {
+  margin: 16px;
+  min-width: 240px; }
+
+.bbcid-styleguide-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 16px; }
+
+.bbcid-styleguide-type-sample {
+  padding: 10px;
+  border-bottom: 1px solid gray; }
+
+.bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox {
+  background-color: #999;
+  padding: 20px;
+  min-width: 240px;
+  min-height: 100px; }
+
+/*
+
+	FORM CTA's
+	_cta._css
+
+*/
+.id-form-group {
+  margin-bottom: 16px; }
+  .id-form-group .id-input {
+    border: 1px solid black;
+    padding: 8px;
+    width: 94%;
+    max-width: 30em; }
+  .id-form-group label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 8px; }
+
+/**
+
+
+
+**/
