@@ -1,5 +1,15 @@
 /*
-	styleguide - variables
+
+    BBC ID - RESPONSIVE ID STRYLEGUIDE
+
+    About:
+
+
+    Authors:
+    Daniel Gonzalez (daniel.gonzalez@bbc.co.uk)
+    Tim Spear (tim.spear@bbc.co.uk)
+
+
 */
 body {
   background-color: #DCEAF3; }
@@ -17,33 +27,29 @@ body {
   padding: 10px;
   border-bottom: 1px solid gray; }
 
-.bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-  background-color: #CCC;
-  padding: 16px;
-  min-width: 240px; }
 
-@media all and (min-width: 20em) {
-  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-    max-width: 20em; } }
-@media all and (min-width: 25em) {
-  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-    max-width: 25em; } }
-@media all and (min-width: 37.5em) {
-  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-    max-width: 30em; } }
 
 /**
 
-FOUNDATION
+    FOUNDATION
 
 **/
 
-/* TYPOGRAPHY */
-/* GEL Typography CSS file */
+/* 
+
+    
+    TYPOGRAPHY
+    See GEL Typography CSS file - GEL-code.css
+
+
+*/
+
 
 /*
 
-COLOURS
+
+    COLOURS
+
 
 */
 
@@ -186,9 +192,51 @@ COLOURS
 
 /*
 
-GRIDS
+
+    GRIDS
+
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+    PANELS
+
+
+*/
+.bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+  background-color: #CCC;
+  padding: 16px;
+  min-width: 240px; }
+
+@media all and (min-width: 20em) {
+  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+    max-width: 20em; } }
+@media all and (min-width: 25em) {
+  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+    max-width: 25em; } }
+@media all and (min-width: 37.5em) {
+  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+    max-width: 30em; } }
+
 
 
 /**
