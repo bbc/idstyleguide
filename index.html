@@ -44,7 +44,7 @@
         <li><a href="#cta">CTA's</a></li>
         <li><a href="#toggle">Toggle Buttons</a></li>
         <li><a href="#radio">Radio Buttons</a></li>
-        <li><a href="#checkboxes">Checkboxes</a></li>
+        <li><a href="#tickboxes">Tickboxes</a></li>
       </ul>
     </div>
     </section>
@@ -53,11 +53,11 @@
 <!-- 
 
 
-    FOUNDATION 
+    FOUNDATION: TYPOGRAPHY, COLOURS & GRIDS. 
 
 
 -->
-
+<!-- TYPOGRAPHY -->
  <section id="typography" class="bbcid-styleguide-section grid-container">
     <h2 class="style-guide-section__h2">Typography</h2>
 
@@ -116,21 +116,80 @@
           <p class="gel-minion-bold">Lorem ipsum dolor sit amet</p>
         </div>
       </div>  
-  </section>
+  </section><!-- END TYPOGRAPHY -->
+
+<!-- COLOURS -->
 <section id="colours" class="bbcid-styleguide-section">
     <h2>Colours</h2>
     
+    <div class="grid">
+      <div class="style-guide-colours__base mb">
+        <div class="style-guide-colours__inner">
+        
+          <ul class="grid">
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--orb-masthead">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">ORB Masthead</span>
+              </div>
+            </li>
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--white">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">White</span>
+              </div>
+            </li>
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--id-header">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">iD Header</span>
+              </div>
+            </li>
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--id-header-bbc-id">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">iD Header - BBC iD</span>
+              </div>
+            </li>            
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--secondary-cta">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">Links &amp; Secondary CTA</span>
+              </div>
+            </li>
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--links-hover">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">Links (Hover)</span>
+              </div>
+            </li>
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--inactive-cta">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">Inactive CTA</span>
+              </div>
+            </li>
+            <li class="style-guide-colours__colour">
+              <div class="style-guide-colour style-guide-colour--black">
+              <div class="style-guide-colour__circle"></div>
+              <span class="style-guide-colour__label">Black</span>
+              </div>
+            </li>
+          </ul>
 
+        </div> <!-- class="style-guide-colours__inner" -->
+      </div> <!-- class="style-guide-colours__base mb" -->
+    </div> <!-- class="grid" -->    
+</section><!-- END COLOURS -->
 
-</section>
-
+<!-- GRIDS -->
 <section id="grid" class="bbcid-styleguide-section">
   
   <h2>Grid</h2>
     
 	<p>How we use the GEL grid.</p>
       
-</section>
+</section><!-- END GRIDS -->
 
 
 <!-- 
@@ -225,12 +284,19 @@
 
     <section id="cta" class="bbcid-styleguide-section">
       
-  <h2>CTA's</h2>
+      <h2>CTA's</h2>
 
-  <div class="bbcid-actions blq-clearfix">
-	  <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-	  <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
-  </div>
+      <div class="bbcid_false_container bbcid_isageold_false_container">
+
+      <a id="bbcid_isageold_false_label_wrapper" href="#">
+      <label for="bbcid_isageold_false" class="bbcid_isageold_false_label inactive">
+        <span class="bbcid_label_main">Label</span>
+        <span class="bbcid-hide">. </span>
+        <span class="bbcid-label-hint bbcid-hide"></span>
+      </label>
+      </a>
+
+      </div>
 
 </section>
     <section id="toggle" class="bbcid-styleguide-section">
@@ -241,8 +307,8 @@
      <h2>Radio Buttons</h2>
     </section>
 
-    <section id="checkboxes" class="bbcid-styleguide-section">
-	<h2>Checkboxes</h2>
+    <section id="tickbox" class="bbcid-styleguide-section">
+	<h2>Tickboxes</h2>
 </section>
 
 
