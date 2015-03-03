@@ -31,11 +31,169 @@ body {
 @media all and (min-width: 37.5em) {
   .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
     max-width: 30em; } }
+
 /**
 
+FOUNDATION
+
+**/
+
+/* TYPOGRAPHY */
+/* GEL Typography CSS file */
+
+/*
+
+COLOURS
+
+*/
+
+.style-guide-colours__base,
+.style-guide-colours__section {
+  display: inline-block;
+  width: 100%;
+}
+
+@media all and (min-width: 48em) {
+  .style-guide-colours__section {
+    width: 50%;
+  }
+}
+
+.style-guide-colours__inner {
+  padding: 16px 16px 0 16px;
+  background-color: white;
+}
+
+.style-guide-colours__section-colour,
+.style-guide-colours__colour {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.style-guide-colours__colour {
+  width: 25%;
+}
+
+@media all and (min-width: 37.5em) {
+    .style-guide-colours__colour {
+      width: 16.66667%;
+    }
+}
+
+@media all and (min-width: 48em) {
+    .style-guide-colours__colour {
+      width: 12%;
+    }
+}
+
+.style-guide-colours__section-colour {
+  width: 25%;
+}
+
+.style-guide-colour {
+  text-align: center;
+  margin-bottom: 24px; }
+.style-guide-colour__circle {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  padding-bottom: calc(100% - 2px);
+  height: 0;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #EDEDED;
+  position: relative;
+}
+
+.style-guide-colour__circle:after {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  bottom: -20px;
+}
+
+.style-guide-colour__label {
+  display: block;
+}
+
+/* ORB Masthead */
+.style-guide-colour--orb-masthead .style-guide-colour__circle {
+  background-color: #1273A5;
+}
+.style-guide-colour--orb-masthead .style-guide-colour__circle:after {
+  content: "#1273A5";
+}
+
+/* White */
+.style-guide-colour--white .style-guide-colour__circle {
+  background-color: #FFFFFF;
+}
+.style-guide-colour--white .style-guide-colour__circle:after {
+  content: "#FFFFFF";
+}
+
+/* iD Header */
+.style-guide-colour--id-header .style-guide-colour__circle {
+  background-color: #1790CF;
+}
+.style-guide-colour--id-header .style-guide-colour__circle:after {
+  content: "#1790CF";
+}
+
+/* iD Header - BBC iD */
+.style-guide-colour--id-header-bbc-id .style-guide-colour__circle {
+  background-color: #E0F4FF;
+}
+.style-guide-colour--id-header-bbc-id .style-guide-colour__circle:after {
+  content: "#E0F4FF";
+}
+
+/* Links & Secondary CTA */
+.style-guide-colour--secondary-cta .style-guide-colour__circle {
+  background-color: #005383;
+}
+.style-guide-colour--secondary-cta .style-guide-colour__circle:after {
+  content: "#005383";
+}
+
+/* Links (Hover) */
+.style-guide-colour--links-hover .style-guide-colour__circle {
+  background-color: #033452;
+}
+.style-guide-colour--links-hover .style-guide-colour__circle:after {
+  content: "#033452";
+}
+
+/* Inactive CTA */
+.style-guide-colour--inactive-cta .style-guide-colour__circle {
+  background-color: #C0C0C0;
+}
+.style-guide-colour--inactive-cta .style-guide-colour__circle:after {
+  content: "#C0C0C0";
+}
+
+/* Black */
+.style-guide-colour--black .style-guide-colour__circle {
+  background-color: #000000;
+}
+.style-guide-colour--black .style-guide-colour__circle:after {
+  content: "#000000";
+}
+
+/*
+
+GRIDS
+
+*/
+
+
+/**
 	LAYOUT - HEADERS
 // _layout_headers.scss
-
 **/
 .bbcid-header {
   background: url("img/sprite.png") no-repeat scroll 7px -194px #1790CF;
@@ -78,105 +236,8 @@ body {
 	FORM CTA's
 
 */
-.bbcid-actions .bbcid-button, .bbcid-back-action {
-  display: block;
-  font-family: Arial,sans-serif;
-  font-size: 1.538em;
-  font-weight: bold;
-  letter-spacing: -0.05em;
-  text-align: center;
-  line-height: 28px;
-  border: 0;
-  float: left; }
-
-.bbcid-rtl .bbcid-actions .bbcid-button, .bbcid-rtl .bbcid-back-action {
-  float: right; }
-
-.bbcid-actions .bbcid-button {
-  padding: 3px 10px 5px 10px;
-  height: 35px;
-  min-width: 80px; }
-
-.bbcid-back-action {
-  padding: 16px 0;
-  margin: 0 16px;
-  height: 28px; }
-
-.bbcid-actions a.bbcid-button {
-  height: 27px; }
-
-.ie6 .bbcid-actions a.bbcid-button, .ie7 .bbcid-actions a.bbcid-button {
-  margin-top: 4px; }
-
-.bbcid-actions input.bbcid-button {
-  min-width: 100px; }
-
-.ie6 .bbcid-actions .bbcid-button, .ie7 .bbcid-actions .bbcid-button {
-  line-height: 1.3em;
-  position: relative;
-  top: -4px; }
-
-.ie6 .bbcid-actions input.bbcid-button, .ie7 .bbcid-actions input.bbcid-button {
-  padding: 0;
-  line-height: 1.2em;
-  position: static; }
-
-.ie8 .bbcid-actions input.bbcid-button {
-  padding: 4px 0; }
-
-.bbcid-actions .submit, .bbcid-actions .submit:link, .bbcid-actions .submit:visited {
-  color: white;
-  background-color: #1790cf; }
-
-.bbcid-actions .submit:focus, .bbcid-actions .submit:hover, .bbcid-actions .submit:active {
-  background-color: #005383;
-  text-decoration: none; }
-
-.bbcid-actions a.continue:link, .bbcid-actions a.continue:visited {
-  color: white;
-  background-color: #1790cf; }
-
-.bbcid-actions a.continue:hover, .bbcid-actions a.continue:focus, .bbcid-actions a.continue:active {
-  text-decoration: none;
-  background-color: #005383; }
-
-.bbcid-actions .submit.disabled {
-  color: white;
-  background-color: #c0c0c0; }
-
 /**
 
-	UTILITIES
+
 
 **/
-body:after {
-  content: "GEL Group 1a: 240-320px";
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 0.75em;
-  background-color: rgba(23, 142, 207, 0.7);
-  text-align: center;
-  color: #fff; }
-
-@media only screen and (min-width: 320px) {
-  body:after {
-    content: "GEL Group 1b: 320-399px"; } }
-@media only screen and (min-width: 400px) {
-  body:after {
-    content: "GEL Group 2: 400-600px"; } }
-@media only screen and (min-width: 600px) {
-  body:after {
-    content: "GEL Group 3: 600-899px"; } }
-@media only screen and (min-width: 900px) {
-  body:after {
-    content: "GEL Group 3 (content-reflow): 900-1007px"; } }
-@media only screen and (min-width: 1008px) {
-  body:after {
-    content: "GEL Group 4: 1008px+"; } }
-.blq-clearfix::after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
