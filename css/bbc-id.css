@@ -27,14 +27,15 @@ body {
 
 .bbcid-styleguide-section {
   background-color: white;
-  padding: 16px;
-  margin-bottom: 16px;
+  padding: 1em 0.5em;
+  margin-bottom: 2em;
 }
 
 .bbcid-styleguide-type-sample {
-  padding: 10px;
+  padding: 8px;
   border-bottom: 1px solid gray;
 }
+
 @media only screen and (min-width: 400px) {
   .bbcid-styleguide-container {
     margin-left: 16px;
