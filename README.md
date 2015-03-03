@@ -1,2 +1,2 @@
-# idstyleguide
-responsive iD styleguide - tests
+# iD Styleguide
+## responsive iD styleguide - tests
