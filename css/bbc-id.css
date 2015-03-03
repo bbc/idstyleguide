@@ -210,27 +210,48 @@ body {
 /*
 
 
-    GRIDS
+    GRID
 
 
 */
 
+.grid__item {
+  display: inline-block;
+  padding-left: 8px;}
+  @media all and (min-width: 37.5em) {
+    .grid__item {
+      padding-left: 16px;
+      padding-right: 0px;
+      margin-bottom: 16px; } }
 
+.grid__item-margin {
+  margin-left: 8px; }
+  @media all and (min-width: 37.5em) {
+    .grid__item-margin {
+      margin-left: 16px; } }
 
+.style-guide-grid__item {
+  margin-bottom: 16px;
+}
 
+.style-guide-grid__item--whole {
+  width: 100%;
+}
 
+.style-guide-grid__item--third {
+  width: 33.33333%;
+}
 
+.style-guide-grid__item--two-thirds {
+  width: 66.66666%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.style-guide-grid-item {
+  background-color: #CCCCCC;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  text-align: center;
+}
 
 /*
 
@@ -452,5 +473,3 @@ body:after {
   clear:both;
   visibility:hidden
 }
-
-
