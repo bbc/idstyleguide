@@ -1,6 +1,6 @@
 /*
 
-    BBC ID - RESPONSIVE ID STRYLEGUIDE
+    BBC ID - RESPONSIVE STYLEGUIDE
 
     About:
 
@@ -11,27 +11,43 @@
 
 
 */
+
+/**
+
+    STYLEGUIDE-SPECIFIC CLASSES
+
+**/
 body {
-  background-color: #DCEAF3; }
+  background-color: #DCEAF3;
+}
 
 .bbcid-styleguide-container {
-  margin: 16px;
-  min-width: 304px; }
+  min-width: 240px;
+}
 
 .bbcid-styleguide-section {
   background-color: white;
   padding: 16px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+}
 
 .bbcid-styleguide-type-sample {
   padding: 10px;
-  border-bottom: 1px solid gray; }
-
+  border-bottom: 1px solid gray;
+}
+@media only screen and (min-width: 400px) {
+  .bbcid-styleguide-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
 
 
 /**
 
+
     FOUNDATION
+
 
 **/
 
@@ -240,8 +256,11 @@ body {
 
 
 /**
-	LAYOUT - HEADERS
-// _layout_headers.scss
+
+
+    LAYOUT - HEADERS
+
+
 **/
 .bbcid-header {
   background: url("img/sprite.png") no-repeat scroll 7px -194px #1790CF;
@@ -249,22 +268,29 @@ body {
   min-height: 64px;
   letter-spacing: -0.03em;
   overflow: hidden;
-  max-height: 64px; }
-  .bbcid-header h1 {
+  max-height: 64px;
+}
+
+.bbcid-header h1 {
     font-family: "Gill Sans";
     font-weight: 500;
-    color: white; }
-  .bbcid-header .subheader {
+    color: white;
+}
+
+.bbcid-header .subheader {
     float: left;
     padding: 0px 11px;
     color: #E0F4FF;
     font-size: 2.615em;
     line-height: 2.25em;
-    letter-spacing: -0.01em; }
+    letter-spacing: -0.01em;
+}
 
 /*
 
+
 	FORM INPUTS & LABELS
+
 
 */
 .id-form-group {
@@ -281,7 +307,9 @@ body {
 
 /*
 
+
   FORM CTA's
+
 
 */
 .bbcid-actions .bbcid-button,.bbcid-back-action{
@@ -370,10 +398,15 @@ body {
 
 /**
 
-      EXTRA UTILITIES
+
+      EXTRA UTILITY CLASSES
+
 
 **/
 
+/*
+  RESPONSIVE REPORTER
+*/
 body:after {
   content: "GEL Group 1a: 240-320px";
   position: fixed;
@@ -410,6 +443,7 @@ body:after {
   } 
 }
 
+/* CLEARFIX (from BBC base.css) */
 .blq-clearfix::after{
   content:".";
   display:block;
@@ -417,3 +451,5 @@ body:after {
   clear:both;
   visibility:hidden
 }
+
+
