@@ -36,6 +36,10 @@ body {
   border-bottom: 1px solid gray;
 }
 
+.bbcid-styleguide-note {
+  color: #666;
+}
+
 @media only screen and (min-width: 400px) {
   .bbcid-styleguide-container {
     margin-left: 16px;
@@ -285,7 +289,7 @@ body {
 
 **/
 .bbcid-header {
-  background: url("img/sprite.png") no-repeat scroll 7px -194px #1790CF;
+  background: url("../img/sprite.png") no-repeat scroll 7px -194px #1790CF;
   padding: 0px 7px;
   min-height: 64px;
   letter-spacing: -0.03em;
@@ -413,6 +417,77 @@ body {
 .bbcid-actions .submit.disabled{
     color:white;
     background-color:#c0c0c0
+}
+
+
+
+
+
+
+
+
+
+
+/**
+
+
+    CHECKBOXES
+
+
+**/
+
+.bbcid-checkbox-container label{
+  padding-top:2px;
+  margin-bottom:0
+}
+
+.bbcid-form .bbcid-checkbox-container input{
+  float:left;
+  margin:5px 0 13px 0
+}
+
+.bbcid-rtl .bbcid-form .bbcid-checkbox-container input{
+  float:right
+}
+
+.ie6 .bbcid-form .bbcid-checkbox-container input,.ie7 .bbcid-form .bbcid-checkbox-container input{
+  margin-top:1px
+}
+
+.bbcid-form .rememberme-container label{
+  float:left;
+  width:auto;
+  margin-right:8px;
+  margin-left:8px;
+  font-size:1.231em
+}
+
+.bbcid-rtl .bbcid-form .rememberme-container label{
+  float:right
+}
+
+.bbcid-form .rememberme-container .description{
+  position:relative;
+  top:5px
+}
+
+.bbcid-form .bbcid-checkbox-container>a{
+  width:24px;
+  height:24px;
+  background-image:url(../img/sprite.png);
+  background-repeat:no-repeat;
+  background-position:0 -359px;
+  display:block;
+  float:left;
+  position:relative
+}
+
+.bbcid-rtl .bbcid-form .bbcid-checkbox-container>a{
+  float:right
+}
+
+.bbcid-form .bbcid-checkbox-container .checked{
+  background-position:0 -383px
 }
 
 
