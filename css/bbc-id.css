@@ -419,11 +419,147 @@ body {
     background-color:#c0c0c0
 }
 
+/**
+
+
+    TOGGLE BUTTONS
+
+
+**/
+
+.bbcid-form .bbcid-field-container{
+  margin-bottom:16px;
+  border:0
+}
+
+.bbcid-rtl p.bbcid-pre-form,.bbcid-rtl p.bbcid-post-form,.bbcid-rtl .bbcid-display-field-container p,.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-radios-container label,.bbcid-mobile-container.bbcid-rtl .bbcid-form .bbcid-radios-container label,.bbcid-mobile-container.bbcid-rtl .bbcid-form .isageold-container label,.bbcid-rtl .bbcid-content .alreadyhaveaccount-container p{
+  font-size:1.39em;
+  line-height:18px
+}
+
+
+.bbcid-form .bbcid-radios-container{
+  max-width:306px
+}
+
+.bbcid-form .bbcid-radios-container label{
+  font-size:1.230em;
+  float:left;
+  position:static;
+  width:auto;
+  padding:0 10px 0 10px;
+  letter-spacing:0;
+  margin-bottom:0
+}
+
+.bbcid-rtl .bbcid-form .bbcid-radios-container label{
+  float:right
+}
+
+.ie6 .bbcid-form .bbcid-radios-container input.radio,.ie7 .bbcid-form .bbcid-radios-container input.radio{
+  margin-top:0
+}
+
+.bbcid-form .bbcid-radios-container input.radio{
+  float:left;
+  clear:both;
+  width:auto;
+  margin:4px 0 0 0
+}
+
+.bbcid-rtl .bbcid-form .bbcid-radios-container input.radio{
+  float:right
+}
+
+.bbcid-form .bbcid-radios-container .bbcid_false_container,.bbcid-form .bbcid-radios-container .bbcid_true_container{
+  float:left;
+  width:100%
+}
+
+.bbcid-rtl .bbcid-radios-container .bbcid_false_container,.bbcid-rtl .bbcid-radios-container .bbcid_true_container{
+  float:right
+}
+
+.bbcid-form .bbcid-radios-container .bbcid_false_container{
+  margin-top:16px;
+  margin-bottom:10px
+}
+
+.bbcid-form .radio-javascript-enabled input.radio{
+  display:none
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid_false_container,.bbcid-form .radio-javascript-enabled .bbcid_true_container{
+  margin-top:16px;
+  width:auto;
+  padding-right:10px
+}
+
+.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_false_container,.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_true_container{
+  padding-right:0;
+  padding-left:10px
+}
+
+.bbcid-form .radio-javascript-enabled a,.bbcid-form .radio-javascript-enabled a{
+  text-decoration:none;
+  display:block
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid-label-hint{
+  top:24px
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid_false_container{
+  margin-bottom:0
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label{
+  padding:8px 21px 8px 22px;
+  background-color:#1790cf;
+  color:#fff;
+  font-size:16px;
+  text-align:right;
+  white-space:nowrap;
+  float:none;
+  cursor:pointer;
+  position:relative
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.inactive{
+  background-color:#a7a7a7
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:hover,.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:focus,.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.active{
+  background-color:#005383
+}
+
+.bbcid-form .radio-javascript-enabled .bbcid-toggle-tick{
+  width:13px;
+  height:11px;
+  background:url(img/sprite.png) no-repeat;
+  background-position:0 -1066px;
+  left:10px;
+  top:12px;
+  position:absolute;
+  display:block;
+  opacity:0
+}
+
+.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-toggle-tick{
+  left:auto;
+  right:10px
+}
 
 
 
 
+/**
 
+
+    RADIO BUTTONS
+
+
+**/
 
 
 
