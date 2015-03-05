@@ -19,6 +19,7 @@
 **/
 body {
   background-color: #DCEAF3;
+  /*font-size:62.5%;*/
 }
 
 .bbcid-styleguide-container {
@@ -64,6 +65,20 @@ body {
 
 
 */
+
+
+.bbcid-form label, .bbcid-form legend {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.53846em;
+    letter-spacing: -1px;
+    line-height: 20px;
+    white-space: normal;
+    margin: 0px 0px 16px;
+    width: 560px;
+    color: #000;
+}
+
 
 
 /*
@@ -481,7 +496,7 @@ body {
 }
 
 .bbcid-form .bbcid-radios-container .bbcid_false_container{
-  margin-top:16px;
+  margin-top:0;
   margin-bottom:10px
 }
 
@@ -490,7 +505,7 @@ body {
 }
 
 .bbcid-form .radio-javascript-enabled .bbcid_false_container,.bbcid-form .radio-javascript-enabled .bbcid_true_container{
-  margin-top:16px;
+  margin-top:0;
   width:auto;
   padding-right:10px
 }
