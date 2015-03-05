@@ -551,7 +551,7 @@ body {
 .bbcid-form .radio-javascript-enabled .bbcid-toggle-tick{
   width:13px;
   height:11px;
-  background:url(img/sprite.png) no-repeat;
+  background:url(../img/sprite.png) no-repeat;
   background-position:0 -1066px;
   left:10px;
   top:12px;
