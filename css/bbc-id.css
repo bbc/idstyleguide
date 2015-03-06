@@ -116,6 +116,11 @@ div.bbcid-styleguide-notes {
 
 */
 
+
+ul.grid {
+  padding-left: 0;
+}
+
 .style-guide-colours__base,
 .style-guide-colours__section {
   display: inline-block;
