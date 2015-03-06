@@ -25,7 +25,6 @@ body {
 }
 
 code {
-  font-size: 0.8125em;
 }
 
 .bbcid-styleguide-container {
@@ -46,6 +45,14 @@ code {
 .bbcid-styleguide-note {
   color: #666;
 }
+div.bbcid-styleguide-notes {
+    font-size: 0.8125em;
+
+  margin-top: 1rem;
+  border-top: 1px solid #DCEAF3;
+  padding: 0.6rem;
+}
+
 
 @media only screen and (min-width: 400px) {
   .bbcid-styleguide-container {
@@ -75,19 +82,24 @@ code {
 
 
 .bbcid-styleguide-type p, .bbcid-styleguide-type a {
-  font-size: 0.8125em;
+  color: #1F1F1F;
+  font-size: 0.813rem;
+  line-height: 1rem;
 }
 .bbcid-styleguide-type a {
+  color: #005383;
   font-weight: bold;
 }
 @media only screen and (min-width: 320px) {
 .bbcid-styleguide-type p, .bbcid-styleguide-type a {
-    font-size: 1em;
+    font-size: 1rem; /*16px*/
+    line-height: 1.250rem; 
   }
 }
 @media only screen and (min-width: 600px) {
 .bbcid-styleguide-type p, .bbcid-styleguide-type a {
-  font-size: 0.8125em;
+  font-size: 0.813rem;
+  line-height: 1rem;
   } 
 .bbcid-styleguide-type a {
   font-weight: normal;
