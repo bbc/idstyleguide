@@ -74,19 +74,19 @@ code {
 
 
 
-.bbcid-styleguide-type p {
+.bbcid-styleguide-type p, .bbcid-styleguide-type a {
   font-size: 0.8125em;
 }
 .bbcid-styleguide-type a {
   font-weight: bold;
 }
 @media only screen and (min-width: 320px) {
-.bbcid-styleguide-type p {
+.bbcid-styleguide-type p, .bbcid-styleguide-type a {
     font-size: 1em;
   }
 }
 @media only screen and (min-width: 600px) {
-.bbcid-styleguide-type p {
+.bbcid-styleguide-type p, .bbcid-styleguide-type a {
   font-size: 0.8125em;
   } 
 .bbcid-styleguide-type a {
