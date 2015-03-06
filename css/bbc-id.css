@@ -47,8 +47,9 @@ code {
   color: #666;
 }
 div.bbcid-styleguide-notes {
+  background-color: #F7F7F9;
   margin-top: 3rem;
-  border-top: 1px solid #DCEAF3;
+  border: 1px solid #DCEAF3;
   padding: 0.6rem;
 }
 
