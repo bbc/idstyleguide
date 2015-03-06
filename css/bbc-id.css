@@ -25,6 +25,7 @@ body {
 }
 
 code {
+  color: #1F1F1F;
 }
 
 .bbcid-styleguide-container {
@@ -46,9 +47,7 @@ code {
   color: #666;
 }
 div.bbcid-styleguide-notes {
-    font-size: 0.8125em;
-
-  margin-top: 1rem;
+  margin-top: 3rem;
   border-top: 1px solid #DCEAF3;
   padding: 0.6rem;
 }
