@@ -19,7 +19,9 @@
 **/
 body {
   background-color: #DCEAF3;
-  /*font-size:62.5%;*/
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
 }
 
 .bbcid-styleguide-container {
@@ -79,6 +81,30 @@ body {
     color: #000;
 }
 
+p {
+  font-size: 0.8em;
+}
+a {
+  font-weight: bold;
+}
+@media only screen and (min-width: 320px) {
+  p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 400px) {
+  p {
+    font-size: 1.2em;
+  }
+  a {
+  font-weight: normal;
+  }
+}
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 1.4em;
+  }
+}
 
 
 /*
