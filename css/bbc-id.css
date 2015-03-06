@@ -24,6 +24,10 @@ body {
   line-height: 1.4;
 }
 
+code {
+  font-size: 0.7em;
+}
+
 .bbcid-styleguide-container {
   min-width: 240px;
 }
@@ -69,17 +73,7 @@ body {
 */
 
 
-.bbcid-form label, .bbcid-form legend {
-    position: relative;
-    font-weight: bold;
-    font-size: 1.53846em;
-    letter-spacing: -1px;
-    line-height: 20px;
-    white-space: normal;
-    margin: 0px 0px 16px;
-    width: 560px;
-    color: #000;
-}
+
 
 p {
   font-size: 0.8em;
@@ -360,6 +354,21 @@ a {
 
 
 */
+
+
+.bbcid-form label, .bbcid-form legend {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.53846em;
+    letter-spacing: -1px;
+    line-height: 20px;
+    white-space: normal;
+    margin: 0px 0px 16px;
+    width: 560px;
+    color: #000;
+}
+
+
 .id-form-group {
   margin-bottom: 16px; }
   .id-form-group .id-input {
