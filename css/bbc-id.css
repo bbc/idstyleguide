@@ -19,7 +19,13 @@
 **/
 body {
   background-color: #DCEAF3;
-  /*font-size:62.5%;*/
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+code {
+  font-size: 0.7em;
 }
 
 .bbcid-styleguide-container {
@@ -58,27 +64,35 @@ body {
 **/
 
 /* 
-
     
+
     TYPOGRAPHY
-    See GEL Typography CSS file - GEL-code.css
 
 
 */
 
 
-.bbcid-form label, .bbcid-form legend {
-    position: relative;
-    font-weight: bold;
-    font-size: 1.53846em;
-    letter-spacing: -1px;
-    line-height: 20px;
-    white-space: normal;
-    margin: 0px 0px 16px;
-    width: 560px;
-    color: #000;
-}
 
+
+p {
+  font-size: 0.8125em;
+}
+a {
+  font-weight: bold;
+}
+@media only screen and (min-width: 320px) {
+  p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 600px) {
+   p {
+  font-size: 0.8125em;
+  } 
+  a {
+  font-weight: normal;
+  }
+}
 
 
 /*
@@ -334,6 +348,21 @@ body {
 
 
 */
+
+
+.bbcid-form label, .bbcid-form legend {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.53846em;
+    letter-spacing: -1px;
+    line-height: 20px;
+    white-space: normal;
+    margin: 0px 0px 16px;
+    width: 560px;
+    color: #000;
+}
+
+
 .id-form-group {
   margin-bottom: 16px; }
   .id-form-group .id-input {
