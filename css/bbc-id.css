@@ -140,6 +140,8 @@ div.bbcid-styleguide-notes {
 
 .style-guide-colours__colour {
   width: 25%;
+  padding-left: 5px;
+  padding-right: 5px; 
 }
 
 @media all and (min-width: 37.5em) {
@@ -305,21 +307,57 @@ div.bbcid-styleguide-notes {
 
 
 */
+
+@media only screen and (max-width: 240px) {
+    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+      max-width: 224px;
+      padding: 8px;
+  }
+}
+@media only screen and (max-width: 320px) {
+    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+      max-width: 224px;
+      padding: 8px;
+  }
+}
+@media only screen and (max-width: 400px) {
+    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+      max-width: 224px;
+      padding: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+      max-width: 224px;
+      padding: 16px;
+  }
+}
+@media only screen and (min-width: 900px) {
+    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+      max-width: 66.66666%;
+      padding: 16px;
+  }
+}
+@media only screen and (min-width: 1008px) {
+    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
+      max-width: 66.66666%;
+      padding: 16px;
+  }
+}
+
 .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-  background-color: #CCC;
+  background-color: #FFF;
   padding: 16px;
-  min-width: 240px; }
+  min-width: 224px; /*240px - padding*/
+  border: 1px solid black;
+}
 
-@media all and (min-width: 20em) {
-  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-    max-width: 20em; } }
-@media all and (min-width: 25em) {
-  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-    max-width: 25em; } }
-@media all and (min-width: 37.5em) {
-  .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-    max-width: 30em; } }
-
+.bbcid-panel-form-content, .bbcid-panel-message-content, .bbcid-panel-3rdparty-content, .bbcid-panel-informationbox-content, .bbcid-panel-form-message-content, .bbcid-panel-settings-content {
+  background-color: #C0C0C0;
+  padding: 8px;
+  min-width: 216px; /*224px - padding*/
+  border: 1px solid black;
+}
 
 
 /**
