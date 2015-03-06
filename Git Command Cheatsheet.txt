@@ -1,0 +1,9 @@
+
+# Pull changes from Master repo to your workspace
+
+	git pull https://github.com/tspear/idstyleguide.git gh-pages
+
+(you might have to fix conflicts here)
+
+	git commit
+	git push
