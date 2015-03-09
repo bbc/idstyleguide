@@ -362,6 +362,10 @@
 
 <section id="inputs" class="bbcid-styleguide-section">
 	<h2>Form Inputs</h2>
+  <p>Responsive Text, Password and Date of Birth Fields.<br>
+  Fields stretch to 100% of viewport width until Group 3, where the form switches to a 'desktop' style layout with hints appearing to the right side of the fields.</p>
+
+
 	<form class="bbcid-form">	
     <h3>Initial Presentation</h3>
 
@@ -375,8 +379,51 @@
     <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
   </div>
 
+    <h3>Waiting State</h3>
+
+
+    <h3>Hint State</h3>
+
+  <div class="bbcid-field-container unique-container">
+    <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+    <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+  </div>
+ <span class="bbcid-label-hint bbcid_validation_format_emailaddress"> <strong>This email address is not valid</strong><span class="bbcid-hide">. </span>  <span>Please check you have typed it correctly.</span> </span>
+ 
+    <h3>Warning State</h3>
+
+
+    <h3>Success State</h3>
+
+
+  <span class="bbcid-label-hint bbcid_validation_format_emailaddress"> <strong>This email address is not valid</strong><span class="bbcid-hide">. </span>  <span>Please check you have typed it correctly.</span> </span>
+
 
 	</form>
+
+  <div class="bbcid-styleguide-notes">
+    <h3>Notes:</h3>
+    <p>
+      <code>
+      <strong>labels:</strong><br>
+        font-weight: bold;<br>
+        font-size: 16px;<br>
+        line-height: 19px;<br>
+        margin-bottom: 16px;<br>
+      </code>
+    </p>
+    <p>
+      <code>
+        <strong>inputs:</strong><br>
+        font-weight: bold;<br>
+        font-size: 16px;<br>
+        line-height: 19px;<br>
+        padding: 0 0 0 0;<br>  
+        margin-bottom: 16px;<br>
+      </code>
+    </p>
+  </div>
+
 </section>
 
 
@@ -457,7 +504,7 @@
 
 </form>
 
-    <div class="bbcid-styleguide-notes">
+<div class="bbcid-styleguide-notes">
   <h3>Notes:</h3>
   <p>
     <code>
