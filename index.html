@@ -535,30 +535,86 @@
 
 <section id="inputs" class="bbcid-styleguide-section">
 	<h2>Form Inputs</h2>
+  <p>Responsive Text, Password and Date of Birth Fields.<br>
+  Fields stretch to 100% of viewport width until Group 3, where the form switches to a 'desktop' style layout with hints appearing to the right side of the fields.</p>
+
+
 	<form class="bbcid-form">	
     <h3>Initial Presentation</h3>
 
-		<div class="id-form-group">
-			<label>Input field Label</label><br />
-			<input type="text" value="input text" class="id-input">
-		</div>
+  <h4>Text Input:</h4>
+
+  <div class="bbcid-field-container unique-container">
+    <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+    <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+  </div>
+  
+
+  <h4>Password Input:</h4>
 		
-		<div class="id-form-group">
-			<label>Password Field Label</label><br />
-			<input type="password" value="input text" class="id-input">
-		</div>
+  <div class="bbcid-field-container unique-container">
+    <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+    <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
+  </div>
 
+   
 
-<div class="bbcid-field-container unique-container">  <label for="bbcid_unique" class="bbcid_unique_label">  <span class="bbcid_label_main">Email or username</span> <span class="bbcid-hide">. </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label> <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="" type="text"> </div>
-
-
-
-
-
-
-
-		
 	</form>
+
+  <div class="bbcid-styleguide-notes">
+    <h3>Notes:</h3>
+    <p>
+      <code>
+        <strong>Labels:</strong><br>
+        <strong>GEL Group 1A: 240px - 319px</strong><br>
+        color: #000;<br>
+        font-size: 16px;<br> 
+        font-weight: Bold;<br>
+        margin-below: 0;<br>
+
+        <strong>GEL Group 1B: 320px - 399px ONWARDS</strong><br>
+        color: #000;<br>
+        font-size: 20px; <br>
+        font-weight: Bold;<br>
+        margin-below: 8px;<br>
+      </code>
+    </p>
+
+    <p>
+      <code>
+        <strong>Inputs:</strong><br>
+
+        <strong>General:</strong><br>
+        display: block;<br>
+        box-sizing: border-box;<br>
+        font-family:Arial,sans-serif;<br>
+        border: 1px solid #a7a7a7;<br>
+
+        <strong>GEL Group 1A: 240px - 319px</strong><br>
+        width: 100%;<br>
+        height: 33px;<br>
+        padding: 8px;<br>
+
+        <strong>GEL Group 1B: 320px - 399px ONWARDS</strong><br>
+        width: 100%;<br>
+        height: 42px;<br>
+        padding: 10px;<br>
+
+        <strong>GEL Group 3: 600px - 900px ONWARDS</strong><br>
+        max-width: 252px;
+
+      </code>
+    </p>
+
+
+
+
+
+
+
+
+  </div>
+
 </section>
 
 
@@ -639,7 +695,7 @@
 
 </form>
 
-    <div class="bbcid-styleguide-notes">
+<div class="bbcid-styleguide-notes">
   <h3>Notes:</h3>
   <p>
     <code>
