@@ -408,46 +408,68 @@ ul.grid {
 
 
 */
+.bbcid-form input, .bbcid-form select, .bbcid-form label {
+    display: block;
+    box-sizing: border-box;
+}
 
 
+/* CONTAINER */
+.bbcid-form .bbcid-field-container {
+    background-color: #EEE;
+    margin-bottom: 16px;
+    border: 0px none;
+}
+/* form labels */
 .bbcid-form label, .bbcid-form legend {
     position: relative;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: -1px;
     line-height: 20px;
     white-space: normal;
-    margin: 0px 0px 16px;
+    margin: 0px;
     width: 560px;
     color: #000;
 }
-
-
-.id-form-group {
-  margin-bottom: 16px;
-}
-.id-form-group .id-input {
-    border: 1px solid black;
-    padding: 8px;
-    width: 94%;
-    max-width: 30em;
-}
-.id-form-group label {
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-
-
-.bbcid-form input.text,.bbcid-form input.password,.bbcid-form select{
-  width:280px;
-  height:24px;
-  padding:8px;
+/* form inputs */
+.bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+  width: 100%;
+  height: 33px;
+  padding: 8px;
   border:1px solid #a7a7a7;
   font-family:Arial,sans-serif;
-  font-size:1.230769230769231em
 }
+
+/*responsive*/
+@media only screen and (min-width: 320px) {
+   .bbcid-form label, .bbcid-form legend {
+      font-size: 1.250em;
+      margin: 0px 0px 8px
+    }
+    .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+    font-size:1em;
+    height: 42px;
+  }
+}
+@media only screen and (min-width: 400px) {
+}
+@media only screen and (min-width: 600px) {
+ .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+    max-width: 252px; /* need to leave room for inline hint. */
+  }
+}
+@media only screen and (min-width: 900px) {
+
+}
+@media only screen and (min-width: 1008px) {
+
+}
+
+
+
+
+
 
 
 
