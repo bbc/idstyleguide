@@ -313,59 +313,42 @@ ul.grid {
 /*
 
 
-    PANELS - Testing new branch!
+    PANELS
 
 
 */
 
 @media only screen and (max-width: 240px) {
     .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-      max-width: 224px;
-      padding: 8px;
+      padding: 8px; /*This should be margin*/
   }
 }
 @media only screen and (max-width: 320px) {
     .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-      max-width: 224px;
-      padding: 8px;
+      padding: 8px; /*This should be margin*/
   }
 }
 @media only screen and (max-width: 400px) {
     .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-      max-width: 224px;
-      padding: 16px;
+      padding: 16px; /*This should be margin*/
   }
 }
 @media only screen and (max-width: 600px) {
     .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-      max-width: 224px;
-      padding: 16px;
+      padding: 16px; /*This should be margin*/
   }
 }
 @media only screen and (min-width: 900px) {
-    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-      max-width: 66.66666%;
-      padding: 16px;
-  }
-}
-@media only screen and (min-width: 1008px) {
-    .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-      max-width: 66.66666%;
-      padding: 16px;
+    .bbcid-panel-form, .bbcid-panel-3rdparty, .bbcid-panel-informationbox {
+      max-width: 592px;
+      padding: 16px; /*This should be margin*/
   }
 }
 
 .bbcid-panel-form, .bbcid-panel-message, .bbcid-panel-3rdparty, .bbcid-panel-informationbox, .bbcid-panel-form-message, .bbcid-panel-settings {
-  background-color: #FFF;
+  background-color: #C0C0C0;
   padding: 16px;
   min-width: 224px; /*240px - padding*/
-  border: 1px solid black;
-}
-
-.bbcid-panel-form-content, .bbcid-panel-message-content, .bbcid-panel-3rdparty-content, .bbcid-panel-informationbox-content, .bbcid-panel-form-message-content, .bbcid-panel-settings-content {
-  background-color: #C0C0C0;
-  padding: 8px;
-  min-width: 216px; /*224px - padding*/
   border: 1px solid black;
 }
 
@@ -765,7 +748,7 @@ ul.grid {
   RESPONSIVE REPORTER
 */
 body:after {
-  content: "GEL Group 1a: 240-320px";
+  content: "GEL Group 1A: 240px - 319px";
   position: fixed;
   top: 0;
   width: 100%;
@@ -776,22 +759,22 @@ body:after {
 }
 @media only screen and (min-width: 320px) {
   body:after {
-    content: "GEL Group 1b: 320-399px";
+    content: "GEL Group 1B: 320px - 399px";
   } 
 }
 @media only screen and (min-width: 400px) {
   body:after {
-    content: "GEL Group 2: 400-600px";
+    content: "GEL Group 2: 400px - 599px";
   } 
 }
 @media only screen and (min-width: 600px) {
   body:after {
-    content: "GEL Group 3: 600-899px";
+    content: "GEL Group 3A: 600px - 899px";
   } 
 }
 @media only screen and (min-width: 900px) {
   body:after {
-    content: "GEL Group 3 (content-reflow): 900-1007px";
+    content: "GEL Group 3B: 900px - 1007px (Content Reflow)";
   } 
 }
 @media only screen and (min-width: 1008px) {
