@@ -420,6 +420,7 @@ ul.grid {
     margin-bottom: 16px;
     border: 0px none;
 }
+
 /* form labels */
 .bbcid-form label, .bbcid-form legend {
     position: relative;
@@ -432,6 +433,7 @@ ul.grid {
     width: 560px;
     color: #000;
 }
+
 /* form inputs */
 .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
   width: 100%;
@@ -442,28 +444,36 @@ ul.grid {
 }
 
 /*responsive*/
+
 @media only screen and (min-width: 320px) {
+
    .bbcid-form label, .bbcid-form legend {
       font-size: 1.250em;
       margin: 0px 0px 8px
     }
+
     .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
     font-size:1em;
     height: 42px;
   }
+
 }
+
 @media only screen and (min-width: 400px) {
 }
+
 @media only screen and (min-width: 600px) {
+ 
  .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
     max-width: 252px; /* need to leave room for inline hint. */
   }
+
 }
+
 @media only screen and (min-width: 900px) {
-
 }
-@media only screen and (min-width: 1008px) {
 
+@media only screen and (min-width: 1008px) {
 }
 
 
