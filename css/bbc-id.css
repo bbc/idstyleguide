@@ -558,6 +558,9 @@ ul.grid {
     border-color: #a61616;
 }
 
+.bbcid-form .valid input.text {
+    border: 2px solid #169009;
+}
 
 /* 1 COL HINT (UNDER INPUT BOX) */
 .bbcid-hint-1col {
@@ -664,6 +667,18 @@ ul.grid {
       background-repeat: no-repeat;
       background-position: 216px -922px;
       border-color: #ffad01;
+  }
+
+  .bbcid-form .waiting input.text {
+      background-image: url("../img/spinner.gif");
+      background-repeat: no-repeat;
+      background-position: 216px -922px;
+  }
+
+  .bbcid-form .valid input.text {
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: 216px -785px;
   }
 
   .bbcid-hint-1col { /* HIDE 1 COLUMN (MOBILE) HINTS */
