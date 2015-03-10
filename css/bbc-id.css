@@ -718,9 +718,19 @@ ul.grid {
 
 
 */
-.bbcid-actions .bbcid-button,.bbcid-back-action{
+
+.bbcid-actions a,
+.bbcid-actions a:hover,
+.bbcid-actions a:focus,
+.bbcid-actions a:active {
+    text-decoration: none;
+}
+
+
+.bbcid-actions .bbcid-button,
+.bbcid-back-action {
     display:block;
-    font-family:Arial,sans-serif;
+    font-family: Arial,sans-serif;
     font-size:1.538em;
     font-weight:bold;
     letter-spacing:-0.05em;
@@ -730,7 +740,8 @@ ul.grid {
     float:left
 }
 
-.bbcid-rtl .bbcid-actions .bbcid-button,.bbcid-rtl .bbcid-back-action{
+.bbcid-rtl .bbcid-actions .bbcid-button,
+.bbcid-rtl .bbcid-back-action{
     float:right
 }
 
@@ -750,7 +761,8 @@ ul.grid {
     height:27px
 }
 
-.ie6 .bbcid-actions a.bbcid-button,.ie7 .bbcid-actions a.bbcid-button{
+.ie6 .bbcid-actions a.bbcid-button,
+.ie7 .bbcid-actions a.bbcid-button{
     margin-top:4px
 }
 
@@ -758,13 +770,15 @@ ul.grid {
     min-width:100px
 }
 
-.ie6 .bbcid-actions .bbcid-button,.ie7 .bbcid-actions .bbcid-button{
+.ie6 .bbcid-actions .bbcid-button,
+.ie7 .bbcid-actions .bbcid-button{
     line-height:1.3em;
     position:relative;
     top:-4px
 }
 
-.ie6 .bbcid-actions input.bbcid-button,.ie7 .bbcid-actions input.bbcid-button{
+.ie6 .bbcid-actions input.bbcid-button,
+.ie7 .bbcid-actions input.bbcid-button{
     padding:0;
     line-height:1.2em;
     position:static
@@ -774,12 +788,15 @@ ul.grid {
     padding:4px 0
 }
 
-.bbcid-actions .submit,.bbcid-actions .submit:link,.bbcid-actions .submit:visited{
+.bbcid-actions .submit,
+.bbcid-actions .submit:link,
+.bbcid-actions .submit:visited {
     color:white;
     background-color:#1790cf
 }
 
-.bbcid-actions .submit:focus,.bbcid-actions .submit:hover,.bbcid-actions .submit:active{
+.bbcid-actions .submit:focus,.bbcid-actions .submit:hover,
+.bbcid-actions .submit:active{
     background-color:#005383;
     text-decoration:none
 }
