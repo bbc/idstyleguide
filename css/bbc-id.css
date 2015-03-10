@@ -573,6 +573,18 @@ ul.grid {
   border-top-width: 0;
 }
 
+/* HINT UNDER INPUT BOX */
+.bbcid-hint-1col {
+  color: black;
+  font-size: 1em;
+  font-weight: normal;
+  background-color: #ffad01;
+  border-color: #ffad01;
+  border: 2px solid #ffad01;
+  border-top-width: 0;
+  letter-spacing: 0;
+  padding: 13px 16px 12px 16px;
+}
 
 
 /* INPUTS - RESPONSIVE STYLES */
