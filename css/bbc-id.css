@@ -428,6 +428,7 @@ ul.grid {
   height: 33px;
   padding: 8px;
   border:1px solid #a7a7a7;
+  font-size: 0.813em;
   font-family:Arial,sans-serif;
 }
 
@@ -535,39 +536,168 @@ ul.grid {
 
 
 
+/* INPUT HINTS */
+
+.bbcid-form .bbcid-hint input.text,
+.bbcid-form .bbcid-hint input.password,
+.bbcid-form .bbcid-warning input.text,
+.bbcid-form .bbcid-warning input.password,
+.bbcid-form .bbcid-error input.text,
+.bbcid-form .bbcid-error input.password,
+.bbcid-form .bbcid-valid input.text,
+.bbcid-form .bbcid-valid input.password {
+  border-width: 2px;
+  border-style: solid;
+  padding-right: 40px;
+}
+.bbcid-form .bbcid-hint input.text {
+  border-color: #ffad01;
+
+}
+.bbcid-form .bbcid-warning input.text {
+    border-color: #a61616;
+}
+
+.bbcid-form .valid input.text {
+    border: 2px solid #169009;
+}
+
+/* 1 COL HINT (UNDER INPUT BOX) */
+.bbcid-hint-1col {
+  color: black;
+  font-size: 0.813em;
+  font-weight: normal;
+  letter-spacing: 0;
+  background-color: #ffad01;
+  border-color: #ffad01;
+  border: 2px solid #ffad01;
+  border-top-width: 0;
+  padding: 8px;
+}
+
+.bbcid-hint-1col-warning {
+  color: white;
+  background-color: #a61616;
+  border-color: #a61616;
+  border: 2px solid #a61616;
+}
+
+/* 2 COL HINT (TO RIGHT OF INPUT BOX) */
+
+.bbcid-hint-2col {
+    display: none; /* hide at smallest breakpoint */
+    background-color: #F5F7F6;
+    color: #525252;
+    font-size: 0.75em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    width: 208px;
+    padding: 13px 16px 12px;
+}
+.bbcid-hint-2col-warning {
+  color: #000;
+  background-color: #FFE141;
+}
+
+.bbcid-hint-2col:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 17px;
+    left: -22px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent #F5F7F6 transparent transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.bbcid-hint-2col-warning:before {
+      border-color: transparent #FFE141 transparent transparent;
+}
 
 
 /* INPUTS - RESPONSIVE STYLES */
 
 @media only screen and (min-width: 320px) {
 
-   .bbcid-form label, .bbcid-form legend {
+  .bbcid-form label, .bbcid-form legend {
       font-size: 1.250em;
       margin: 0px 0px 8px
-    }
+  }
 
-    .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+  .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
     font-size:1em;
     height: 42px;
   }
 
+  .bbcid-label-hint {
+    top: 120px;
+  }
+
+  .bbcid-hint-1col {
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding: 10px;
+  }
+
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) { /* GEL Group 2 */
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) { /* GEL Group 3a */
  
  .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
     max-width: 252px; /* need to leave room for inline hint. */
   }
 
+  .bbcid-form .bbcid-hint input.text {
+    border-color: #a7a7a7;
+  }
+
+  .bbcid-form .bbcid-warning input.text {
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: 216px -922px;
+      border-color: #ffad01;
+  }
+
+  .bbcid-form .waiting input.text {
+      background-image: url("../img/spinner.gif");
+      background-repeat: no-repeat;
+      background-position: 216px -922px;
+  }
+
+  .bbcid-form .valid input.text {
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: 216px -785px;
+  }
+
+  .bbcid-hint-1col { /* HIDE 1 COLUMN (MOBILE) HINTS */
+    display: none;
+  }
+
+  .bbcid-hint-2col { /* SHOW 2COLUMN (Desktop style) HINTS */
+    display: inline-block;
+    position: relative;
+    top: -48px;
+    right: -279px;
+  }
+
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) { /* GEL Group 3b */
 }
 
-@media only screen and (min-width: 1008px) {
+@media only screen and (min-width: 1008px) { /* GEL Group 4 */
 }
 
 
