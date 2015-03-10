@@ -428,6 +428,7 @@ ul.grid {
   height: 33px;
   padding: 8px;
   border:1px solid #a7a7a7;
+  font-size: 0.813em;
   font-family:Arial,sans-serif;
 }
 
@@ -534,57 +535,53 @@ ul.grid {
 }
 
 
-
-/* HINTS */
-.bbcid-label-hint {
-  position: absolute;
-  top: 107px;
-  left: 323px;
-  color: #25252;
-  font-size: 1em;
-  font-weight: normal;
-  letter-spacing: 0;
-  width: 100%;
-  padding: 13px 16px 12px 16px;
-  background-repeat: no-repeat;
-  background-color: #f5f7f6;
-  background-position: 0 0;
+.bbcid-form .bbcid-hint input.text,
+.bbcid-form .bbcid-hint input.password,
+.bbcid-form .bbcid-warning input.text,
+.bbcid-form .bbcid-warning input.password,
+.bbcid-form .bbcid-error input.text,
+.bbcid-form .bbcid-error input.password,
+.bbcid-form .bbcid-valid input.text,
+.bbcid-form .bbcid-valid input.password {
+  border-width: 2px;
+  border-style: solid;
+  padding-right: 40px;
 }
-
-.bbcid-label-hint, 
-.bbcid-mobile-container .bbcid-warning .bbcid-label-hint {
-  color: black;
-  background-color: #ffad01;
+.bbcid-form .bbcid-hint input.text {
   border-color: #ffad01;
+
+}
+.bbcid-form .bbcid-warning input.text {
+    border-color: #a61616;
 }
 
-/*mobile hint*/
-.bbcid-label-hint, 
-.bbcid-mobile-container .bbcid-error .bbcid-label-hint,
-.bbcid-mobile-container .bbcid-warning .bbcid-label-hint {
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  min-width: 268px;
-  top: 147px;
-  left: 0;
-  border: 2px solid;
-  border-top-width: 0;
-}
 
-/* HINT UNDER INPUT BOX */
+/* 1 COL HINT (UNDER INPUT BOX) */
 .bbcid-hint-1col {
   color: black;
-  font-size: 1em;
+  font-size: 0.813em;
   font-weight: normal;
+  letter-spacing: 0;
   background-color: #ffad01;
   border-color: #ffad01;
   border: 2px solid #ffad01;
   border-top-width: 0;
-  letter-spacing: 0;
-  padding: 13px 16px 12px 16px;
+  padding: 8px;
 }
+
+.bbcid-hint-1col-warning {
+  color: white;
+  background-color: #a61616;
+  border-color: #a61616;
+  border: 2px solid #a61616;
+}
+
+
+.bbcid-hint-2col {
+
+}
+
+
 
 
 /* INPUTS - RESPONSIVE STYLES */
@@ -605,24 +602,34 @@ ul.grid {
     top: 120px;
   }
 
+  .bbcid-hint-1col {
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding: 10px;
+  }
 
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) { /* GEL Group 2 */
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) { /* GEL Group 3a */
  
  .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
     max-width: 252px; /* need to leave room for inline hint. */
   }
 
+  .bbcid-hint-1col {
+    display: none;
+  }
+
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) { /* GEL Group 3b */
 }
 
-@media only screen and (min-width: 1008px) {
+@media only screen and (min-width: 1008px) { /* GEL Group 4 */
 }
 
 
