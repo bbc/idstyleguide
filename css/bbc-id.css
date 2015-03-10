@@ -33,6 +33,12 @@ code {
   color: #1F1F1F;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .bbcid-styleguide-container {
   min-width: 240px;
 }
@@ -387,7 +393,7 @@ ul.grid {
 /*
 
 
-	FORM INPUTS & LABELS
+  	FORM INPUTS & LABELS
 
 
 */
@@ -403,7 +409,7 @@ ul.grid {
     border: 0px none;
 }
 
-/* form labels */
+/* FORM LABELS */
 .bbcid-form label, .bbcid-form legend {
     position: relative;
     font-weight: bold;
@@ -416,7 +422,7 @@ ul.grid {
     color: #000;
 }
 
-/* form inputs */
+/* FORM INPUTS */
 .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
   width: 100%;
   height: 33px;
@@ -425,7 +431,113 @@ ul.grid {
   font-family:Arial,sans-serif;
 }
 
-/*responsive*/
+
+/* DOB FIELDS (EXISTING) */
+
+
+#bbcid_dateofbirthundersixteen_day,#bbcid_dateofbirthundersixteen_month,#bbcid_dateofbirth_day,#bbcid_dateofbirth_month{
+  width:40px;
+  display:inline;
+  text-align:center;
+  margin-right:8px
+}
+
+.bbcid-rtl #bbcid_dateofbirthundersixteen_day .bbcid-rtl #bbcid_dateofbirth_day,.bbcid-rtl #bbcid_dateofbirthundersixteen_day,.bbcid-rtl #bbcid_dateofbirth_day{
+  margin-right:0
+}
+
+#bbcid_dateofbirthundersixteen_year,#bbcid_dateofbirth_year{
+  width:52px;
+  display:inline;
+  text-align:center
+}
+
+.bbcid-rtl #bbcid_dateofbirthundersixteen_year,.bbcid-rtl #bbcid_dateofbirth_year{
+  margin-right:8px
+}
+
+.bbcid-form .dateofbirthundersixteen-container.bbcid-warning input.text,.bbcid-form .dateofbirthundersixteen-container.bbcid-valid input.text,.bbcid-form .dateofbirth-container.bbcid-warning input.text,.bbcid-form .dateofbirth-container.bbcid-valid input.text{
+  padding:8px
+}
+
+
+/* DOB - VALIDATION STATES */
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_day,.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_month,.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_year,.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_day,.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_month,.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_year{
+  background-position:263px -922px;
+  padding-left:8px
+}
+
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_day,.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_month,.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_year,.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_day,.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_month,.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_year{
+  background-position:263px -922px;
+  padding-left:6px
+}
+
+.bbcid-form .dateofbirthundersixteen-container.bbcid-warning,.bbcid-form .dateofbirth-container.bbcid-warning{
+  background:url(img/sprite.png) no-repeat;
+  background-position:224px -904px
+}
+
+.bbcid-rtl .bbcid-form .dateofbirthundersixteen-container.bbcid-warning,.bbcid-rtl .bbcid-form .dateofbirth-container.bbcid-warning{
+  background-position:310px -904px
+}
+
+.bbcid-form .dateofbirthundersixteen-container.bbcid-valid,.bbcid-form .dateofbirth-container.bbcid-valid{
+  background:url(img/sprite.png) no-repeat;
+  background-position:224px -767px
+}
+
+.bbcid-rtl .bbcid-form .dateofbirthundersixteen-container.bbcid-valid,.bbcid-rtl .bbcid-form .dateofbirth-container.bbcid-valid{
+  background-position:310px -767px
+}
+
+
+
+
+/* INPUTS - DOB - MOBILE STYLES (EXISTING) */
+
+.bbcid-mobile-container #bbcid_dateofbirthundersixteen_day,.bbcid-mobile-container #bbcid_dateofbirthundersixteen_month,.bbcid-mobile-container #bbcid_dateofbirth_day,.bbcid-mobile-container #bbcid_dateofbirth_month{
+  min-width:58px
+}
+
+.bbcid-mobile-container #bbcid_dateofbirthundersixteen_month,.bbcid-mobile-container #bbcid_dateofbirth_month{
+  left:89px
+}
+
+.bbcid-mobile-container #bbcid_dateofbirthundersixteen_year,.bbcid-mobile-container #bbcid_dateofbirth_year{
+  min-width:106px;
+  left:178px
+}
+
+.bbcid-mobile-container .bbcid-form .dateofbirth-container.bbcid-valid,.bbcid-mobile-container .bbcid-form .dateofbirthundersixteen-container.bbcid-valid{
+  background-image:none
+}
+
+.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirthundersixteen_day,.bbcid-mobile-container .bbcid-valid #bbcid_dateofbirthundersixteen_day,.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirth_day,.bbcid-mobile-container .bbcid-valid #bbcid_dateofbirth_day,.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirthundersixteen_month,.bbcid-mobile-container .bbcid-valid #bbcid_dateofbirthundersixteen_month,.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirth_month,.bbcid-mobile-container .bbcid-valid #bbcid_dateofbirth_month{
+  min-width:61px
+}
+
+.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirthundersixteen_year,.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirth_year{
+  min-width:106px
+}
+
+.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirthundersixteen_year,.bbcid-mobile-container .bbcid-warning #bbcid_dateofbirth_year{
+  min-width:106px
+}
+
+.bbcid-mobile-container .dateofbirthundersixteen-container.bbcid-warning span.bbcid-label-hint,.bbcid-mobile-container .dateofbirth-container.bbcid-warning span.bbcid-label-hint{
+  min-width:280px;
+  top:41px
+}
+
+.bbcid-mobile-container.bbcid-rtl .dateofbirthundersixteen-container.bbcid-warning span.bbcid-label-hint,.bbcid-mobile-container.bbcid-rtl .dateofbirth-container.bbcid-warning span.bbcid-label-hint{
+  top:49px
+}
+
+
+
+
+
+/* INPUTS - RESPONSIVE STYLES */
 
 @media only screen and (min-width: 320px) {
 
