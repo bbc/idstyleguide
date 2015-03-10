@@ -535,6 +535,9 @@ ul.grid {
 }
 
 
+
+/* INPUT HINTS */
+
 .bbcid-form .bbcid-hint input.text,
 .bbcid-form .bbcid-hint input.password,
 .bbcid-form .bbcid-warning input.text,
@@ -576,24 +579,56 @@ ul.grid {
   border: 2px solid #a61616;
 }
 
+/* 2 COL HINT (TO RIGHT OF INPUT BOX) */
 
 .bbcid-hint-2col {
-
+    display: none; /* hide at smallest breakpoint */
+    background-color: #F5F7F6;
+    color: #525252;
+    font-size: 0.75em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    width: 208px;
+    padding: 13px 16px 12px;
+}
+.bbcid-hint-2col-warning {
+  color: #000;
+  background-color: #FFE141;
 }
 
-
+.bbcid-hint-2col:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 17px;
+    left: -22px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent #F5F7F6 transparent transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.bbcid-hint-2col-warning:before {
+      border-color: transparent #FFE141 transparent transparent;
+}
 
 
 /* INPUTS - RESPONSIVE STYLES */
 
 @media only screen and (min-width: 320px) {
 
-   .bbcid-form label, .bbcid-form legend {
+  .bbcid-form label, .bbcid-form legend {
       font-size: 1.250em;
       margin: 0px 0px 8px
-    }
+  }
 
-    .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+  .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
     font-size:1em;
     height: 42px;
   }
@@ -620,8 +655,26 @@ ul.grid {
     max-width: 252px; /* need to leave room for inline hint. */
   }
 
-  .bbcid-hint-1col {
+  .bbcid-form .bbcid-hint input.text {
+    border-color: #a7a7a7;
+  }
+
+  .bbcid-form .bbcid-warning input.text {
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: 216px -922px;
+      border-color: #ffad01;
+  }
+
+  .bbcid-hint-1col { /* HIDE 1 COLUMN (MOBILE) HINTS */
     display: none;
+  }
+
+  .bbcid-hint-2col { /* SHOW 2COLUMN (Desktop style) HINTS */
+    display: inline-block;
+    position: relative;
+    top: -48px;
+    right: -279px;
   }
 
 }
