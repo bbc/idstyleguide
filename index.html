@@ -542,25 +542,40 @@
 	<form class="bbcid-form">	
     <h3>Initial Presentation</h3>
 
-  <h4>Text Input:</h4>
+    <h4>Text Input:</h4>
 
-  <div class="bbcid-field-container unique-container">
-    <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
-    <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
-  </div>
-  
+    <div class="bbcid-field-container unique-container">
+      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+    </div>
+    
 
-  <h4>Password Input:</h4>
-		
-  <div class="bbcid-field-container unique-container">
-    <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
-    <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
-  </div>
+    <h4>Password Input:</h4>
+  		
+    <div class="bbcid-field-container unique-container">
+      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
+    </div>
+
+    <h4>Date of Birth Input:</h4>
+      
+
+    <fieldset style="display: block; opacity: 1;" class="bbcid-field-container dateofbirthundersixteen-container">      
+      <legend>
+        <span class="bbcid_label_main">Date of birth</span>
+      </legend>
+        <input class="text" autocomplete="off" name="dateofbirthundersixteen_day" id="bbcid_dateofbirthundersixteen_day" value="" maxlength="2" type="text">
+        <input class="text" autocomplete="off" name="dateofbirthundersixteen_month" id="bbcid_dateofbirthundersixteen_month" value="" maxlength="2" type="text">
+        <input class="text" autocomplete="off" name="dateofbirthundersixteen_year" id="bbcid_dateofbirthundersixteen_year" value="" maxlength="4" type="text"> 
+    </fieldset>
+
+
 
    
 
 	</form>
 
+  <!-- INPUTS: NOTES -->
   <div class="bbcid-styleguide-notes">
     <h3>Notes:</h3>
     <p>
@@ -606,11 +621,20 @@
       </code>
     </p>
 
-
-
-
-
-
+    <p>
+      <code>
+        <strong>Date of Birth Fields - ALL SIZES:</strong><br>
+        <strong>Day/Month Fields:</strong><br>
+        width: 40px;<br>
+        display: inline;<br>
+        text-align: center;<br>
+        margin-right: 8px<br>
+        <strong>Year Field:</strong>
+        width: 52px;<br>
+        display: inline;<br>
+        text-align: center<br>
+      </code>
+    </p>
 
 
   </div>
