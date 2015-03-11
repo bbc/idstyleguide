@@ -418,12 +418,14 @@ ul.grid {
     line-height: 20px;
     white-space: normal;
     margin: 0px;
-    width: 560px;
+    max-width: 560px;
     color: #000;
 }
 
 /* FORM INPUTS */
-.bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+.bbcid-form input.text,
+.bbcid-form input.password,
+.bbcid-form select {
   width: 100%;
   height: 33px;
   padding: 8px;
@@ -443,7 +445,9 @@ ul.grid {
   margin-right:8px
 }
 
-.bbcid-rtl #bbcid_dateofbirthundersixteen_day .bbcid-rtl #bbcid_dateofbirth_day,.bbcid-rtl #bbcid_dateofbirthundersixteen_day,.bbcid-rtl #bbcid_dateofbirth_day{
+.bbcid-rtl #bbcid_dateofbirthundersixteen_day .bbcid-rtl #bbcid_dateofbirth_day,
+.bbcid-rtl #bbcid_dateofbirthundersixteen_day,
+.bbcid-rtl #bbcid_dateofbirth_day{
   margin-right:0
 }
 
@@ -453,22 +457,36 @@ ul.grid {
   text-align:center
 }
 
-.bbcid-rtl #bbcid_dateofbirthundersixteen_year,.bbcid-rtl #bbcid_dateofbirth_year{
+.bbcid-rtl #bbcid_dateofbirthundersixteen_year,
+.bbcid-rtl #bbcid_dateofbirth_year{
   margin-right:8px
 }
 
-.bbcid-form .dateofbirthundersixteen-container.bbcid-warning input.text,.bbcid-form .dateofbirthundersixteen-container.bbcid-valid input.text,.bbcid-form .dateofbirth-container.bbcid-warning input.text,.bbcid-form .dateofbirth-container.bbcid-valid input.text{
+.bbcid-form .dateofbirthundersixteen-container.bbcid-warning input.text,
+.bbcid-form .dateofbirthundersixteen-container.bbcid-valid input.text,
+.bbcid-form .dateofbirth-container.bbcid-warning input.text,
+.bbcid-form .dateofbirth-container.bbcid-valid input.text{
   padding:8px
 }
 
 
 /* DOB - VALIDATION STATES */
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_day,.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_month,.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_year,.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_day,.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_month,.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_year{
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_day,
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_month,
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_year,
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_day,
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_month,
+.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_year{
   background-position:263px -922px;
   padding-left:8px
 }
 
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_day,.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_month,.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_year,.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_day,.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_month,.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_year{
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_day,
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_month,
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_year,
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_day,
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_month,
+.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_year{
   background-position:263px -922px;
   padding-left:6px
 }
@@ -564,7 +582,7 @@ ul.grid {
 
 /* 1 COL HINT (UNDER INPUT BOX) */
 .bbcid-hint-1col {
-  color: black;
+  color: #000;
   font-size: 0.813em;
   font-weight: normal;
   letter-spacing: 0;
@@ -573,6 +591,7 @@ ul.grid {
   border: 2px solid #ffad01;
   border-top-width: 0;
   padding: 8px;
+  clear: both;
 }
 
 .bbcid-hint-1col-warning {
@@ -704,17 +723,10 @@ ul.grid {
 
 
 
-
-
-
-
-
-
-
 /*
 
 
-  FORM CTA's
+    FORM CTA's
 
 
 */
@@ -727,11 +739,12 @@ ul.grid {
 }
 
 
+/* Main CTA Style */
 .bbcid-actions .bbcid-button,
 .bbcid-back-action {
     display:block;
     font-family: Arial,sans-serif;
-    font-size:1.538em;
+    font-size: 1em;
     font-weight:bold;
     letter-spacing:-0.05em;
     text-align:center;
@@ -741,20 +754,20 @@ ul.grid {
 }
 
 .bbcid-rtl .bbcid-actions .bbcid-button,
-.bbcid-rtl .bbcid-back-action{
+.bbcid-rtl .bbcid-back-action {
     float:right
 }
 
-.bbcid-actions .bbcid-button{
-    padding:3px 10px 5px 10px;
-    height:35px;
+.bbcid-actions .bbcid-button {
+    padding: 0px 10px 0px 10px;
+    /*height:35px;*/
     min-width:80px
 }
 
 .bbcid-back-action{
-    padding:16px 0;
-    margin:0 16px;
-    height:28px
+    padding: 16px 0;
+    margin: 0 16px;
+    height: 28px
 }
 
 .bbcid-actions a.bbcid-button{
@@ -795,18 +808,22 @@ ul.grid {
     background-color:#1790cf
 }
 
-.bbcid-actions .submit:focus,.bbcid-actions .submit:hover,
-.bbcid-actions .submit:active{
+.bbcid-actions .submit:focus,
+.bbcid-actions .submit:hover,
+.bbcid-actions .submit:active {
     background-color:#005383;
     text-decoration:none
 }
 
-.bbcid-actions a.continue:link,.bbcid-actions a.continue:visited{
+.bbcid-actions a.continue:link,
+.bbcid-actions a.continue:visited {
     color:white;
     background-color:#1790cf
 }
 
-.bbcid-actions a.continue:hover,.bbcid-actions a.continue:focus,.bbcid-actions a.continue:active{
+.bbcid-actions a.continue:hover,
+.bbcid-actions a.continue:focus,
+.bbcid-actions a.continue:active{
     text-decoration:none;
     background-color:#005383
 }
@@ -816,27 +833,59 @@ ul.grid {
     background-color:#c0c0c0
 }
 
+/* CTA - Responsive Styles */
+
+@media only screen and (min-width: 320px) { /* GEL Group 1b */
+
+  .bbcid-actions .bbcid-button {
+      padding: 3px 10px 5px 10px;
+      height: 35px;
+      min-width: 80px;
+  }
+
+  .bbcid-actions .bbcid-button,
+  .bbcid-back-action {
+      font-size: 1.25em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
 /**
 
 
+
     TOGGLE BUTTONS
+
 
 
 **/
 
 .bbcid-form .bbcid-field-container{
   margin-bottom:16px;
-  border:0
 }
 
-.bbcid-rtl p.bbcid-pre-form,.bbcid-rtl p.bbcid-post-form,.bbcid-rtl .bbcid-display-field-container p,.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-radios-container label,.bbcid-mobile-container.bbcid-rtl .bbcid-form .bbcid-radios-container label,.bbcid-mobile-container.bbcid-rtl .bbcid-form .isageold-container label,.bbcid-rtl .bbcid-content .alreadyhaveaccount-container p{
-  font-size:1.39em;
-  line-height:18px
+.bbcid-rtl p.bbcid-pre-form,
+.bbcid-rtl p.bbcid-post-form,
+.bbcid-rtl .bbcid-display-field-container p,
+.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-radios-container label,
+.bbcid-mobile-container.bbcid-rtl .bbcid-form .bbcid-radios-container label,
+.bbcid-mobile-container.bbcid-rtl .bbcid-form .isageold-container label,
+.bbcid-rtl .bbcid-content .alreadyhaveaccount-container p{
+  font-size: 1.39em;
+  line-height: 18px;
 }
 
 
 .bbcid-form .bbcid-radios-container{
-  max-width:306px
+  width: 100%;
 }
 
 .bbcid-form .bbcid-radios-container label{
@@ -886,18 +935,21 @@ ul.grid {
   display:none
 }
 
-.bbcid-form .radio-javascript-enabled .bbcid_false_container,.bbcid-form .radio-javascript-enabled .bbcid_true_container{
+.bbcid-form .radio-javascript-enabled .bbcid_false_container,
+.bbcid-form .radio-javascript-enabled .bbcid_true_container{
   margin-top:0;
   width:auto;
   padding-right:10px
 }
 
-.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_false_container,.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_true_container{
+.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_false_container,
+.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_true_container{
   padding-right:0;
   padding-left:10px
 }
 
-.bbcid-form .radio-javascript-enabled a,.bbcid-form .radio-javascript-enabled a{
+.bbcid-form .radio-javascript-enabled a,
+.bbcid-form .radio-javascript-enabled a{
   text-decoration:none;
   display:block
 }
@@ -910,41 +962,61 @@ ul.grid {
   margin-bottom:0
 }
 
+
+
+/* main toggles button style */
 .bbcid-form .radio-javascript-enabled .bbcid-radios-container label{
-  padding:8px 21px 8px 22px;
+  padding: 8px 21px 8px 22px;
   background-color:#1790cf;
-  color:#fff;
-  font-size:16px;
-  text-align:right;
-  white-space:nowrap;
-  float:none;
-  cursor:pointer;
-  position:relative
+  color: #fff;
+  font-size: 1em;
+  text-align: right;
+  white-space: nowrap;
+  float: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 8px;
 }
 
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.inactive{
+
+
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.inactive {
   background-color:#a7a7a7
 }
 
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:hover,.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:focus,.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.active{
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:hover,
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:focus,
+.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.active{
   background-color:#005383
 }
 
-.bbcid-form .radio-javascript-enabled .bbcid-toggle-tick{
-  width:13px;
-  height:11px;
-  background:url(../img/sprite.png) no-repeat;
-  background-position:0 -1066px;
-  left:10px;
-  top:12px;
-  position:absolute;
-  display:block;
-  opacity:0
+.bbcid-form .radio-javascript-enabled .bbcid-toggle-tick {
+  width: 13px;
+  height: 11px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0 -1066px;
+  left: 10px;
+  top: 12px;
+  position: absolute;
+  display: block;
+  opacity: 0;
 }
 
-.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-toggle-tick{
+.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-toggle-tick {
   left:auto;
   right:10px
+}
+
+
+
+/* Toggles - Responsive Styles */
+
+@media only screen and (min-width: 320px) { /* GEL Group 1b */
+
+  .bbcid-form .radio-javascript-enabled .bbcid-radios-container label {
+    padding: 8px 21px 8px 22px;
+  }
+
 }
 
 
@@ -983,7 +1055,8 @@ ul.grid {
   float:right
 }
 
-.ie6 .bbcid-form .bbcid-checkbox-container input,.ie7 .bbcid-form .bbcid-checkbox-container input{
+.ie6 .bbcid-form .bbcid-checkbox-container input,
+.ie7 .bbcid-form .bbcid-checkbox-container input{
   margin-top:1px
 }
 
