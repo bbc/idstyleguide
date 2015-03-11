@@ -956,15 +956,39 @@ background-color: #005383;<br>
 <section id="radio" class="bbcid-styleguide-section">
   <h2>Radio Buttons</h2>
   <p>(Javascript Disabled view)</p>
-  <fieldset>
-    <div>
-      <input type="radio"> <label class-"gel-minion">label</label>
+      
+
+    <div class="bbc-radios-container">
+      <fieldset>
+          <div class="bbcid-radio-item"><input type="radio" name="bbcid" value="one" checked> <label class="bbcid-radio">Option 1</label></div>
+          <div class="bbcid-radio-item"><input type="radio" name="bbcid" value="one"> <label class="bbcid-radio">Option 2</label></div>
+      </fieldset>
     </div>
-    <div>
-      <input type="radio"> <label class-"gel-minion">label</label>
-    </div>
-  </fieldset>
+
+
+  <!-- Notes -->
+  <div class="bbcid-styleguide-notes">
+    <h3>Notes</h3>
+    <p>At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
+    <p>
+      <code>
   
+      <strong>Labels:</strong><br>
+<br>
+      <strong>group 1a;</strong><br>
+      font-size: 13px;<br>
+      font-weight: bold;<br>
+<br>
+      <strong>group 1b onwards</strong><br>
+      font-size: 16px;<br>
+      font-weight: bold;<br>
+
+
+
+      </code>
+    </p>
+  </div>
+
 </section>
 
 <!-- 
