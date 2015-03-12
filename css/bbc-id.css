@@ -260,10 +260,10 @@ ul.grid {
 
 /* Links (Hover) */
 .style-guide-colour--links-hover .style-guide-colour__circle {
-  background-color: #033452;
+  background-color: #013452;
 }
 .style-guide-colour--links-hover .style-guide-colour__circle:after {
-  content: "#033452";
+  content: "#013452";
 }
 
 /* Inactive CTA */
