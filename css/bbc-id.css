@@ -103,16 +103,38 @@ div.bbcid-styleguide-notes {
 
 
 
-
+/* paragraph text */
 .bbcid-styleguide-type p, .bbcid-styleguide-type a {
   color: #1F1F1F;
   font-size: 0.813rem;
   line-height: 1rem;
 }
+
+/* links */
 .bbcid-styleguide-type a {
   color: #005383;
   font-weight: bold;
 }
+
+/* Headlines */
+.bbcid-styleguide-type h2,
+.bbcid-styleguide-type h3 {
+    font-size: 2em;
+    line-height: 32px;
+    letter-spacing: -1px;
+    padding: 4px 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+p.email-doublecheck {
+    color: #159008;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 16px 0px 6px;
+    word-wrap: break-word;
+}
+
 @media only screen and (min-width: 320px) {
 .bbcid-styleguide-type p, .bbcid-styleguide-type a {
     font-size: 1rem; /*16px*/
@@ -128,6 +150,7 @@ div.bbcid-styleguide-notes {
   font-weight: normal;
   }
 }
+
 
 
 /*
