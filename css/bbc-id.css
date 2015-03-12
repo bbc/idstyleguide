@@ -368,31 +368,81 @@ ul.grid {
 **/
 
 .bbcid-header {
-    background: url("../img/sprite.png") no-repeat scroll 7px -194px #1790CF;
+    background: #1790CF;
     padding: 0px 7px;
-    /*min-height: 64px;*/
     letter-spacing: -0.03em;
     overflow: hidden;
-    max-height: 64px;
+    max-height: 40px;
 }
 
 .bbcid-header h1 {
-    font-family: "Gill Sans";
-    font-weight: 500;
-    font-size: 48px;
-    color: white;
-    padding-left: 50px;
+  font-family: "Gill Sans";
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  line-height: 1.667em;
+  letter-spacing: -1px;
+  
+  margin: 0 0 0 0px;
+  margin-right: 8px;
+  display: block;
+  width: 340px;
+  height: auto;
+  padding-left: 0;
 }
 
 .bbcid-header .subheader {
     display: inline;
     float: left;
     padding: 0px 11px;
+
     color: #E0F4FF;
+
     font-size: 2.615em;
     line-height: 2.25em;
     letter-spacing: -0.01em;
 }
+
+@media only screen and (min-width: 320px) { /* GEL Group 1b */
+    
+    .bbcid-header {
+      padding: 0px 7px;
+      letter-spacing: -0.03em;
+      max-height: 42px;
+    }
+
+    .bbcid-header h1 {
+        font-size: 26px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) { /* GEL Group 2 */
+    
+   
+
+}
+
+@media only screen and (min-width: 600px) { /* GEL Group 3a */
+
+  .bbcid-header {
+    background: url("../img/sprite.png") no-repeat scroll 7px -194px #1790CF;
+    padding-left: 58px;
+
+    min-height: 64px;
+    max-height: 64px;
+  }
+
+
+  .bbcid-header h1 {
+    font-size: 48px;
+    line-height: 1.36em;
+  }
+  
+
+
+}
+
 
 
 /*
