@@ -66,15 +66,21 @@ a:hover {
   border-bottom: 1px solid gray;
 }
 
-.bbcid-styleguide-note {
+.bbcid-styleguide-notes {
   color: #666;
 }
-div.bbcid-styleguide-notes {
-  background-color: #F7F7F9;
-  margin-top: 3rem;
-  border: 1px solid #DCEAF3;
-  padding: 0.6rem;
+
+.bbcid-styleguide-notes h3 {
+  font-size: 0.813em;
+  text-align: right;
 }
+
+div.bbcid-styleguide-notes div{
+  background-color: #F7F7F9;
+  border: px solid #DCEAF3;
+  padding: 0.25em 1em;
+}
+
 
 
 @media only screen and (min-width: 400px) {

@@ -63,80 +63,133 @@
     
     <h2 class="style-guide-section__h2">Typography</h2>
 
-    <p>General font sizing for paragraph text and links</p>
+    <p>General font sizing for paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.<p>
     
     <div class="bbcid-styleguide-type">
-<h2>This a headline for message pages.</h2>
-        <p>This is an example of paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Here is a second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-        <p><strong>This is an example of bold text</strong></a>
-        
-        <p><a href="" class="">This is a standard text link.</a></p>
-
+      <h2>This a headline for message pages.</h2>
     </div>
+
+      <div class="bbcid-styleguide-notes">
+      <h3>Show styles</h3>
+      <div>
+        <p>
+          <code>
+            <strong>Headline h2:</strong><br>
+            <strong>GEL Group 1a:</strong><br>
+            font-size: 20px;<br>
+            line-height: 20px;<br>
+            letter-spacing: -1px;<br>
+            margin-top: 8px;<br>
+            margin-bottom: 8px;<br>
+            <br>
+            <strong>GEL Group 1b / 2:</strong><br>
+            font-size: 24px;<br>
+            line-height: 24px;<br>
+            margin-top: 8px;<br>
+            margin-bottom: 8px;<br>
+            <br>
+            <strong>GEL Group 3:</strong><br>
+            font-size: 32em;<br>
+            line-height: 32px;<br>
+            padding-above: 4px;<br>
+            padding-below: 4px;<br>
+            margin-top: 8px;<br>
+            margin-bottom: 8px;<br>
+            <br>
+          </code></p>
+        </div>
+      </div>
+
+    <div class="bbcid-styleguide-type">
+      <p>This is an example of paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Here is a second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p><strong>This is an example of bold text</strong></p>
+    </div>
+
     
-    <div>
-    <p class="email-doublecheck">an_email_address@domain.com</p>
+    <div class="bbcid-styleguide-notes">
+      <h3>Notes:</h3>
+      <div>
+       <p>
+        <code>
+          <strong>Body Text</strong><br >
+          <strong>Feature Phone (Responsive group 1a)</strong><br>
+          font-family: Arial, sans-serif<br>
+          font-size: 13px<br>
+          line-height: 16px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
+          font-family: Arial, sans-serif<br>
+          font-size: 16px<br>
+          line-height: 20px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Desktop Web (Responsive group 3)</strong><br>
+          font-family: Arial, sans-serif<br>
+          font-size: 13px<br>
+          line-height: 16px<br>
+          margin-bottom: 12px;<br>      
+        </code>
+      </p>
+      </div>
+    </div>
+
+
+    
+
+    <div class="bbcid-styleguide-type">
+    <p><a href="#typography" class="">This is a standard text link.</a></p>
     </div>
     
     <div class="bbcid-styleguide-notes">
       <h3>Notes:</h3>
       <div>
-      <p>For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.</p>
-      <p>
-      <code>
-      <strong>Body Text</strong><br >
-      <strong>Feature Phone (Responsive group 1a)</strong><br>
-      font-family: Arial, sans-serif<br>
-      font-size: 13px<br>
-      line-height: 16px<br>
-      margin-bottom: ???px;<br>      
-      <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
-      font-family: Arial, sans-serif<br>
-      font-size: 16px<br>
-      line-height: 20px<br>
-      margin-bottom: ???px;<br>      
-      <strong>Desktop Web (Responsive group 3)</strong><br>
-      font-family: Arial, sans-serif<br>
-      font-size: 13px<br>
-      line-height: 16px<br>
-      margin-top: 0px;<br>
-      margin-bottom: 12px;<br>      
-      </code>
+       <p>
+        <code>
+          <strong>Link text - add the following rules:</strong><br >
+          <strong>Feature Phone (Responsive group 1a)</strong><br>
+          color: #005383<br>
+          font-weight: bold<br>
+          text-decoration: none;<br>
+          <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
+          color: #005383<br>
+          font-weight: bold<br>
+          text-decoration: none;<br>
+          <strong>Desktop Web (Responsive group 3)</strong><br>
+          color: #005383<br>
+          font-weight: regular<br>
+          text-decoration: none;<br>
+          :hover - text-decoration: underline;
+        </code>
       </p>
-      <p>
-      <code>
-      <strong>Link text - add the following rules:</strong><br >
-      <strong>Feature Phone (Responsive group 1a)</strong><br>
-      color: #005383<br>
-      font-weight: bold<br>
-      text-decoration: none;<br>
-      <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
-      color: #005383<br>
-      font-weight: bold<br>
-      text-decoration: none;<br>
-      <strong>Desktop Web (Responsive group 3)</strong><br>
-      color: #005383<br>
-      font-weight: regular<br>
-      text-decoration: none;<br>
-      :hover - text-decoration: underline;
-      </code>
-      </p>
-
-<p>
-      <code>
-    <strong>Headline h2:</strong>
-    font-size: 2em;
-    line-height: 32px;
-    letter-spacing: -1px;
-    padding: 4px 0px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-</code></p>
-</div>
-
     </div>
+    </div>
+
+
+    <div>
+      <p class="email-doublecheck">an_email_address@domain.com</p>
+    </div>
+    
+    <div class="bbcid-styleguide-notes">
+      <h3>Notes:</h3>
+      <div>
+       <p>
+        <code>
+          <strong>Feature Phone (Responsive group 1a)</strong><br>
+          font-size: 13px<br>
+          line-height: 16px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
+          font-size: 16px<br>
+          line-height: 20px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Desktop Web (Responsive group 3)</strong><br>
+          font-size: 24px<br>
+          line-height: 16px<br>
+          margin-bottom: 16px;<br>      
+        </code>
+      </p>
+    </div>
+  </div>
 
 
 </section><!-- END TYPOGRAPHY -->
@@ -1138,8 +1191,6 @@ background-color: #005383;<br>
     <p>Use standard type styles from <a href="#typography">typography</a> section.</p>
   </div>
 
-
-
 </section>
 
 
@@ -1156,13 +1207,13 @@ background-color: #005383;<br>
         <script src="js/vendor/jquery-ui.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script>
-  $(function() {
-    $( ".bbcid-styleguide-notes" ).accordion({
-      collapsible: true,
-      active: false
-    });
-  });
-</script>
+          $(function() {
+            $( ".bbcid-styleguide-notes" ).accordion({
+              collapsible: true,
+              active: false
+            });
+          });
+        </script>
 
     </body>
 </html>
