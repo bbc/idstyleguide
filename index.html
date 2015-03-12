@@ -63,79 +63,133 @@
     
     <h2 class="style-guide-section__h2">Typography</h2>
 
-    <p>General font sizing for paragraph text and links</p>
+    <p>General font sizing for paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.<p>
     
     <div class="bbcid-styleguide-type">
-<h2>This a headline for message pages.</h2>
-        <p>This is an example of paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Here is a second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-        <p><strong>This is an example of bold text</strong></a>
-        
-        <p><a href="" class="">This is a standard text link.</a></p>
-
+      <h2>This a headline for message pages.</h2>
     </div>
+
+      <div class="bbcid-styleguide-notes">
+      <h3>Show styles</h3>
+      <div>
+        <p>
+          <code>
+            <strong>Headline h2:</strong><br>
+            <strong>GEL Group 1a:</strong><br>
+            font-size: 20px;<br>
+            line-height: 20px;<br>
+            letter-spacing: -1px;<br>
+            margin-top: 8px;<br>
+            margin-bottom: 8px;<br>
+            <br>
+            <strong>GEL Group 1b / 2:</strong><br>
+            font-size: 24px;<br>
+            line-height: 24px;<br>
+            margin-top: 8px;<br>
+            margin-bottom: 8px;<br>
+            <br>
+            <strong>GEL Group 3:</strong><br>
+            font-size: 32em;<br>
+            line-height: 32px;<br>
+            padding-above: 4px;<br>
+            padding-below: 4px;<br>
+            margin-top: 8px;<br>
+            margin-bottom: 8px;<br>
+            <br>
+          </code></p>
+        </div>
+      </div>
+
+    <div class="bbcid-styleguide-type">
+      <p>This is an example of paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Here is a second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p><strong>This is an example of bold text</strong></p>
+    </div>
+
     
-    <div>
-    <p class="email-doublecheck">an_email_address@domain.com</p>
+    <div class="bbcid-styleguide-notes">
+      <h3>Notes:</h3>
+      <div>
+       <p>
+        <code>
+          <strong>Body Text</strong><br >
+          <strong>Feature Phone (Responsive group 1a)</strong><br>
+          font-family: Arial, sans-serif<br>
+          font-size: 13px<br>
+          line-height: 16px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
+          font-family: Arial, sans-serif<br>
+          font-size: 16px<br>
+          line-height: 20px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Desktop Web (Responsive group 3)</strong><br>
+          font-family: Arial, sans-serif<br>
+          font-size: 13px<br>
+          line-height: 16px<br>
+          margin-bottom: 12px;<br>      
+        </code>
+      </p>
+      </div>
+    </div>
+
+
+    
+
+    <div class="bbcid-styleguide-type">
+    <p><a href="#typography" class="">This is a standard text link.</a></p>
     </div>
     
     <div class="bbcid-styleguide-notes">
-      <h4>Notes:</h4>
-      <p>For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.</p>
-      <p>
-      <code>
-      <strong>Body Text</strong><br >
-      <strong>Feature Phone (Responsive group 1a)</strong><br>
-      font-family: Arial, sans-serif<br>
-      font-size: 13px<br>
-      line-height: 16px<br>
-      margin-bottom: ???px;<br>      
-      <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
-      font-family: Arial, sans-serif<br>
-      font-size: 16px<br>
-      line-height: 20px<br>
-      margin-bottom: ???px;<br>      
-      <strong>Desktop Web (Responsive group 3)</strong><br>
-      font-family: Arial, sans-serif<br>
-      font-size: 13px<br>
-      line-height: 16px<br>
-      margin-top: 0px;<br>
-      margin-bottom: 12px;<br>      
-      </code>
+      <h3>Notes:</h3>
+      <div>
+       <p>
+        <code>
+          <strong>Link text - add the following rules:</strong><br >
+          <strong>Feature Phone (Responsive group 1a)</strong><br>
+          color: #005383<br>
+          font-weight: bold<br>
+          text-decoration: none;<br>
+          <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
+          color: #005383<br>
+          font-weight: bold<br>
+          text-decoration: none;<br>
+          <strong>Desktop Web (Responsive group 3)</strong><br>
+          color: #005383<br>
+          font-weight: regular<br>
+          text-decoration: none;<br>
+          :hover - text-decoration: underline;
+        </code>
       </p>
-      <p>
-      <code>
-      <strong>Link text - add the following rules:</strong><br >
-      <strong>Feature Phone (Responsive group 1a)</strong><br>
-      color: #005383<br>
-      font-weight: bold<br>
-      text-decoration: none;<br>
-      <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
-      color: #005383<br>
-      font-weight: bold<br>
-      text-decoration: none;<br>
-      <strong>Desktop Web (Responsive group 3)</strong><br>
-      color: #005383<br>
-      font-weight: regular<br>
-      text-decoration: none;<br>
-      :hover - text-decoration: underline;
-      </code>
-      </p>
-
-<p>
-      <code>
-    <strong>Headline h2:</strong>
-    font-size: 2em;
-    line-height: 32px;
-    letter-spacing: -1px;
-    padding: 4px 0px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-</code></p>
-
-
     </div>
+    </div>
+
+
+    <div>
+      <p class="email-doublecheck">an_email_address@domain.com</p>
+    </div>
+    
+    <div class="bbcid-styleguide-notes">
+      <h3>Notes:</h3>
+      <div>
+       <p>
+        <code>
+          <strong>Feature Phone (Responsive group 1a)</strong><br>
+          font-size: 13px<br>
+          line-height: 16px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Mobile Web (Responsive group 1b - 2)</strong><br>
+          font-size: 16px<br>
+          line-height: 20px<br>
+          margin-bottom: 8px;<br>      
+          <strong>Desktop Web (Responsive group 3)</strong><br>
+          font-size: 24px<br>
+          line-height: 16px<br>
+          margin-bottom: 16px;<br>      
+        </code>
+      </p>
+    </div>
+  </div>
 
 
 </section><!-- END TYPOGRAPHY -->
@@ -220,43 +274,55 @@
 	 <p>bbcid-primary-column</p>
   </div>
 
-  <p>
-    <code>
-      <strong>GEL Group 1A: 240px - 319px</strong><br>
-      margin-left: <strong>8px;</strong><br>
-      margin-right: <strong>8px;</strong><br>
-      min-width: <strong>224px;</strong>&nbsp;<i>//240px - 8px (left) - 8px (right)</i><br>
-      max-width: <strong>303px;</strong>&nbsp;<i>//319px - 8px (left) - 8px (right)</i><br>
-      <br>
-      <strong>GEL Group 1B: 320px - 399px</strong><br>
-      margin-left: <strong>8px;</strong><br>
-      margin-right: <strong>8px;</strong><br>
-      min-width: <strong>304px;</strong>&nbsp;<i>//320px - 8px (left) - 8px (right)</i><br>
-      max-width: <strong>383px;</strong>&nbsp;<i>//399px - 8px (left) - 8px (right)</i><br>
-      <br>
-      <strong>GEL Group 2: 400px - 599px</strong><br>
-      margin-left: <strong>16px;</strong><br>
-      margin-right: <strong>16px;</strong><br>
-      min-width: <strong>368px;</strong>&nbsp;<i>//400px - 16px (left) - 16px (right)</i><br>
-      max-width: <strong>567px;</strong>&nbsp;<i>//599px - 16px (left) - 16px (right)</i><br>
-      <br>
-      <strong>GEL Group 3A: 600px - 899px</strong><br>
-      margin-left: <strong>16px;</strong><br>
-      margin-right: <strong>16px;</strong><br>
-      min-width: <strong>568px;</strong>&nbsp;<i>//600px - 16px (left) - 16px (right)</i><br>
-      max-width: <strong>867px;</strong>&nbsp;<i>//899px - 16px (left) - 16px (right)</i><br>
-      <br>
-      <strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong><br>
-      margin-left: <strong>16px;</strong><br>
-      margin-right: <strong>16px;</strong><br>
-      width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i><br>
-      <br>
-      <strong>GEL Group 4: 1008px+</strong><br>
-      margin-left: <strong>16px;</strong><br>
-      margin-right: <strong>16px;</strong><br>
-      width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i><br>
-    </code>
-  </p>
+
+  <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+
+     <p>
+      <code>
+        <strong>GEL Group 1A: 240px - 319px</strong><br>
+        margin-left: <strong>8px;</strong><br>
+        margin-right: <strong>8px;</strong><br>
+        min-width: <strong>224px;</strong>&nbsp;<i>//240px - 8px (left) - 8px (right)</i><br>
+        max-width: <strong>303px;</strong>&nbsp;<i>//319px - 8px (left) - 8px (right)</i><br>
+        <br>
+        <strong>GEL Group 1B: 320px - 399px</strong><br>
+        margin-left: <strong>8px;</strong><br>
+        margin-right: <strong>8px;</strong><br>
+        min-width: <strong>304px;</strong>&nbsp;<i>//320px - 8px (left) - 8px (right)</i><br>
+        max-width: <strong>383px;</strong>&nbsp;<i>//399px - 8px (left) - 8px (right)</i><br>
+        <br>
+        <strong>GEL Group 2: 400px - 599px</strong><br>
+        margin-left: <strong>16px;</strong><br>
+        margin-right: <strong>16px;</strong><br>
+        min-width: <strong>368px;</strong>&nbsp;<i>//400px - 16px (left) - 16px (right)</i><br>
+        max-width: <strong>567px;</strong>&nbsp;<i>//599px - 16px (left) - 16px (right)</i><br>
+        <br>
+        <strong>GEL Group 3A: 600px - 899px</strong><br>
+        margin-left: <strong>16px;</strong><br>
+        margin-right: <strong>16px;</strong><br>
+        min-width: <strong>568px;</strong>&nbsp;<i>//600px - 16px (left) - 16px (right)</i><br>
+        max-width: <strong>867px;</strong>&nbsp;<i>//899px - 16px (left) - 16px (right)</i><br>
+        <br>
+        <strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong><br>
+        margin-left: <strong>16px;</strong><br>
+        margin-right: <strong>16px;</strong><br>
+        width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i><br>
+        <br>
+        <strong>GEL Group 4: 1008px+</strong><br>
+        margin-left: <strong>16px;</strong><br>
+        margin-right: <strong>16px;</strong><br>
+        width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i><br>
+      </code>
+    </p>
+
+    
+  </div>
+</div>
+
+
+ 
 
   <!-- Message -->
 	<h3>Message</h3>
@@ -264,6 +330,9 @@
     <p>Content</p>
   </div>
 
+<div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
   <p>
     <code>
       <strong>GEL Group 1A: 240px - 319px</strong><br>
@@ -301,7 +370,12 @@
       margin-right: <strong>16px;</strong><br>
       width: <strong>976px;</strong>&nbsp;<i>//1008px - 16px (left) - 16px (right)</i><br>
     </code>
-  </p>
+  </p>    
+  </div>
+</div>
+
+
+
 	
   <!-- Form + Message -->
 	<h3>Form + Message</h3>
@@ -309,6 +383,10 @@
 	 <p>Content</p>
   </div>
 
+<div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
+    
   <p>
     <code>
       <strong>GEL Group 1A: 240px - 319px</strong><br>
@@ -346,7 +424,10 @@
       margin-right: <strong>16px;</strong><br>
       width: <strong>976px;</strong>&nbsp;<i>//1008px - 16px (left) - 16px (right)</i><br>
     </code>
-  </p>
+  </p>    
+  </div>
+</div>
+
 
   <!-- 3rd Party Sign-in -->
 	<h3>3<sup>rd</sup> Party Sign-in</h3>
@@ -354,6 +435,10 @@
 	 <p>bbcid-section-thirdparty - <strong>Remove?</strong></p>
   </div>
   
+
+  <div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
   <p>
     <code>
       <strong>GEL Group 1A: 240px - 319px</strong><br>
@@ -391,14 +476,19 @@
       width: <strong>368px;</strong>&nbsp;<i>//excluding margins</i><br>
     </code>
   </p>
+  </div>
+</div>
+
 
   <!-- Information Box -->
 	<h3>Information Box</h3>
   <div class="bbcid-panel-informationbox">
 	 <p>bbcid-section-info</p>
   </div>
-
-  <p>
+<div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
+<p>
     <code>
       <strong>GEL Group 1A: 240px - 319px</strong><br>
       margin-left: <strong>8px;</strong><br>
@@ -434,7 +524,10 @@
       margin-right: <strong>16px;</strong><br>
       width: <strong>368px;</strong>&nbsp;<i>//excluding margins</i><br>
     </code>
-  </p>
+  </p>        
+  </div>
+</div>
+  
 
   <!-- Settings -->
 	<h3>Settings</h3>
@@ -444,6 +537,11 @@
     </div>
   </div>
 
+
+<div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
+    
   <p>
     <code>
       <strong>GEL Group 1A: 240px - 319px</strong><br>
@@ -481,7 +579,11 @@
       margin-right: <strong>16px;</strong><br>
       width: <strong>976px;</strong>&nbsp;<i>//1008px - 16px (left) - 16px (right)</i><br>
     </code>
-  </p>
+  </p>    
+  </div>
+</div>
+
+
 
 </section> <!-- End Panels -->
 
@@ -508,12 +610,11 @@
 
 
  <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    
+ <div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>    
     <p>
       <code>
-
         <strong>GEL Group 1a</strong><br>
         
         <strong>header bar</strong><br>
@@ -522,7 +623,7 @@
         letter-spacing: -0.03em;<br>
         overflow: hidden;<br>
         max-height: 40px;<br>
-<br>
+        <br>
         <strong>headline h1</strong><br>
         font-family: "Gill Sans";<br>
         font-weight: 400;<br>
@@ -530,7 +631,7 @@
         color: white;<br>
         line-height: 1.667em;<br>
         letter-spacing: -1px;<br>
-<br>
+        <br>
 
         <strong>GEL Group 1b / 2</strong><br>
         
@@ -538,20 +639,20 @@
         padding: 0px 7px;<br>
         letter-spacing: -0.03em;<br>
         max-height: 42px;<br>
-<br>
+        <br>
         <strong>headline h1</strong><br>
         font-size: 26px;<br>
-<br>
+        <br>
         <strong>GEL Group 3 onwards.</strong><br>
 
         <strong>header bar</strong><br>
-          padding: 0px 7px;<br>
-          letter-spacing: -0.03em;<br>
-          max-height: 42px;<br>
+        padding: 0px 7px;<br>
+        letter-spacing: -0.03em;<br>
+        max-height: 42px;<br>
         <br>
-          <strong>headline h1</strong><br>
-          font-size: 26px;<br>
-<br>
+        <strong>headline h1</strong><br>
+        font-size: 26px;<br>
+        <br>
         <strong>subheader</strong><br>
         font-family: "Gill Sans",Arial,sans-serif;<br>
         font-size: 34px;<br>
@@ -559,16 +660,11 @@
         letter-spacing: -0.01em;<br>
         color: #E0F4FF;<br>
         height: 66px;<br>
-<br>
-
+        <br>
       </code>
-
-    </p>
+    </p>   
   </div>
-
-</section>
-
-
+</div>
 
 </section>
 
@@ -601,7 +697,7 @@
     <h4>Text Input:</h4>
 
     <div class="bbcid-field-container unique-container">
-      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
       <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
     </div>
     
@@ -609,9 +705,63 @@
     <h4>Password Input:</h4>
   		
     <div class="bbcid-field-container unique-container">
-      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
       <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
     </div>
+
+
+<div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
+    
+<p>
+          <code>
+            <strong>Labels:</strong><br>
+            <strong>GEL Group 1A: 240px - 319px</strong><br>
+            color: #000;<br>
+            font-size: 16px;<br> 
+            font-weight: Bold;<br>
+            margin-below: 0;<br>
+
+            <strong>GEL Group 1B: 320px - 399px ONWARDS</strong><br>
+            color: #000;<br>
+            font-size: 20px; <br>
+            font-weight: Bold;<br>
+            margin-below: 8px;<br>
+          </code>
+        </p>
+
+        <p>
+          <code>
+            <strong>Inputs:</strong><br>
+
+            <strong>General:</strong><br>
+            display: block;<br>
+            box-sizing: border-box;<br>
+            font-family:Arial,sans-serif;<br>
+            border: 1px solid #a7a7a7;<br>
+
+            <strong>GEL Group 1A: 240px - 319px</strong><br>
+            width: 100%;<br>
+            height: 33px;<br>
+            padding: 8px;<br>
+
+            <strong>GEL Group 1B: 320px - 399px ONWARDS</strong><br>
+            width: 100%;<br>
+            height: 42px;<br>
+            padding: 10px;<br>
+
+            <strong>GEL Group 3: 600px - 900px ONWARDS</strong><br>
+            max-width: 252px;
+
+          </code>
+        </p>
+
+
+    
+  </div>
+</div>
+
 
     <h4>Date of Birth Input:</h4>
 
@@ -624,76 +774,41 @@
         <input class="text" autocomplete="off" name="dateofbirthundersixteen_year" id="bbcid_dateofbirthundersixteen_year" value="" maxlength="4" type="text"> 
     </fieldset>
 
+
+
   <!-- INPUTS: NOTES -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes:</h3>
-    <p>
-      <code>
-        <strong>Labels:</strong><br>
-        <strong>GEL Group 1A: 240px - 319px</strong><br>
-        color: #000;<br>
-        font-size: 16px;<br> 
-        font-weight: Bold;<br>
-        margin-below: 0;<br>
 
-        <strong>GEL Group 1B: 320px - 399px ONWARDS</strong><br>
-        color: #000;<br>
-        font-size: 20px; <br>
-        font-weight: Bold;<br>
-        margin-below: 8px;<br>
-      </code>
-    </p>
-
-    <p>
-      <code>
-        <strong>Inputs:</strong><br>
-
-        <strong>General:</strong><br>
-        display: block;<br>
-        box-sizing: border-box;<br>
-        font-family:Arial,sans-serif;<br>
-        border: 1px solid #a7a7a7;<br>
-
-        <strong>GEL Group 1A: 240px - 319px</strong><br>
-        width: 100%;<br>
-        height: 33px;<br>
-        padding: 8px;<br>
-
-        <strong>GEL Group 1B: 320px - 399px ONWARDS</strong><br>
-        width: 100%;<br>
-        height: 42px;<br>
-        padding: 10px;<br>
-
-        <strong>GEL Group 3: 600px - 900px ONWARDS</strong><br>
-        max-width: 252px;
-
-      </code>
-    </p>
-
-    <p>
-      <code>
-        <strong>Date of Birth Fields - ALL SIZES:</strong><br>
-        <strong>Day/Month Fields:</strong><br>
-        width: 40px;<br>
-        display: inline;<br>
-        text-align: center;<br>
-        margin-right: 8px<br>
-        <strong>Year Field:</strong>
-        width: 52px;<br>
-        display: inline;<br>
-        text-align: center<br>
-      </code>
-    </p>
+    <div class="bbcid-styleguide-notes">
+      <h3>Show styles</h3>
+      <div>
+          
+        <p>
+          <code>
+            <strong>Date of Birth Fields - ALL SIZES:</strong><br>
+            <strong>Day/Month Fields:</strong><br>
+            width: 40px;<br>
+            display: inline;<br>
+            text-align: center;<br>
+            margin-right: 8px<br>
+            <strong>Year Field:</strong>
+            width: 52px;<br>
+            display: inline;<br>
+            text-align: center<br>
+          </code>
+        </p>    
+      </div>
+    </div>
 
 
-  </div>
+
+  
 
     <h3>Validation</h3>
 
     <h4>Hint State</h4>
 
     <div class="bbcid-field-container unique-container bbcid-hint">
-      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
       <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 
       <div class="bbcid-hint-1col">
@@ -708,10 +823,52 @@
 
     </div>
 
+
+<div class="bbcid-styleguide-notes">
+  <h3>Show styles</h3>
+  <div>
+    
+<p>
+        <code>
+          <strong>Hint / Warning states - Mobile (Up to GEL group 2):</strong><br>
+          <br>    
+          <strong>Hint State - GEL GROUP 1A</strong><br>
+          width: 100%;<br>
+          color: #000;<br>
+          font-size: 13px;<br>
+          background-color: #FFAD01;<br> 
+          padding: 8px;<br>
+          <br>
+          <strong>Hint State - GEL GROUP 1B / 2</strong><br>
+          width: 100%;<br>
+          color: #000;<br>
+          font-size: 16px;<br>
+          background-color: #FFAD01;<br> 
+          padding: 10px;<br>
+          <br>
+          <br>
+<strong>Desktop Style (GEL group 3 onwards):</strong><br>
+          <br>
+          <strong>Hint State</strong><br>
+          background-color: #F5F7F6;<br>
+          color: #525252;<br>
+          font-size: 12px;<br>
+          font-weight: normal;<br>
+          letter-spacing: 0px;<br>
+          width: 208px;<br>
+          padding: 13px 16px 12px;<br>
+          <br>
+    </code>
+    </p>
+  </div>
+</div>
+
+
+
     <h4>Warning State</h4>
 
     <div class="bbcid-field-container unique-container bbcid-warning">
-      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
       <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 
       <div class="bbcid-hint-1col bbcid-hint-1col-warning">
@@ -726,11 +883,47 @@
 
     </div>
 
-    
+    <div class="bbcid-styleguide-notes">
+      <h3>Show styles</h3>
+      <div>
+
+        <p>
+          <code>
+           <strong>Warning State - GEL GROUP 1A</strong><br>
+           width: 100%;<br>
+           color: #000;<br>
+           font-size: 13px;<br>
+           background-color: #A61616;<br> 
+           padding: 8px;<br>
+           <br>
+
+           <strong>Warning State - GEL GROUP 1B / 2</strong><br>
+           width: 100%;<br>
+           color: #FFF;<br>
+           font-size: 16px;<br>
+           background-color: #A61616;<br> 
+           padding: 10px;<br>
+           <br>
+
+           <strong>Warning State</strong><br>
+           background-color: #FFE141;<br>
+           color: #000;<br>
+           font-size: 12px;<br>
+           font-weight: normal;<br>
+           letter-spacing: 0px;<br>
+           width: 208px;<br>
+           padding: 13px 16px 12px;<br>
+           <br>
+         </code>
+       </p>
+     </div>
+   </div>
+
+
     <h4>Waiting State:</h4>
 
     <div class="bbcid-field-container unique-container waiting">
-      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
       <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
     </div>
 
@@ -738,7 +931,7 @@
     <h4>Validated State:</h4>
 
     <div class="bbcid-field-container unique-container valid">
-      <label for="bbcid_unique" class="bbcid_unique_label">label Text</label> 
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
       <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
     </div>
 
@@ -747,70 +940,7 @@
 
 
 
-   <!-- HINTS: Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>
-      <code>
-        <strong>Hint / Warning states - Mobile (Up to GEL group 2):</strong><br>
-    <br>    
-        <strong>Hint State - GEL GROUP 1A</strong><br>
-        width: 100%;<br>
-        color: #000;<br>
-        font-size: 13px;<br>
-        background-color: #FFAD01;<br> 
-        padding: 8px;<br>
-<br>
-        <strong>Hint State - GEL GROUP 1B / 2</strong><br>
-        width: 100%;<br>
-        color: #000;<br>
-        font-size: 16px;<br>
-        background-color: #FFAD01;<br> 
-        padding: 10px;<br>
-<br>
-<br>
-        <strong>Warning State - GEL GROUP 1A</strong><br>
-        width: 100%;<br>
-        color: #000;<br>
-        font-size: 13px;<br>
-        background-color: #A61616;<br> 
-        padding: 8px;<br>
-<br>
-        <strong>Warning State - GEL GROUP 1B / 2</strong><br>
-        width: 100%;<br>
-        color: #FFF;<br>
-        font-size: 16px;<br>
-        background-color: #A61616;<br> 
-        padding: 10px;<br>
-<br>
-        <strong>Hint / Warning states - Desktop Style (GEL group 3 onwards):</strong><br>
-<br>
-        <strong>Hint State</strong><br>
-        background-color: #F5F7F6;<br>
-        color: #525252;<br>
-        font-size: 12px;<br>
-        font-weight: normal;<br>
-        letter-spacing: 0px;<br>
-        width: 208px;<br>
-        padding: 13px 16px 12px;<br>
-<br>
-        <strong>Warning State</strong><br>
-        background-color: #FFE141;<br>
-        color: #000;<br>
-        font-size: 12px;<br>
-        font-weight: normal;<br>
-        letter-spacing: 0px;<br>
-        width: 208px;<br>
-        padding: 13px 16px 12px;<br>
-<br>
 
-
-
-      </code>
-    </p>
-
-
-  </div>
 
 </section>
 
@@ -826,7 +956,7 @@
 <section id="cta" class="bbcid-styleguide-section">
       
   <h2>CTA's</h2>
-  <p class="bbcid-styleguide-note">CTA's for form panels.</p>
+  <p class="bbcid-styleguide-note">CTA's for form panels. CTA buttons have extra spacing above above their container to space them away from content above.</p>
 
 
   <h3>Initial Presentation</h3>
@@ -835,6 +965,33 @@
     <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
   </div>
 
+  <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+      <p>
+        <code>
+          <strong>GEL Group 1a</strong><br>
+          color: #FFF;<br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          letter-spacing: -0.05em;<br>
+          text-align: center;<br>
+          line-height: 28px;<br>
+          background-color: #C0C0C0;<br>
+          padding: 0px 10px 0px 10px;<br>
+          <br>
+          <strong>GEL Group 1b onwards.</strong><br>
+          font-size: 20px;<br>
+          font-weight: bold;<br>
+          letter-spacing: -0.05em;<br>
+          text-align: center;<br>
+          line-height: 28px;<br>
+          padding: 3px 10px 5px 10px;<br>
+        </code>
+        </p>
+        </div>
+    </div>
+
 
   <h3>Active State</h3>
   <div class="bbcid-actions blq-clearfix">
@@ -842,6 +999,23 @@
     <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
   </div>
 
+  <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+     <p>
+       <code>
+        <strong>Active State</strong><br>
+        color: #FFF;<br>
+        background-color: #1790CF;<br>
+        <br>
+        <strong>Hover State</strong><br>
+        color: #FFF;<br>
+        background-color: #005383;<br>
+        <br>
+      </code>
+    </p>
+  </div>
+</div>
 
   <h3>Long buttons</h3>
   <p>When the CTA text is too long, the buttons wrap onto 2 lines.</p>
@@ -850,50 +1024,6 @@
     <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Long Cancel Text</a> 
   </div>
 
-
-   <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>CTA buttons have extra spacing above above their container to space them away from content above.</p>
-    
-    <p>
-      <code>
-        <strong>Buttons</strong><br>
-        <br>
-        <strong>GEL Group 1a</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        letter-spacing: -0.05em;<br>
-        text-align: center;<br>
-        line-height: 28px;<br>
-        padding: 0px 10px 0px 10px;<br>
-        <br>
-        <strong>GEL Group 1b onwards.</strong><br>
-        font-size: 20px;<br>
-        font-weight: bold;<br>
-        letter-spacing: -0.05em;<br>
-        text-align: center;<br>
-        line-height: 28px;<br>
-        padding: 3px 10px 5px 10px;<br>
-
-<strong>Buttons</strong><br>
-<br>
-<strong>disabled state</strong><br>
-color: #FFF;<br>
-background-color: #C0C0C0;<br>
-<br>
-<strong>Active State</strong><br>
-color: #FFF;<br>
-background-color: #1790CF;<br>
-<br>
-<strong>Hover State</strong><br>
-color: #FFF;<br>
-background-color: #005383;<br>
-<br>
-
-      </code>
-    </p>
-  </div>
 
 </section>
 
@@ -966,7 +1096,7 @@ background-color: #005383;<br>
     </div>
     
     <!--
-                      FIX
+                      **FIX THIS**
 
 
     <div class="bbcid-hint-2col">
@@ -982,27 +1112,31 @@ background-color: #005383;<br>
 
 
 
-</form>
+  </form>
 
    <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>
-      <code>
-        <strong>Legend sizing is consistent with <a href="#inputs">input label</a> sizing.</strong><br>
-        <br>
-        <strong>Buttons (All GEL groups)</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        text-align: center;<br>
-        line-height: 28px;<br>
-        padding: 8px 21px 8px 22px;<br>
-        <br>
-        <strong>Color values are consistent with <a href="#inputs">input labels</a></strong><br>
-        <br>
-      </code>
-    </p>
+   <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+      <p>
+        <code>
+          <strong>Legend sizing is consistent with <a href="#inputs">input label</a> sizing.</strong><br>
+          <br>
+          <strong>Buttons (All GEL groups)</strong><br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          text-align: center;<br>
+          line-height: 28px;<br>
+          padding: 8px 21px 8px 22px;<br>
+          <br>
+          <strong>Color values are consistent with <a href="#inputs">input labels</a></strong><br>
+          <br>
+        </code>
+      </p>    
+    </div>
   </div>
+
+
 
 </section>
 
@@ -1016,8 +1150,7 @@ background-color: #005383;<br>
 -->
 <section id="radio" class="bbcid-styleguide-section">
   <h2>Radio Buttons</h2>
-  <p>(Javascript Disabled view)</p>
-      
+  <p>Javascript Disabled view of toggle buttons. At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
 
     <div class="bbc-radios-container">
       <fieldset>
@@ -1027,28 +1160,25 @@ background-color: #005383;<br>
     </div>
 
 
-  <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
-    <p>
-      <code>
-  
-      <strong>Labels:</strong><br>
-<br>
-      <strong>group 1a;</strong><br>
-      font-size: 13px;<br>
-      font-weight: bold;<br>
-<br>
-      <strong>group 1b onwards</strong><br>
-      font-size: 16px;<br>
-      font-weight: bold;<br>
-
-
-
-      </code>
-    </p>
-  </div>
+    <!-- Notes -->
+    <div class="bbcid-styleguide-notes">
+      <h3>Show styles</h3>
+      <div>
+        <p>
+          <code>
+            <strong>Labels:</strong><br>
+            <br>
+            <strong>group 1a;</strong><br>
+            font-size: 13px;<br>
+            font-weight: bold;<br>
+            <br>
+            <strong>group 1b onwards</strong><br>
+            font-size: 16px;<br>
+            font-weight: bold;<br>
+          </code>
+        </p>    
+      </div>
+    </div>
 
 </section>
 
@@ -1061,7 +1191,7 @@ background-color: #005383;<br>
 -->
 <section id="checkbox" class="bbcid-styleguide-section">
 	<h2>Checkboxes</h2>
-    
+      <p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
   <div class="bbcid-form">
     <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced">
         <a class="checked" href="#checkbox"></a>
@@ -1074,40 +1204,39 @@ background-color: #005383;<br>
     </div>
   </div>
 
-  <!-- Notes -->
   <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
-      <p>
-        <code>
-        <strong>GEL Group 1a / 1b / 2;</strong><br>
-        <strong>Container</strong><br>
-        margin-below: 16px;<br>
-        <br>
-        <strong>Label</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        <br>
-        <strong>Note text</strong><br>
-        font-size: 16px;<br>
-        font-weight: Regular;<br>
-        <br>
-        <strong>GEL Group 3 onwards</strong><br>
-        <strong>Container</strong><br>
-        margin-below: 16px;<br>
-        <br>
-        <strong>Label</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        <br>
-        <strong>Note text</strong><br>
-        font-size: 13px;<br>
-        font-weight: Regular;<br>
-        <br>
-      </code>
-    </p>
+    <h3>Show styles</h3>
+    <div>
+        <p>
+          <code>
+          <strong>GEL Group 1a / 1b / 2;</strong><br>
+          <strong>Container</strong><br>
+          margin-below: 16px;<br>
+          <br>
+          <strong>Label</strong><br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          <br>
+          <strong>Note text</strong><br>
+          font-size: 16px;<br>
+          font-weight: Regular;<br>
+          <br>
+          <strong>GEL Group 3 onwards</strong><br>
+          <strong>Container</strong><br>
+          margin-below: 16px;<br>
+          <br>
+          <strong>Label</strong><br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          <br>
+          <strong>Note text</strong><br>
+          font-size: 13px;<br>
+          font-weight: Regular;<br>
+          <br>
+        </code>
+      </p>          
+    </div>
   </div>
-
 
 </section>
 
@@ -1133,9 +1262,12 @@ background-color: #005383;<br>
 
   <!-- Notes -->
   <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>Use standard type styles from <a href="#typography">typography</a> section.</p>
+  <h3>Show styles</h3>
+  <div>
+    <p><code>Use standard type styles from <a href="#typography">typography</a> section.</code></p>
   </div>
+</div>
+
 
 
 
@@ -1152,6 +1284,16 @@ background-color: #005383;<br>
 
 -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/vendor/jquery-ui.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>
+          $(function() {
+            $( ".bbcid-styleguide-notes" ).accordion({
+              collapsible: true,
+              active: false
+            });
+          });
+        </script>
+
     </body>
 </html>
