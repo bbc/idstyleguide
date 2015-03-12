@@ -1067,14 +1067,53 @@ background-color: #005383;<br>
 -->
 <section id="checkbox" class="bbcid-styleguide-section">
 	<h2>Checkboxes</h2>
-  <p class="bbcid-styleguide-note gel-minion">Currently achieved using spritesheet/CSS/jQuery</p>  
+    
   <div class="bbcid-form">
     <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced">
-        <a class="checked" href="#"></a>
+        <a class="checked" href="#checkbox"></a>
         <input name="rememberme" id="bbcid_rememberme_default" value="1" type="hidden">
-        <label for="bbcid_rememberme" class="bbcid_rememberme_label"> <span class="bbcid_label_main">Remember me</span> <span class="bbcid-hide">. </span> <span class="bbcid-label-hint bbcid-hide"></span> </label> <span class="description">Untick if you're using a shared computer.</span>
+        <label for="bbcid_rememberme" class="bbcid_rememberme_label">
+        <span class="bbcid_label_main">This is a label</span>
+        <span class="bbcid-label-hint bbcid-hide"></span>
+        </label>
+        <span class="description">With an optional note.</span>
     </div>
   </div>
+
+  <!-- Notes -->
+  <div class="bbcid-styleguide-notes">
+    <h3>Notes</h3>
+    <p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
+      <code>
+        <strong>GEL Group 1a / 1b / 2;</strong><br>
+        <strong>Container</strong><br>
+        margin-below: 16px;<br>
+        <br>
+        <strong>Label</strong><br>
+        font-size: 16px;<br>
+        font-weight: bold;<br>
+        <br>
+        <strong>Note text</strong><br>
+        font-size: 16px;<br>
+        font-weight: Regular;<br>
+        <br>
+        <strong>GEL Group 3 onwards</strong><br>
+        <strong>Container</strong><br>
+        margin-below: 16px;<br>
+        <br>
+        <strong>Label</strong><br>
+        font-size: 16px;<br>
+        font-weight: bold;<br>
+        <br>
+        <strong>Note text</strong><br>
+        font-size: 13px;<br>
+        font-weight: Regular;<br>
+        <br>
+      </code>
+    </p>
+  </div>
+
+
 </section>
 
 

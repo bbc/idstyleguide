@@ -1137,54 +1137,67 @@ ul.grid {
   margin-bottom:0
 }
 
+
 .bbcid-form .bbcid-checkbox-container input{
   float:left;
   margin:5px 0 13px 0
 }
 
-.bbcid-rtl .bbcid-form .bbcid-checkbox-container input{
-  float:right
-}
 
 .ie6 .bbcid-form .bbcid-checkbox-container input,
 .ie7 .bbcid-form .bbcid-checkbox-container input{
   margin-top:1px
 }
 
+/*label*/
 .bbcid-form .rememberme-container label{
   float:left;
   width:auto;
   margin-right:8px;
   margin-left:8px;
-  font-size:1.231em
+  font-size:1em;
 }
-
-.bbcid-rtl .bbcid-form .rememberme-container label{
-  float:right
-}
-
 .bbcid-form .rememberme-container .description{
+  font-size: 0.813em;
   position:relative;
-  top:5px
+  top: 1px
 }
 
+/*checkbox*/
 .bbcid-form .bbcid-checkbox-container>a{
-  width:24px;
-  height:24px;
-  background-image:url(../img/sprite.png);
-  background-repeat:no-repeat;
-  background-position:0 -359px;
-  display:block;
-  float:left;
-  position:relative
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -359px;
+  display: block;
+  float: left;
+  position: relative
 }
-
-.bbcid-rtl .bbcid-form .bbcid-checkbox-container>a{
-  float:right
-}
-
 .bbcid-form .bbcid-checkbox-container .checked{
-  background-position:0 -383px
+  background-position: 0 -383px
+}
+
+
+
+@media only screen and (min-width: 320px) {
+  
+  .bbcid-form .rememberme-container .description{
+    font-size: 1em;
+    position:relative;
+    top: 1px
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .bbcid-form .rememberme-container .description{
+    font-size: 0.813em;
+    position:relative;
+    top: 1px
+  }
+
 }
 
 
