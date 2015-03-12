@@ -39,6 +39,18 @@ fieldset {
   border: none;
 }
 
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #005383;
+}
+a:hover {
+  color: #013452; 
+  text-decoration: underline;
+}
+
+
 .bbcid-styleguide-container {
   min-width: 240px;
 }
@@ -1200,6 +1212,29 @@ ul.grid {
 
 }
 
+
+/* 
+
+      DROPDOWNS
+
+*/
+
+
+.bbcid-text-dropdown {
+  font-size: 0.813em;
+}
+
+@media only screen and (min-width: 320px) {
+  .bbcid-text-dropdown {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .bbcid-text-dropdown {
+    font-size: 0.813em;
+  }
+}
 
 
 
