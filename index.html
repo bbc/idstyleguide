@@ -956,7 +956,7 @@
 <section id="cta" class="bbcid-styleguide-section">
       
   <h2>CTA's</h2>
-  <p class="bbcid-styleguide-note">CTA's for form panels.</p>
+  <p class="bbcid-styleguide-note">CTA's for form panels. CTA buttons have extra spacing above above their container to space them away from content above.</p>
 
 
   <h3>Initial Presentation</h3>
@@ -965,6 +965,33 @@
     <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
   </div>
 
+  <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+      <p>
+        <code>
+          <strong>GEL Group 1a</strong><br>
+          color: #FFF;<br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          letter-spacing: -0.05em;<br>
+          text-align: center;<br>
+          line-height: 28px;<br>
+          background-color: #C0C0C0;<br>
+          padding: 0px 10px 0px 10px;<br>
+          <br>
+          <strong>GEL Group 1b onwards.</strong><br>
+          font-size: 20px;<br>
+          font-weight: bold;<br>
+          letter-spacing: -0.05em;<br>
+          text-align: center;<br>
+          line-height: 28px;<br>
+          padding: 3px 10px 5px 10px;<br>
+        </code>
+        </p>
+        </div>
+    </div>
+
 
   <h3>Active State</h3>
   <div class="bbcid-actions blq-clearfix">
@@ -972,46 +999,11 @@
     <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
   </div>
 
-
-  <h3>Long buttons</h3>
-  <p>When the CTA text is too long, the buttons wrap onto 2 lines.</p>
-  <div class="bbcid-actions blq-clearfix">
-    <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="This is a long button" type="submit">
-    <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Long Cancel Text</a> 
-  </div>
-
-
-   <!-- Notes -->
-   <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>CTA buttons have extra spacing above above their container to space them away from content above.</p>
-    
-    <p>
-      <code>
-        <strong>Buttons</strong><br>
-        <br>
-        <strong>GEL Group 1a</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        letter-spacing: -0.05em;<br>
-        text-align: center;<br>
-        line-height: 28px;<br>
-        padding: 0px 10px 0px 10px;<br>
-        <br>
-        <strong>GEL Group 1b onwards.</strong><br>
-        font-size: 20px;<br>
-        font-weight: bold;<br>
-        letter-spacing: -0.05em;<br>
-        text-align: center;<br>
-        line-height: 28px;<br>
-        padding: 3px 10px 5px 10px;<br>
-
-        <strong>Buttons</strong><br>
-        <br>
-        <strong>disabled state</strong><br>
-        color: #FFF;<br>
-        background-color: #C0C0C0;<br>
-        <br>
+  <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+     <p>
+       <code>
         <strong>Active State</strong><br>
         color: #FFF;<br>
         background-color: #1790CF;<br>
@@ -1020,10 +1012,18 @@
         color: #FFF;<br>
         background-color: #005383;<br>
         <br>
-
       </code>
     </p>
   </div>
+</div>
+
+  <h3>Long buttons</h3>
+  <p>When the CTA text is too long, the buttons wrap onto 2 lines.</p>
+  <div class="bbcid-actions blq-clearfix">
+    <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="This is a long button" type="submit">
+    <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Long Cancel Text</a> 
+  </div>
+
 
 </section>
 
@@ -1115,24 +1115,28 @@
   </form>
 
    <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>
-      <code>
-        <strong>Legend sizing is consistent with <a href="#inputs">input label</a> sizing.</strong><br>
-        <br>
-        <strong>Buttons (All GEL groups)</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        text-align: center;<br>
-        line-height: 28px;<br>
-        padding: 8px 21px 8px 22px;<br>
-        <br>
-        <strong>Color values are consistent with <a href="#inputs">input labels</a></strong><br>
-        <br>
-      </code>
-    </p>
+   <div class="bbcid-styleguide-notes">
+    <h3>Show styles</h3>
+    <div>
+      <p>
+        <code>
+          <strong>Legend sizing is consistent with <a href="#inputs">input label</a> sizing.</strong><br>
+          <br>
+          <strong>Buttons (All GEL groups)</strong><br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          text-align: center;<br>
+          line-height: 28px;<br>
+          padding: 8px 21px 8px 22px;<br>
+          <br>
+          <strong>Color values are consistent with <a href="#inputs">input labels</a></strong><br>
+          <br>
+        </code>
+      </p>    
+    </div>
   </div>
+
+
 
 </section>
 
@@ -1146,8 +1150,7 @@
 -->
 <section id="radio" class="bbcid-styleguide-section">
   <h2>Radio Buttons</h2>
-  <p>(Javascript Disabled view)</p>
-      
+  <p>Javascript Disabled view of toggle buttons. At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
 
     <div class="bbc-radios-container">
       <fieldset>
@@ -1157,28 +1160,25 @@
     </div>
 
 
-  <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
-    <p>
-      <code>
-  
-      <strong>Labels:</strong><br>
-<br>
-      <strong>group 1a;</strong><br>
-      font-size: 13px;<br>
-      font-weight: bold;<br>
-<br>
-      <strong>group 1b onwards</strong><br>
-      font-size: 16px;<br>
-      font-weight: bold;<br>
-
-
-
-      </code>
-    </p>
-  </div>
+    <!-- Notes -->
+    <div class="bbcid-styleguide-notes">
+      <h3>Show styles</h3>
+      <div>
+        <p>
+          <code>
+            <strong>Labels:</strong><br>
+            <br>
+            <strong>group 1a;</strong><br>
+            font-size: 13px;<br>
+            font-weight: bold;<br>
+            <br>
+            <strong>group 1b onwards</strong><br>
+            font-size: 16px;<br>
+            font-weight: bold;<br>
+          </code>
+        </p>    
+      </div>
+    </div>
 
 </section>
 
@@ -1191,7 +1191,7 @@
 -->
 <section id="checkbox" class="bbcid-styleguide-section">
 	<h2>Checkboxes</h2>
-    
+      <p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
   <div class="bbcid-form">
     <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced">
         <a class="checked" href="#checkbox"></a>
@@ -1204,40 +1204,39 @@
     </div>
   </div>
 
-  <!-- Notes -->
   <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
-      <p>
-        <code>
-        <strong>GEL Group 1a / 1b / 2;</strong><br>
-        <strong>Container</strong><br>
-        margin-below: 16px;<br>
-        <br>
-        <strong>Label</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        <br>
-        <strong>Note text</strong><br>
-        font-size: 16px;<br>
-        font-weight: Regular;<br>
-        <br>
-        <strong>GEL Group 3 onwards</strong><br>
-        <strong>Container</strong><br>
-        margin-below: 16px;<br>
-        <br>
-        <strong>Label</strong><br>
-        font-size: 16px;<br>
-        font-weight: bold;<br>
-        <br>
-        <strong>Note text</strong><br>
-        font-size: 13px;<br>
-        font-weight: Regular;<br>
-        <br>
-      </code>
-    </p>
+    <h3>Show styles</h3>
+    <div>
+        <p>
+          <code>
+          <strong>GEL Group 1a / 1b / 2;</strong><br>
+          <strong>Container</strong><br>
+          margin-below: 16px;<br>
+          <br>
+          <strong>Label</strong><br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          <br>
+          <strong>Note text</strong><br>
+          font-size: 16px;<br>
+          font-weight: Regular;<br>
+          <br>
+          <strong>GEL Group 3 onwards</strong><br>
+          <strong>Container</strong><br>
+          margin-below: 16px;<br>
+          <br>
+          <strong>Label</strong><br>
+          font-size: 16px;<br>
+          font-weight: bold;<br>
+          <br>
+          <strong>Note text</strong><br>
+          font-size: 13px;<br>
+          font-weight: Regular;<br>
+          <br>
+        </code>
+      </p>          
+    </div>
   </div>
-
 
 </section>
 
@@ -1263,9 +1262,14 @@
 
   <!-- Notes -->
   <div class="bbcid-styleguide-notes">
-    <h3>Notes</h3>
-    <p>Use standard type styles from <a href="#typography">typography</a> section.</p>
+  <h3>Show styles</h3>
+  <div>
+    <p><code>Use standard type styles from <a href="#typography">typography</a> section.</code></p>
   </div>
+</div>
+
+
+
 
 </section>
 
