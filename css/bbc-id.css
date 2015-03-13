@@ -432,7 +432,15 @@ ul.grid {
 }
 
 .bbcid-panel-2col-info {
+  background-color: #FFF;
 
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  border: 1px solid #CCC; /*debug*/
 }
 
 .bbcid-panel-form,
@@ -457,7 +465,8 @@ ul.grid {
 
 @media only screen and (min-width: 400px) {
   .bbcid-panel-1col,
-  .bbcid-panel-2col-content {
+  .bbcid-panel-2col-content,
+  .bbcid-panel-2col-info {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -471,10 +480,11 @@ ul.grid {
 
 .bbcid-panel-2col-content {
   max-width: 592px; /* for GEL group 4 */
-  border: 1px solid #CCC; /*debug*/
 }
 
-
+.bbcid-panel-2col-info {
+  max-width: 300px; /* for GEL group 4 */
+}
 
 }
 
