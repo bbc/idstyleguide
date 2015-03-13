@@ -58,8 +58,8 @@ a:hover {
 .bbcid-styleguide-section {
   background-color: white;
   padding: 1em 0.5em;
+  margin-top: 3em; /* Adds margin at top of page so GEL group size display doesn't overlap header text */
   margin-bottom: 2em;
-  margin-top: 3em; /* Adds margin at top of page so GEL group size display doesn't overlap header */
 }
 
 .bbcid-styleguide-type-sample {
@@ -69,11 +69,11 @@ a:hover {
 
 .bbcid-styleguide-notes {
   color: #666;
-  cursor: pointer; /* Changes cursor to pointer on drop down note links */
+  cursor: pointer; /* Changes cursor on drop down note and show style links */
 }
 
 .ui-state-hover {
-  color: #333; /* Darkens note links when hovered over */
+  color: #333; /* Darkens note and show style links when hovered over */
 }
 
 .bbcid-styleguide-notes h3 {
