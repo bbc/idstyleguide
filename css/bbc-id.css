@@ -896,9 +896,9 @@ ul.grid {
   }
 
   .bbcid-form .waiting input.text {
-      background-image: url("../img/spinner.gif");
+      background-image: url("../img/spinner_20px.gif");
       background-repeat: no-repeat;
-      background-position: 216px -922px;
+      background-position: 220px 10px;
   }
 
   .bbcid-form .valid input.text {
