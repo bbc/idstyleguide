@@ -92,6 +92,11 @@ img.bbcid-styleguide-img-responsive {
   height: auto;
 }
 
+img.bbcid-styleguide-exampleimg {
+  border: 1px solid #CCC;
+}
+
+
 @media only screen and (min-width: 400px) {
   .bbcid-styleguide-container {
     margin-left: 16px;
