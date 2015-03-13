@@ -59,6 +59,7 @@ a:hover {
   background-color: white;
   padding: 1em 0.5em;
   margin-bottom: 2em;
+  margin-top: 3em; /* Adds margin at top of page so GEL group size display doesn't overlap header */
 }
 
 .bbcid-styleguide-type-sample {
@@ -68,6 +69,11 @@ a:hover {
 
 .bbcid-styleguide-notes {
   color: #666;
+  cursor: pointer; /* Changes cursor to pointer on drop down note links */
+}
+
+.ui-state-hover {
+  color: #333; /* Darkens note links when hovered over */
 }
 
 .bbcid-styleguide-notes h3 {
