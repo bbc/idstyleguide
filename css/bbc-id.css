@@ -818,6 +818,8 @@ ul.grid {
     width: 208px;
     padding: 13px 16px 12px;
 }
+
+
 .bbcid-hint-2col-warning {
   color: #000;
   background-color: #FFE141;
@@ -894,9 +896,9 @@ ul.grid {
   }
 
   .bbcid-form .waiting input.text {
-      background-image: url("../img/spinner.gif");
+      background-image: url("../img/spinner_20px.gif");
       background-repeat: no-repeat;
-      background-position: 216px -922px;
+      background-position: 220px 10px;
   }
 
   .bbcid-form .valid input.text {
@@ -914,6 +916,11 @@ ul.grid {
     position: relative;
     top: -48px;
     right: -279px;
+  }
+
+  .togglefix { /* temp fix to make this work with toggle buttons */
+    top: -10px;
+    right: -20px;
   }
 
 }
