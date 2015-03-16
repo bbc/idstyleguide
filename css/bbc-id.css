@@ -237,17 +237,11 @@ ul.grid {
   padding-left: 0;
 }
 
-.style-guide-colours__base,
-.style-guide-colours__section {
+.style-guide-colours__base {
   display: inline-block;
   width: 100%;
 }
 
-@media all and (min-width: 48em) {
-  .style-guide-colours__section {
-    width: 50%;
-  }
-}
 
 .style-guide-colours__inner {
   padding: 16px 16px 0 16px;
@@ -261,22 +255,22 @@ ul.grid {
 }
 
 .style-guide-colours__colour {
-  width: 25%;
+  width: 28%;
   padding-left: 5px;
   padding-right: 5px; 
 }
-
-@media all and (min-width: 37.5em) {
+@media all and (min-width: 25em) { /* GEL Group 2 */
     .style-guide-colours__colour {
-      width: 16.66667%;
+      width: 20%;
     }
 }
-
-@media all and (min-width: 48em) {
+@media all and (min-width: 37.5em) { /* GEL Group 3 */
     .style-guide-colours__colour {
       width: 12%;
     }
 }
+
+
 
 .style-guide-colours__section-colour {
   width: 25%;
@@ -284,7 +278,9 @@ ul.grid {
 
 .style-guide-colour {
   text-align: center;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+}
+
 .style-guide-colour__circle {
   display: block;
   width: 100%;
@@ -312,22 +308,7 @@ ul.grid {
   display: block;
 }
 
-/* ORB Masthead */
-.style-guide-colour--orb-masthead .style-guide-colour__circle {
-  background-color: #1273A5;
-}
-.style-guide-colour--orb-masthead .style-guide-colour__circle:after {
-  content: "#1273A5";
-}
-
-/* White */
-.style-guide-colour--white .style-guide-colour__circle {
-  background-color: #FFFFFF;
-}
-.style-guide-colour--white .style-guide-colour__circle:after {
-  content: "#FFFFFF";
-}
-
+/* COLOUR REFS FOR SWATCHES */
 /* iD Header */
 .style-guide-colour--id-header .style-guide-colour__circle {
   background-color: #1790CF;
@@ -335,7 +316,6 @@ ul.grid {
 .style-guide-colour--id-header .style-guide-colour__circle:after {
   content: "#1790CF";
 }
-
 /* iD Header - BBC iD */
 .style-guide-colour--id-header-bbc-id .style-guide-colour__circle {
   background-color: #E0F4FF;
@@ -343,7 +323,6 @@ ul.grid {
 .style-guide-colour--id-header-bbc-id .style-guide-colour__circle:after {
   content: "#E0F4FF";
 }
-
 /* Links & Secondary CTA */
 .style-guide-colour--secondary-cta .style-guide-colour__circle {
   background-color: #005383;
@@ -351,7 +330,6 @@ ul.grid {
 .style-guide-colour--secondary-cta .style-guide-colour__circle:after {
   content: "#005383";
 }
-
 /* Links (Hover) */
 .style-guide-colour--links-hover .style-guide-colour__circle {
   background-color: #013452;
@@ -359,7 +337,6 @@ ul.grid {
 .style-guide-colour--links-hover .style-guide-colour__circle:after {
   content: "#013452";
 }
-
 /* Inactive CTA */
 .style-guide-colour--inactive-cta .style-guide-colour__circle {
   background-color: #C0C0C0;
@@ -368,13 +345,7 @@ ul.grid {
   content: "#C0C0C0";
 }
 
-/* Black */
-.style-guide-colour--black .style-guide-colour__circle {
-  background-color: #000000;
-}
-.style-guide-colour--black .style-guide-colour__circle:after {
-  content: "#000000";
-}
+/* END COLOURS */
 
 /*
 
