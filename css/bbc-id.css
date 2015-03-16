@@ -4,7 +4,6 @@
 
     About:
 
-
     Authors:
     Daniel Gonzalez (daniel.gonzalez@bbc.co.uk)
     Tim Spear (tim.spear@bbc.co.uk)
@@ -26,6 +25,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  color: #1F1F1F;
 }
 
 code {
@@ -47,7 +47,6 @@ a:visited {
 }
 a:hover {
   color: #013452; 
-  text-decoration: underline;
 }
 
 
@@ -60,6 +59,11 @@ a:hover {
   padding: 1em 0.5em;
   margin-top: 3em; /* Adds margin at top of page so GEL group size display doesn't overlap header text */
   margin-bottom: 2em;
+}
+
+.style-guide-section__h2 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #CCC;
 }
 
 .bbcid-styleguide-type-sample {
@@ -97,6 +101,13 @@ img.bbcid-styleguide-exampleimg {
 }
 
 
+.bbcid-styleguide-menu-list {
+  padding-left: 1em;
+}
+.bbcid-styleguide-menu-list li {
+  list-style: none;
+}
+
 @media only screen and (min-width: 400px) {
   .bbcid-styleguide-container {
     margin-left: 16px;
@@ -128,6 +139,7 @@ img.bbcid-styleguide-exampleimg {
   color: #1F1F1F;
   font-size: 0.813rem;
   line-height: 1rem;
+  margin-bottom: 8px;
 }
 
 /* links */
@@ -181,10 +193,15 @@ p.email-doublecheck {
   .bbcid-styleguide-type a {
     font-size: 0.813rem;
     line-height: 1rem;
+    margin-bottom: 12px;
   }
 
   .bbcid-styleguide-type a {
     font-weight: normal;
+  }
+ 
+ .bbcid-styleguide-type a:hover {
+    text-decoration: underline;
   }
 
   .bbcid-styleguide-type h2,
