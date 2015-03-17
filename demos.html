@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iD - Styleguide Demo</title>
+        <meta name="description" content="id Styleguide">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bbc-id.css">
+    </head>
+    <body>
+
+<div class="bbcid-styleguide-container">
+
+  <!-- 
+
+
+        INDEX
+
+
+  -->
+
+  <section class="bbcid-styleguide-section">
+    <h1>iD Style Guide Demos.</h1>
+    <a href="index.html">Patterns</a><br>
+    <a href="demos.html">Demos</a>
+  </section>
+
+
+
+
+<!-- SIGN IN FORM DEMO -->
+
+<h2>Form</h2>
+
+<div class="bbcid-panel-bg">
+    <div class="bbcid-panel-1col">
+
+
+    <!-- Username -->
+
+    <div class="bbcid-field-container unique-container">
+      <label for="bbcid_unique" class="bbcid_unique_label">Email</label> 
+      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+    </div>
+    
+
+    <!-- Password  -->
+      
+    <div class="bbcid-field-container unique-container">
+      <label for="bbcid_unique" class="bbcid_unique_label">Password</label> 
+      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
+    </div>
+
+
+    <!-- CTA -->
+
+    <div class="bbcid-actions blq-clearfix">
+      <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
+      <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+<!-- MESSAGE DEMO -->
+
+<h2>Message</h2>
+
+
+  <div class="bbcid-panel-bg">
+    <div class="bbcid-panel-1col">
+
+    <h1>Headline h1</h1>
+
+    <p>Test Text</p>
+
+    <div class="bbcid-actions blq-clearfix">
+      <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
+      <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
+    </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+</div> <!-- / id_container -->
+
+
+<!-- 
+
+    SCRIPTS 
+
+
+-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/vendor/jquery-ui.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>
+          $(function() {
+            $( ".bbcid-styleguide-notes" ).accordion({
+              collapsible: true,
+              active: false
+            });
+            $( ".bbcid-text-dropdown" ).accordion({
+              collapsible: true,
+              active: false
+            });
+          });
+        </script>
+
+    </body>
+</html>
