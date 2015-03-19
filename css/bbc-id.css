@@ -412,7 +412,7 @@ ul.grid {
   background-color: rgba(255,255,255,0.4);
 
   width: 100%;
-  max-width: 944px;
+  max-width: 976px;
  
   margin-left: auto;
   margin-right: auto;
@@ -432,7 +432,7 @@ padding-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
 
-  border: 1px solid #CCC; /*debug*/
+  /* border: 1px solid #CCC; debug*/
 }
 
 
@@ -449,7 +449,7 @@ padding-bottom: 1em;
 padding-top: 1em;
 padding-bottom: 1em;
 
-  border: 1px solid #CCC; /*debug*/
+  /* border: 1px solid #CCC; debug*/
 }
 
 .bbcid-panel-2col-info {
@@ -464,7 +464,7 @@ padding-bottom: 1em;
 padding-top: 1em;
 padding-bottom: 1em;
 
-  border: 1px solid #CCC; /*debug*/
+  /* border: 1px solid #CCC; debug*/
 }
 
 .bbcid-panel-form,
@@ -497,25 +497,43 @@ padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 900px) { /* GEL Group 3b */
+
+  .bbcid-panel-2col-content {
+    width: 65%;
+    min-width: 533px; /* for GEL group 4 */
+    max-width: 616px; /* for GEL group 4 */
+    margin-right: 16px;
+  }
+
+  .bbcid-panel-2col-info {
+    width: 33%;
+    min-width: 278px;
+    max-width: 300px; /* for GEL group 4 */
+  }
 
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1008px) { /* GEL Group 4 */
 
-.bbcid-panel-2col-content {
-  width: 65%;
-  min-width: 533px; /* for GEL group 4 */
-  max-width: 616px; /* for GEL group 4 */
-  margin-right: 16px;
+  .bbcid-panel-2col-content {
+    /* this panel is fixed 645 at group 4*/
+    width: 645px;
+    max-width: 645px;
+    margin-right: 16px;
+  }
+
+  .bbcid-panel-2col-info {
+    width: 315px;
+    max-width: 315px;
+  }
+
 }
 
-.bbcid-panel-2col-info {
-  width: 33%;
-  min-width: 278px;
-  max-width: 300px; /* for GEL group 4 */
-}
 
-}
+
 
 
 /**
