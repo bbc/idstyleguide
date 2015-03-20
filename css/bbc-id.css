@@ -61,6 +61,10 @@ a:hover {
   margin-bottom: 2em;
 }
 
+.bbcid-styleguide-demosection {
+  margin-bottom: 2em;
+}
+
 .style-guide-section__h2 {
   padding-bottom: 1em;
   border-bottom: 1px solid #CCC;
@@ -158,7 +162,7 @@ img.bbcid-styleguide-exampleimg {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-/*email*/
+/* email */
 p.email-doublecheck {
     color: #159008;
     font-weight: bold;
@@ -167,10 +171,22 @@ p.email-doublecheck {
     word-wrap: break-word;
 }
 
+.bbcid-form .bbcid-forgotpassword {
+    text-align: right;
+    margin-top: 8px;
+}
+
+
+.bbcid-styleguide-type .caption { /* utility class to add vertical space? */
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+
 @media only screen and (min-width: 320px) { /* GEL Group 1b */
   .bbcid-styleguide-type p,
   .bbcid-styleguide-type a {
-      font-size: 1rem; /*16px*/
+      font-size: 1rem; /* 16px */
       line-height: 1.250rem; 
   }
 
@@ -909,7 +925,10 @@ padding-bottom: 1em;
 
 @media only screen and (min-width: 600px) { /* GEL Group 3a */
  
- .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+ .bbcid-form input.text,
+ .bbcid-form input.password,
+ .bbcid-form select,
+ .bbcid-form .bbcid-forgotpassword {
     max-width: 252px; /* need to leave room for inline hint. */
   }
 
@@ -944,7 +963,7 @@ padding-bottom: 1em;
     display: inline-block;
     position: relative;
     top: -48px;
-    right: -279px;
+    right: -270px;
   }
 
   .togglefix { /* temp fix to make this work with toggle buttons */
