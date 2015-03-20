@@ -49,6 +49,19 @@ a:hover {
   color: #013452; 
 }
 
+  
+.bbcid-styleguide-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 240px;
+  padding: 0.75em;
+  background-color: hsla(201, 80%, 45%, 0.7);
+  font-size: 0.813em;
+  text-align: left;
+  color: #fff;
+  z-index: 1;
+}
 
 .bbcid-styleguide-container {
   min-width: 240px;
@@ -110,6 +123,12 @@ img.bbcid-styleguide-exampleimg {
 }
 .bbcid-styleguide-menu-list li {
   list-style: none;
+}
+
+@media only screen and (min-width: 320px) {
+  .bbcid-styleguide-nav {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 400px) {
@@ -1449,18 +1468,22 @@ padding-bottom: 1em;
   RESPONSIVE REPORTER
 */
 body:after {
-  content: "GEL Group 1A: 240px - 319px";
+  content: "Group 1A: <319px";
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 0;
   padding: 0.75em;
-  background-color: hsla(201, 80%, 45%, 0.7);
+  background-color: hsla(201, 80%, 45%, 0.5);
+  font-size: 0.813em;
   text-align: center;
   color: #fff;
+  z-index: 2;
 }
+
 @media only screen and (min-width: 320px) {
   body:after {
-    content: "GEL Group 1B: 320px - 399px";
+    content: "Group 1B: 320px - 399px";
+    font-size: 1em;
   } 
 }
 @media only screen and (min-width: 400px) {
