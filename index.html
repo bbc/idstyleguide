@@ -12,6 +12,10 @@
     </head>
     <body>
 
+    <nav class="bbcid-styleguide-nav">
+      iD StyleGuide
+    </nav>
+
 <div class="bbcid-styleguide-container">
 
   <!-- 
@@ -27,18 +31,18 @@
 
       <h2>Index</h2>
       <div class="bbcid-styleguide-menu">
-      <h2 class="bbcid-styleguide-menu-header">Foundation</h2>
+      <h3 class="bbcid-styleguide-menu-header">Foundation</h3>
       <ul class="bbcid-styleguide-menu-list">
         <li><a href="#typography">Typography</a></li>
         <li><a href="#colours">Colours</a></li>
         <li><a href="#grid">Grid</a></li>
       </ul>
-      <h2 class="bbcid-styleguide-menu-header">Layout</h2>
+      <h3 class="bbcid-styleguide-menu-header">Layout</h3>
       <ul class="bbcid-styleguide-menu-list">
         <li><a href="#headers">Headers</a></li>
         <li><a href="#panels">Panels</a></li>
       </ul>
-      <h2 class="bbcid-styleguide-menu-header">Form Components</h2>
+      <h3 class="bbcid-styleguide-menu-header">Form Components</h3>
       <ul class="bbcid-styleguide-menu-list">
         <li><a href="#inputs">Form Inputs &amp; labels</a></li>
         <li><a href="#cta">CTA's</a></li>
@@ -49,17 +53,23 @@
       </ul>
     </div>
 
-    <h2>About</h2>
-    <p>General Intro.</p>
-    <a href="index.html">Patterns</a><br>
-    <a href="demos.html">Demos</a>
-  </section>
+<h2>Pages</h2>
+<ul>
+    <li><a href="index.html">Patterns</a><br>
+    <li><a href="demos.html">Demos</a>
+</ul>
+
+<p>The Github repo for this project is here: <a href="https://github.com/bbc/idstyleguide">https://github.com/bbc/idstyleguide</a></p>
+
+
+
+</section>
 
 
 <!-- 
 
 
-    FOUNDATION: TYPOGRAPHY, COLOURS & GRIDS. 
+    FOUNDATION:
 
 
 -->
@@ -68,7 +78,7 @@
 <!-- TYPOGRAPHY -->
  <section id="typography" class="bbcid-styleguide-section grid-container">
     
-    <h2 class="style-guide-section__h2">Typography</h2>
+    <h2>Typography</h2>
 
     <p>General font sizing for paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.<p>
     
@@ -77,7 +87,7 @@
     </div>
 
     <div class="bbcid-styleguide-notes">
-        <h3>Show styles</h3>
+      <h3>Show styles</h3>
     <div>
 <code>
 <pre>
@@ -467,33 +477,34 @@ margin-right: <strong>16px;</strong>
 <pre>
 <strong>GEL Group 1A: 240px - 319px</strong>
 width: 100%
-margin-left: <strong>8px</strong>
-margin-right: <strong>8px</strong>
+padding-left: <strong>8px</strong>
+padding-right: <strong>8px</strong>
 
 <strong>GEL Group 1B: 320px - 399px</strong>
 width: 100%
-margin-left: <strong>8px</strong>
-margin-right: <strong>8px</strong>
+padding-left: <strong>8px</strong>
+padding-right: <strong>8px</strong>
 
 <strong>GEL Group 2: 400px - 599px</strong>
 width: 100%
-margin-left: <strong>16px</strong>
-margin-right: <strong>16px</strong>
+padding-left: <strong>16px</strong>
+padding-right: <strong>16px</strong>
 
 <strong>GEL Group 3A: 600px - 899px</strong>
 width: 100%
-margin-left: <strong>16px;</strong>
-margin-right: <strong>16px;</strong>
+padding-left: <strong>16px;</strong>
+padding-right: <strong>16px;</strong>
 
 <strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong>
-margin-left: <strong>16px;</strong>
-margin-right: <strong>16px;</strong>
-width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i>
+width: <strong>62%;</strong> <i>(widths must be expressed as percentage at this breakpoint to allow panels to stretch in proportion.</i>
+padding-left: <strong>16px</strong>
+padding-right: <strong>16px</strong>
+margin-right: 16px
 
 <strong>GEL Group 4: 1008px+</strong>
-margin-left: <strong>16px;</strong>
-margin-right: <strong>16px;</strong>
-width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i>
+width: <strong>645px;</strong>&nbsp;
+padding-left: <strong>16px;</strong>
+padding-right: <strong>16px;</strong>
 </pre>
 </code>    
   </div>
@@ -538,32 +549,32 @@ width: <strong>592px;</strong>&nbsp;<i>//excluding margins</i>
 <pre>
 <strong>GEL Group 1A: 240px - 319px</strong>
 width: 100%
-margin-left: <strong>8px</strong>
-margin-right: <strong>8px</strong>
+padding-left: <strong>8px</strong>
+padding-right: <strong>8px</strong>
 
 <strong>GEL Group 1B: 320px - 399px</strong>
 width: 100%
-margin-left: <strong>8px</strong>
-margin-right: <strong>8px</strong>
+padding-left: <strong>8px</strong>
+padding-right: <strong>8px</strong>
 
 <strong>GEL Group 2: 400px - 599px</strong>
 width: 100%
-margin-left: <strong>16px</strong>
-margin-right: <strong>16px</strong>
+padding-left: <strong>16px</strong>
+padding-right: <strong>16px</strong>
 
 <strong>GEL Group 3A: 600px - 899px</strong>
 width: 100%
-margin-left: <strong>16px;</strong>
-margin-right: <strong>16px;</strong>
+padding-left: <strong>16px</strong>
+padding-right: <strong>16px</strong>
 
 <strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong>
-max-width: <strong>368px;</strong>&nbsp;<i>//excluding margins</i>
+width: <strong>36%;</strong> <i>(widths must be expressed as percentage at this breakpoint to allow panels to stretch in proportion.</i>
 margin-left: <strong>16px;</strong>
 margin-right: <strong>16px;</strong>
 float: right
 
 <strong>GEL Group 4: 1008px+</strong>
-width: <strong>368px;</strong>&nbsp;<i>//excluding margins</i>]
+width: 315px <i>fixed width panels at this point.</i>
 margin-left: <strong>16px;</strong>
 margin-right: <strong>16px;</strong>
 float: right
@@ -872,7 +883,7 @@ padding-left: 16px
   <h3>Initial Presentation</h3>
   <div class="bbcid-actions blq-clearfix">
     <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-    <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
+    <a href="#" class="bbcid-button cancel">Cancel</a> 
   </div>
 
   <div class="bbcid-styleguide-notes">
@@ -911,7 +922,7 @@ padding-left: 10px
   <h3>Active State</h3>
   <div class="bbcid-actions blq-clearfix">
     <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-    <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
+    <a href="#" class="bbcid-button cancel">Cancel</a> 
   </div>
 
   <div class="bbcid-styleguide-notes">
@@ -935,7 +946,7 @@ background-color: #005383
   <p>When the CTA text is too long, the buttons wrap onto 2 lines.</p>
   <div class="bbcid-actions blq-clearfix">
     <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="This is a long button" type="submit">
-    <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Long Cancel Text</a> 
+    <a href="#" class="bbcid-button cancel">Long Cancel Text</a> 
   </div>
 
 

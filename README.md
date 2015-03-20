@@ -1,4 +1,10 @@
 # iD Styleguide
-## responsive iD styleguide - tests
 
-Hello World
+Responsive live styleguide for BBC iD. Based on current design (id 4.x).
+
+Viewable at: http://bbc.github.io/idstyleguide
+
+Contributors:
+- @tspear (Tim Spear) - myBBC UXD
+- @danielgonzalezbbc (Daniel Gonzalez) - myBBC UXD
+- @clementallen (Clement Allen)- myBBC dev.

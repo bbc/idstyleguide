@@ -49,6 +49,19 @@ a:hover {
   color: #013452; 
 }
 
+  
+.bbcid-styleguide-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 240px;
+  padding: 0.75em;
+  background-color: hsla(201, 80%, 45%, 0.7);
+  font-size: 0.813em;
+  text-align: left;
+  color: #fff;
+  z-index: 1;
+}
 
 .bbcid-styleguide-container {
   min-width: 240px;
@@ -58,6 +71,10 @@ a:hover {
   background-color: white;
   padding: 1em 0.5em;
   margin-top: 3em; /* Adds margin at top of page so GEL group size display doesn't overlap header text */
+  margin-bottom: 2em;
+}
+
+.bbcid-styleguide-demosection {
   margin-bottom: 2em;
 }
 
@@ -106,6 +123,12 @@ img.bbcid-styleguide-exampleimg {
 }
 .bbcid-styleguide-menu-list li {
   list-style: none;
+}
+
+@media only screen and (min-width: 320px) {
+  .bbcid-styleguide-nav {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 400px) {
@@ -158,7 +181,7 @@ img.bbcid-styleguide-exampleimg {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-/*email*/
+/* email */
 p.email-doublecheck {
     color: #159008;
     font-weight: bold;
@@ -167,10 +190,22 @@ p.email-doublecheck {
     word-wrap: break-word;
 }
 
+.bbcid-form .bbcid-forgotpassword {
+    text-align: right;
+    margin-top: 8px;
+}
+
+
+.bbcid-styleguide-type .caption { /* utility class to add vertical space? */
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+
 @media only screen and (min-width: 320px) { /* GEL Group 1b */
   .bbcid-styleguide-type p,
   .bbcid-styleguide-type a {
-      font-size: 1rem; /*16px*/
+      font-size: 1rem; /* 16px */
       line-height: 1.250rem; 
   }
 
@@ -421,7 +456,7 @@ ul.grid {
 
 .bbcid-panel-1col {
   background-color: #FFF;
-  max-width: 928px; /* for GEL group 4 */
+  max-width: 944px; /* for GEL group 4 */
   
   padding-left: 8px;
   padding-right: 8px;
@@ -502,16 +537,12 @@ padding-bottom: 1em;
 @media only screen and (min-width: 900px) { /* GEL Group 3b */
 
   .bbcid-panel-2col-content {
-    width: 65%;
-    min-width: 533px; /* for GEL group 4 */
-    max-width: 616px; /* for GEL group 4 */
+    width: 62%;
     margin-right: 16px;
   }
 
   .bbcid-panel-2col-info {
-    width: 33%;
-    min-width: 278px;
-    max-width: 300px; /* for GEL group 4 */
+    width: 36%;
   }
 
 }
@@ -526,6 +557,7 @@ padding-bottom: 1em;
   }
 
   .bbcid-panel-2col-info {
+    /* this panel is fixed 315 at group 4*/
     width: 315px;
     max-width: 315px;
   }
@@ -912,7 +944,10 @@ padding-bottom: 1em;
 
 @media only screen and (min-width: 600px) { /* GEL Group 3a */
  
- .bbcid-form input.text,.bbcid-form input.password,.bbcid-form select {
+ .bbcid-form input.text,
+ .bbcid-form input.password,
+ .bbcid-form select,
+ .bbcid-form .bbcid-forgotpassword {
     max-width: 252px; /* need to leave room for inline hint. */
   }
 
@@ -947,7 +982,7 @@ padding-bottom: 1em;
     display: inline-block;
     position: relative;
     top: -48px;
-    right: -279px;
+    right: -270px;
   }
 
   .togglefix { /* temp fix to make this work with toggle buttons */
@@ -1433,18 +1468,22 @@ padding-bottom: 1em;
   RESPONSIVE REPORTER
 */
 body:after {
-  content: "GEL Group 1A: 240px - 319px";
+  content: "Group 1A: <319px";
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 0;
   padding: 0.75em;
-  background-color: hsla(201, 80%, 45%, 0.7);
+  background-color: hsla(201, 80%, 45%, 0.5);
+  font-size: 0.813em;
   text-align: center;
   color: #fff;
+  z-index: 2;
 }
+
 @media only screen and (min-width: 320px) {
   body:after {
-    content: "GEL Group 1B: 320px - 399px";
+    content: "Group 1B: 320px - 399px";
+    font-size: 1em;
   } 
 }
 @media only screen and (min-width: 400px) {

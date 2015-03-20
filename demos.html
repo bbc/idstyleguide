@@ -25,14 +25,17 @@
   <section class="bbcid-styleguide-section">
     <h1>iD Styleguide - Demo's</h1>
     <p>A selection of iD content to test the styleguide components.</p>
-    <a href="index.html">Patterns</a><br>
-    <a href="demos.html">Demos</a>
+
+    <a href="index.html">Return to Patterns.</a>
+
   </section>
 
 
 
 
+
 <!-- MESSAGE DEMO -->
+<section class="bbcid-styleguide-demosection">
 
 <h2>Message</h2>
 
@@ -40,29 +43,32 @@
   <div class="bbcid-panel-bg">
     <div class="bbcid-panel-1col bbcid-styleguide-type">
 
-    <h1>Headline h1</h1>
+    <h2>Headline h2</h2>
 
-  <p>Some sample message text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+  <p>Some sample message text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
     <div>
       <p class="email-doublecheck">an_email_address@domain.com</p>
     </div>
 
+    <p class="caption">
+      
+    </p><!-- For some reason there is a spacer element in live iD -->
+
     <!-- CTA -->
     <div class="bbcid-actions blq-clearfix">
-      <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-      <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
+      <a href="#" class="bbcid-button continue">Continue</a> 
     </div>
 
     </div>
   </div>
-
+</section>
 <!-- END MESSAGE DEMO -->
 
 
 
 <!-- FORM DEMO (SIGN-IN) -->
+<section class="bbcid-styleguide-demosection">
 
 <h2>Form</h2>
 
@@ -91,13 +97,33 @@
       </div>
 
 
-      <p>forgot password?</p>
+      <p class="bbcid-forgotpassword">
+      <a href="#">forgot password?</a>
+      </p>
+
+
+
+    <div class="bbcid-field-container unique-container bbcid-hint">
+      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+
+      <div class="bbcid-hint-1col">
+        <strong>Primary hint message.</strong><br>
+        <span>Secondary hint message to add clarity.</span>
+      </div>
+      
+      <div class="bbcid-hint-2col">
+      <strong>Primary hint message.</strong><br>
+      <span>Secondary hint message to add clarity.</span>
+      </div>    
+
+    </div>
 
       <!-- CTA -->
 
       <div class="bbcid-actions blq-clearfix">
         <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-        <a href="http://www.bbc.co.uk/" class="bbcid-button cancel">Cancel</a> 
+        <a href="#" class="bbcid-button cancel">Cancel</a> 
       </div>
 
   </form>
@@ -119,7 +145,7 @@
 
 
 </div>
-
+</section>
 <!-- END FORM DEMO (SIGN-IN) -->
 
 
