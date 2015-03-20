@@ -421,7 +421,7 @@ ul.grid {
 
 .bbcid-panel-1col {
   background-color: #FFF;
-  max-width: 928px; /* for GEL group 4 */
+  max-width: 944px; /* for GEL group 4 */
   
   padding-left: 8px;
   padding-right: 8px;
@@ -502,16 +502,12 @@ padding-bottom: 1em;
 @media only screen and (min-width: 900px) { /* GEL Group 3b */
 
   .bbcid-panel-2col-content {
-    width: 65%;
-    min-width: 533px; /* for GEL group 4 */
-    max-width: 616px; /* for GEL group 4 */
+    width: 62%;
     margin-right: 16px;
   }
 
   .bbcid-panel-2col-info {
-    width: 33%;
-    min-width: 278px;
-    max-width: 300px; /* for GEL group 4 */
+    width: 36%;
   }
 
 }
@@ -526,6 +522,7 @@ padding-bottom: 1em;
   }
 
   .bbcid-panel-2col-info {
+    /* this panel is fixed 315 at group 4*/
     width: 315px;
     max-width: 315px;
   }
