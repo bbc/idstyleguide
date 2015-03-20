@@ -7,4 +7,4 @@ Viewable at: http://bbc.github.io/idstyleguide
 Contributors:
 - @tspear (Tim Spear) - myBBC UXD
 - @danielgonzalezbbc (Daniel Gonzalez) - myBBC UXD
-- @clementallen - myBBC dev.
+- @clementallen (Clement Allen)- myBBC dev.
