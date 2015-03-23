@@ -700,6 +700,8 @@ padding-bottom: 1em;
   padding: 8px;
   border:1px solid #a7a7a7;
   border-radius: 0;
+  -webkit-border-radius: 0;
+
   font-size: 0.813em;
   font-family:Arial,sans-serif;
 }
