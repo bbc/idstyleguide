@@ -62,6 +62,12 @@ a:hover {
   color: #fff;
   z-index: 1;
 }
+.bbcid-styleguide-nav a {
+  font-size: 0.7em;
+  color: #005383;
+  display: none;
+}
+
 
 .bbcid-styleguide-container {
   min-width: 240px;
@@ -104,8 +110,9 @@ a:hover {
 
 div.bbcid-styleguide-notes div{
   background-color: #F7F7F9;
-  border: px solid #DCEAF3;
+  border: 1px solid #DCEAF3;
   padding: 0.25em 1em;
+  border-radius: 0.25em;
 }
 
 img.bbcid-styleguide-img-responsive {
@@ -136,6 +143,13 @@ img.bbcid-styleguide-exampleimg {
     margin-left: 16px;
     margin-right: 16px;
   }
+  .bbcid-styleguide-nav a {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
 }
 
 
@@ -1493,7 +1507,7 @@ body:after {
 }
 @media only screen and (min-width: 400px) {
   body:after {
-    content: "GEL Group 2: 400px - 599px";
+    content: "Group 2: 400px - 599px";
   } 
 }
 @media only screen and (min-width: 600px) {
