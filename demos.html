@@ -1,40 +1,41 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>iD Styleguide - Demo's</title>
-        <meta name="description" content="id Styleguide">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>BBC iD Styleguide - Demos</title>
+<meta name="description" content="id Styleguide">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bbc-id.css">
-    </head>
-    <body>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/demos.css">
 
-    <nav class="bbcid-styleguide-nav">
-      iD StyleGuide
-      <a href="index.html">Patterns</a></li>
-      <a href="demos.html">Demos</a></li>
-    </nav>
+</head>
+<body>
+
+<nav class="bbcid-styleguide-nav">
+iD StyleGuide
+<a href="index.html">Patterns</a></li>
+<a href="demos.html">Demos</a></li>
+</nav>
 
 <div class="bbcid-styleguide-container">
 
-  <!-- 
+<!-- 
 
 
-        INDEX
+INDEX
 
 
-  -->
+-->
 
-  <section class="bbcid-styleguide-section">
-    <h1>iD Styleguide - Demo's</h1>
-    <p>A selection of iD content to test the styleguide components.</p>
+<section class="bbcid-styleguide-section">
+<h1>BBC iD Styleguide - Demos</h1>
+<p>A selection of iD content to test the styleguide components.</p>
 
-    <a href="index.html">Return to Patterns.</a>
+<a href="index.html">Return to Patterns.</a>
 
-  </section>
+</section>
 
 
 
@@ -45,29 +46,23 @@
 
 <h2>Message</h2>
 
+<div class="bbcid-panel-bg">
+<div class="bbcid-panel-1col bbcid-styleguide-type">
 
-  <div class="bbcid-panel-bg">
-    <div class="bbcid-panel-1col bbcid-styleguide-type">
+<img style="float: left; margin-left: 40px;" class="bbcid-styleguide-img-responsive page-icon-message" src="img/page-icons/pageicon-valid.png" alt="Valid">
 
-    <h2>Headline h2</h2>
-
-  <p>Some sample message text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-    <div>
-      <p class="email-doublecheck">an_email_address@domain.com</p>
-    </div>
-
-    <p class="caption">
-      
-    </p><!-- For some reason there is a spacer element in live iD -->
-
-    <!-- CTA -->
-    <div class="bbcid-actions blq-clearfix">
-      <a href="#" class="bbcid-button continue">Continue</a> 
-    </div>
-
-    </div>
+<div class="message-reflow">
+  <h2>Your registration is complete</h2>
+  <p class="bbcid-styleguide-type">You can sign in with your email address:</p>
+  <p class="email-doublecheck">email@email.com</p>
+  <p class="caption"></p>
+  <div class="bbcid-actions blq-clearfix">
+    <a href="#" class="bbcid-button continue">Continue</a> 
   </div>
+</div>
+
+</div>
+</div>
 </section>
 <!-- END MESSAGE DEMO -->
 
@@ -80,73 +75,43 @@
 
 <div class="bbcid-panel-bg blq-clearfix">
 
-          <div class="bbcid-panel-container blq-clearfix">
+<div class="bbcid-panel-container blq-clearfix">
 
+<!--div class="bbcid-can-move">
+  <p class="bbcid-pre-form bbcid-mode-switch"> Don't have a BBC iD? Please <a href="#">register</a>.
+  </p>
+</div-->
 
-    <div class="bbcid-panel-2col-content bbcid-styleguide-type">
-
-  <form class="bbcid-form"> 
-
-      <!-- Username -->
-
-      <div class="bbcid-field-container unique-container">
-        <label for="bbcid_unique" class="bbcid_unique_label">Email</label> 
-        <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
-      </div>
-      
-
-      <!-- Password  -->
-        
-      <div class="bbcid-field-container unique-container">
-        <label for="bbcid_unique" class="bbcid_unique_label">Password</label> 
-        <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
-      </div>
-
-
-      <p class="bbcid-forgotpassword">
-      <a href="#">forgot password?</a>
-      </p>
+<div class="bbcid-panel-2col-content bbcid-styleguide-type">
 
 
 
-    <div class="bbcid-field-container unique-container bbcid-hint">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+<form action="https://ssl.bbc.co.uk/id/signin" method="post" class="bbcid-form" id="bbcid-signin-form" novalidate="true"> <div class="bbcid-fields blq-clearfix">       <div class="bbcid-field-container unique-container">  <label for="bbcid_unique" class="bbcid_unique_label">  <span class="bbcid_label_main">Email or username</span> <span class="bbcid-hide"> </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label> <input type="text" class="text" autocomplete="off" name="unique" id="bbcid_unique" value=""> </div>                                <div class="bbcid-field-container password-container">  <label for="bbcid_password" class="bbcid_password_label">  <span class="bbcid_label_main">Password</span> <span class="bbcid-hide"> </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label>  <input type="password" class="password" autocomplete="off" placeholder="" name="password" id="bbcid_password" value="">  <p class="bbcid-forgotpassword"><a href="#">Forgot your password?</a></p>  </div>                                <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced"><a href="#" class="checked"></a>   <input type="hidden" name="rememberme" id="bbcid_rememberme_default" value="1">    <label for="bbcid_rememberme" class="bbcid_rememberme_label">  <span class="bbcid_label_main">Remember me</span> <span class="bbcid-hide">. </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label>  <span class="description">Untick if you're using a shared computer.</span>  </div>                           </div> <div class="bbcid-actions blq-clearfix"> <input type="submit" class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" title="To submit the form, please complete all the fields."> <a href="#" class="bbcid-button cancel">Cancel</a> </div> </form>
 
-      <div class="bbcid-hint-1col">
-        <strong>Primary hint message.</strong><br>
-        <span>Secondary hint message to add clarity.</span>
-      </div>
-      
-      <div class="bbcid-hint-2col">
-      <strong>Primary hint message.</strong><br>
-      <span>Secondary hint message to add clarity.</span>
-      </div>    
+</div>
 
+
+<!-- INFO PANEL -->
+
+<div class="bbcid-panel-2col-info">
+<div class="bbcid-panel-message">
+
+<img class="bbcid-styleguide-img-responsive about-bbc-id" src="img/aboutBBCiD.png" class="bbcid-styleguide-img-responsive">
+
+<div class="minimal-id">
+  <div class="bbcid-section-info">
+    <div class="bbcid-subsection-whatis-minimal">
+      <a style="float:left; font-weight: bold;" href="https://ssl.bbc.co.uk/id/info">About BBC iD</a>
+      <img class="right-arrow" src="img/right-arrow.png">
     </div>
-
-      <!-- CTA -->
-
-      <div class="bbcid-actions blq-clearfix">
-        <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-        <a href="#" class="bbcid-button cancel">Cancel</a> 
-      </div>
-
-  </form>
-
   </div>
+</div>
+
+</div>
+</div>
 
 
-      <!-- INFO PANEL -->
-
-            <div class="bbcid-panel-2col-info">
-              <div class="bbcid-panel-message">
-                <p>Info Panel - Content</p>
-              </div>
-            </div>
-
-
-          </div>
+</div>
 
 
 
@@ -155,11 +120,18 @@
 <!-- END FORM DEMO (SIGN-IN) -->
 
 
+<!-- FORM+MESSAGE DEMO -->
+<section class="bbcid-styleguide-demosection">
+  <h2>Form + Message</h2>
+</section>
+<!-- END FORM+MESSAGE DEMO -->
 
 
-
-
-
+<!-- SETTINGS DEMO -->
+<section class="bbcid-styleguide-demosection">
+  <h2>Settings</h2>
+</section>
+<!-- END SETTINGS DEMO -->
 
 
 </div> <!-- /bbcid-styleguide-container -->
@@ -167,25 +139,25 @@
 
 <!-- 
 
-    SCRIPTS 
+SCRIPTS 
 
 
 -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/vendor/jquery-ui.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script>
-          $(function() {
-            $( ".bbcid-styleguide-notes" ).accordion({
-              collapsible: true,
-              active: false
-            });
-            $( ".bbcid-text-dropdown" ).accordion({
-              collapsible: true,
-              active: false
-            });
-          });
-        </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/vendor/jquery-ui.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script>
+$(function() {
+$( ".bbcid-styleguide-notes" ).accordion({
+collapsible: true,
+active: false
+});
+$( ".bbcid-text-dropdown" ).accordion({
+collapsible: true,
+active: false
+});
+});
+</script>
 
-    </body>
+</body>
 </html>
