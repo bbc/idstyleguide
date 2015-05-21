@@ -140,9 +140,6 @@ img.bbcid-styleguide-exampleimg {
   list-style: none;
 }
 
-@media only screen and (min-width: 320px) {
-}
-
 @media only screen and (min-width: 400px) {
   .bbcid-styleguide-container {
     margin-left: 16px;
@@ -151,10 +148,6 @@ img.bbcid-styleguide-exampleimg {
   .bbcid-styleguide-nav a {
     display: inline;
   }
-}
-
-@media only screen and (min-width: 600px) {
-
 }
 
 
@@ -230,12 +223,6 @@ p.email-doublecheck {
     text-align: right;
     margin-top: 8px;
 }
-
-
-/*.bbcid-styleguide-type .caption { /* utility class to add vertical space?
-    font-weight: bold;
-    margin-bottom: 24px;
-}*/
 
 @media only screen and (max-width: 319px) { /* GEL Group 1a */
   .bbcid-styleguide-type p,
@@ -367,10 +354,6 @@ p.email-doublecheck {
     /*margin-left: 256px;*/
   }
 
-  .valid-icon {
-    background-image: url(img/page-icons/pageicon-valid.png);
-  }
-
   p.bbcid-pre-form, h3.bbcid-pre-form {
     padding: 16px;
     font-size: 16px;
@@ -431,131 +414,6 @@ p.email-doublecheck {
 
 }
 
-
-
-/*
-
-
-    COLOURS
-
-
-*/
-
-
-ul.grid {
-  padding-left: 0;
-}
-
-.style-guide-colours__base {
-  display: inline-block;
-  width: 100%;
-}
-
-
-.style-guide-colours__inner {
-  padding: 16px 16px 0 16px;
-  background-color: white;
-}
-
-.style-guide-colours__section-colour,
-.style-guide-colours__colour {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.style-guide-colours__colour {
-  width: 28%;
-  padding-left: 5px;
-  padding-right: 5px; 
-}
-
-@media all and (min-width: 25em) { /* GEL Group 2 */
-    .style-guide-colours__colour {
-      width: 20%;
-    }
-}
-@media all and (min-width: 37.5em) { /* GEL Group 3 */
-    .style-guide-colours__colour {
-      width: 12%;
-    }
-}
-
-
-
-.style-guide-colours__section-colour {
-  width: 25%;
-}
-
-.style-guide-colour {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.style-guide-colour__circle {
-  display: block;
-  width: 100%;
-  padding-bottom: 100%;
-  padding-bottom: calc(100% - 2px);
-  height: 0;
-  border-radius: 50%;
-  text-align: center;
-  margin-bottom: 20px;
-  border: 1px solid #EDEDED;
-  position: relative;
-}
-
-.style-guide-colour__circle:after {
-  display: block;
-  position: absolute;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100%;
-  bottom: -20px;
-}
-
-.style-guide-colour__label {
-  display: block;
-}
-
-/* COLOUR REFS FOR SWATCHES */
-/* iD Header */
-.style-guide-colour--id-header .style-guide-colour__circle {
-  background-color: #1790CF;
-}
-.style-guide-colour--id-header .style-guide-colour__circle:after {
-  content: "#1790CF";
-}
-/* iD Header - BBC iD */
-.style-guide-colour--id-header-bbc-id .style-guide-colour__circle {
-  background-color: #E0F4FF;
-}
-.style-guide-colour--id-header-bbc-id .style-guide-colour__circle:after {
-  content: "#E0F4FF";
-}
-/* Links & Secondary CTA */
-.style-guide-colour--secondary-cta .style-guide-colour__circle {
-  background-color: #005383;
-}
-.style-guide-colour--secondary-cta .style-guide-colour__circle:after {
-  content: "#005383";
-}
-/* Links (Hover) */
-.style-guide-colour--links-hover .style-guide-colour__circle {
-  background-color: #013452;
-}
-.style-guide-colour--links-hover .style-guide-colour__circle:after {
-  content: "#013452";
-}
-/* Inactive CTA */
-.style-guide-colour--inactive-cta .style-guide-colour__circle {
-  background-color: #C0C0C0;
-}
-.style-guide-colour--inactive-cta .style-guide-colour__circle:after {
-  content: "#C0C0C0";
-}
-
-/* END COLOURS */
 
 /*
 
@@ -678,7 +536,6 @@ padding-bottom: 1em;
 }
 
 .bbcid-panel-form,
-.bbcid-panel-message,
 .bbcid-panel-3rdparty,
 .bbcid-panel-informationbox,
 .bbcid-panel-form-message,
@@ -693,20 +550,30 @@ padding-bottom: 1em;
 
 
 /* RESPONSIVE SIZES */
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 319px) {
+  .about-bbc-id, .page-icon-message {
+    display: none;
+  }
+}
 
+@media only screen and (max-width: 599px) {
+  .page-icon-message {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 400px) {
   .bbcid-panel-1col,
-  .bbcid-panel-2col-content,
-  .bbcid-panel-2col-info {
+  .bbcid-panel-2col-content {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 899px) {
+  .about-bbc-id {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 900px) { /* GEL Group 3b */
@@ -835,28 +702,6 @@ padding-bottom: 1em;
 }
 
 
-/* PAGE ICONS */
-.style-guide-pageicons {
-  display: inline-block;
-  vertical-align: top;
-  width: 28%;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow: auto;
-}
-
-@media all and (min-width: 25em) { /* GEL Group 2 */
-    .style-guide-pageicons {
-      /*width: 20%;*/
-    }
-}
-@media all and (min-width: 37.5em) { /* GEL Group 3 */
-    .style-guide-pageicons {
-      /*width: 12%;*/
-    }
-}
-
-
 /*
 
 
@@ -904,101 +749,6 @@ padding-bottom: 1em;
 
   font-size: 0.813em;
   font-family:Arial,sans-serif;
-}
-
-
-/* DOB FIELDS (EXISTING) */
-
-
-#bbcid_dateofbirthundersixteen_day,#bbcid_dateofbirthundersixteen_month,#bbcid_dateofbirth_day,#bbcid_dateofbirth_month{
-  width:40px;
-  display:inline;
-  text-align:center;
-  margin-right:8px
-}
-
-.bbcid-rtl #bbcid_dateofbirthundersixteen_day .bbcid-rtl #bbcid_dateofbirth_day,
-.bbcid-rtl #bbcid_dateofbirthundersixteen_day,
-.bbcid-rtl #bbcid_dateofbirth_day{
-  margin-right:0
-}
-
-#bbcid_dateofbirthundersixteen_year,#bbcid_dateofbirth_year{
-  width:52px;
-  display:inline;
-  text-align:center
-}
-
-.bbcid-rtl #bbcid_dateofbirthundersixteen_year,
-.bbcid-rtl #bbcid_dateofbirth_year{
-  margin-right:8px
-}
-
-.bbcid-form .dateofbirthundersixteen-container.bbcid-warning input.text,
-.bbcid-form .dateofbirthundersixteen-container.bbcid-error input.text,
-.bbcid-form .dateofbirthundersixteen-container.bbcid-valid input.text,
-.bbcid-form .dateofbirth-container.bbcid-warning input.text,
-.bbcid-form .dateofbirth-container.bbcid-error input.text,
-.bbcid-form .dateofbirth-container.bbcid-valid input.text{
-  padding:8px
-}
-
-
-/* DOB - VALIDATION STATES */
-.bbcid-rtl .bbcid-error #bbcid_dateofbirthundersixteen_day,
-.bbcid-rtl .bbcid-error #bbcid_dateofbirthundersixteen_month,
-.bbcid-rtl .bbcid-error #bbcid_dateofbirthundersixteen_year,
-.bbcid-rtl .bbcid-error #bbcid_dateofbirth_day,
-.bbcid-rtl .bbcid-error #bbcid_dateofbirth_month,
-.bbcid-rtl .bbcid-error #bbcid_dateofbirth_year{
-  background-position:263px -922px;
-  padding-left:8px
-}
-
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_day,
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_month,
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirthundersixteen_year,
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_day,
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_month,
-.bbcid-rtl .bbcid-warning #bbcid_dateofbirth_year{
-  background-position:263px -922px;
-  padding-left:8px
-}
-
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_day,
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_month,
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirthundersixteen_year,
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_day,
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_month,
-.bbcid-rtl .bbcid-valid #bbcid_dateofbirth_year{
-  background-position:263px -922px;
-  padding-left:6px
-}
-
-.bbcid-form .dateofbirthundersixteen-container.bbcid-error,.bbcid-form .dateofbirth-container.bbcid-error{
-  background:url(img/sprite.png);
-}
-
-.bbcid-rtl .bbcid-form .dateofbirthundersixteen-container.bbcid-error,.bbcid-rtl .bbcid-form .dateofbirth-container.bbcid-error{
-
-}
-
-.bbcid-form .dateofbirthundersixteen-container.bbcid-warning,.bbcid-form .dateofbirth-container.bbcid-warning{
-  background:url(img/sprite.png) no-repeat;
-  background-position:224px -904px
-}
-
-.bbcid-rtl .bbcid-form .dateofbirthundersixteen-container.bbcid-warning,.bbcid-rtl .bbcid-form .dateofbirth-container.bbcid-warning{
-  background-position:310px -904px
-}
-
-.bbcid-form .dateofbirthundersixteen-container.bbcid-valid,.bbcid-form .dateofbirth-container.bbcid-valid{
-  background:url(img/sprite.png) no-repeat;
-  background-position:224px -767px
-}
-
-.bbcid-rtl .bbcid-form .dateofbirthundersixteen-container.bbcid-valid,.bbcid-rtl .bbcid-form .dateofbirth-container.bbcid-valid{
-  background-position:310px -767px
 }
 
 
@@ -1481,219 +1231,6 @@ right: -20px;
 }
 
 
-
-
-
-
-
-
-
-/**
-
-
-
-    TOGGLE BUTTONS
-
-
-
-**/
-
-.bbcid-form .bbcid-field-container{
-  margin-bottom:16px;
-}
-
-.bbcid-rtl p.bbcid-pre-form,
-.bbcid-rtl p.bbcid-post-form,
-.bbcid-rtl .bbcid-display-field-container p,
-.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-radios-container label,
-.bbcid-mobile-container.bbcid-rtl .bbcid-form .bbcid-radios-container label,
-.bbcid-mobile-container.bbcid-rtl .bbcid-form .isageold-container label,
-.bbcid-rtl .bbcid-content .alreadyhaveaccount-container p{
-  font-size: 1.39em;
-  line-height: 18px;
-}
-
-
-.bbcid-form .bbcid-radios-container{
-  width: 100%;
-}
-
-.bbcid-form .bbcid-radios-container label{
-  font-size:1.230em;
-  float:left;
-  position:static;
-  width:auto;
-  padding:0 10px 0 10px;
-  letter-spacing:0;
-  margin-bottom:0
-}
-
-.bbcid-rtl .bbcid-form .bbcid-radios-container label{
-  float:right
-}
-
-.ie6 .bbcid-form .bbcid-radios-container input.radio,.ie7 .bbcid-form .bbcid-radios-container input.radio{
-  margin-top:0
-}
-
-.bbcid-form .bbcid-radios-container input.radio{
-  float:left;
-  clear:both;
-  width:auto;
-  margin:4px 0 0 0
-}
-
-.bbcid-rtl .bbcid-form .bbcid-radios-container input.radio{
-  float:right
-}
-
-.bbcid-form .bbcid-radios-container .bbcid_false_container,.bbcid-form .bbcid-radios-container .bbcid_true_container{
-  float:left;
-  width:100%
-}
-
-.bbcid-rtl .bbcid-radios-container .bbcid_false_container,.bbcid-rtl .bbcid-radios-container .bbcid_true_container{
-  float:right
-}
-
-.bbcid-form .bbcid-radios-container .bbcid_false_container{
-  margin-top:0;
-  margin-bottom:10px
-}
-
-.bbcid-form .radio-javascript-enabled input.radio{
-  display:none
-}
-
-.bbcid-form .radio-javascript-enabled .bbcid_false_container,
-.bbcid-form .radio-javascript-enabled .bbcid_true_container{
-  margin-top:0;
-  width:auto;
-  padding-right:10px
-}
-
-.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_false_container,
-.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid_true_container{
-  padding-right:0;
-  padding-left:10px
-}
-
-.bbcid-form .radio-javascript-enabled a,
-.bbcid-form .radio-javascript-enabled a{
-  text-decoration:none;
-  display:block
-}
-
-.bbcid-form .radio-javascript-enabled .bbcid-label-hint{
-  top:24px
-}
-
-.bbcid-form .radio-javascript-enabled .bbcid_false_container{
-  margin-bottom:0
-}
-
-
-
-/* main toggles button style */
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label{
-  padding: 8px 21px 8px 22px;
-  background-color:#1790cf;
-  color: #fff;
-  font-size: 1em;
-  text-align: right;
-  white-space: nowrap;
-  float: none;
-  cursor: pointer;
-  position: relative;
-  margin-bottom: 8px;
-}
-
-
-
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.inactive {
-  background-color:#a7a7a7
-}
-
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:hover,
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label:focus,
-.bbcid-form .radio-javascript-enabled .bbcid-radios-container label.active{
-  background-color:#005383
-}
-
-.bbcid-form .radio-javascript-enabled .bbcid-toggle-tick {
-  width: 13px;
-  height: 11px;
-  background: url(../img/sprite.png) no-repeat;
-  background-position: 0 -1066px;
-  left: 10px;
-  top: 12px;
-  position: absolute;
-  display: block;
-  opacity: 0;
-}
-
-.bbcid-rtl .bbcid-form .radio-javascript-enabled .bbcid-toggle-tick {
-  left:auto;
-  right:10px
-}
-
-
-
-/* Toggles - Responsive Styles */
-
-@media only screen and (min-width: 320px) { /* GEL Group 1b */
-
-  .bbcid-form .radio-javascript-enabled .bbcid-radios-container label {
-    padding: 8px 21px 8px 22px;
-  }
-
-}
-
-
-
-
-/**
-
-
-    RADIO BUTTONS
-
-
-**/
-
-
-  label.bbcid-radio {
-    font-size: 0.813em;
-    font-weight: bold;
-  }
-
-
-  .bbcid-radio-item {
-      min-width: 112px;
-      float: left;
-  }
-
-  /* Toggles - Responsive Styles */
-
-  @media only screen and (min-width: 320px) {
-
-    label.bbcid-radio {
-        font-size: 1em;
-        font-weight: bold;
-    }
-  
-  }
-  @media only screen and (min-width: 400px) {
-
-    .bbcid-radio-item {
-        float: none;
-        margin-bottom: 10px;
-    }
-
-  }
-
-
-
-
 /**
 
 
@@ -1771,40 +1308,72 @@ right: -20px;
 }
 
 
-/* 
+/* NOW THAT THE BASIC ELEMENTS ARE DEFINED, LET'S START WITH THE DEMO TEMPLATES:
+MESSAGE, FORM, FORM + MESSAGE & SETTINGS. */
 
-      DROPDOWNS
+/** 
 
-*/
+MESSAGE 
 
+**/
 
-.bbcid-text-dropdown {
-  font-size: 0.813em;
-}
-
-.caret {
-    display: inline-block;
-    width: 0px;
-    height: 0px;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px solid;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-}
-
-@media only screen and (min-width: 320px) {
-  .bbcid-text-dropdown {
-    font-size: 1em;
+@media only screen and (max-width: 599px) { /* Until GEL Group 2 */
+  .message-reflow {
+    padding: 0px;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .bbcid-text-dropdown {
-    font-size: 0.813em;
+@media only screen and (min-width: 600px) { /* GEL Group 3A */
+  .message-reflow {
+    padding-left: 256px;
   }
 }
 
+/** 
+
+FORM
+
+**/
+
+
+@media screen and (max-width: 899px) {
+  .bbcid-section-info {
+    border-top: solid 8px #1790cf;
+    padding: 8px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .bbcid-subsection-whatis-minimal {
+    margin-left: 0px;
+  }
+
+  .right-arrow {
+    float: right;
+    padding: 16px 0px 16px 0px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .bbcid-subsection-whatis-minimal a {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 16px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .right-arrow {
+    float: right;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .minimal-id {
+    display: none;
+  }
+}
 
 
 /**

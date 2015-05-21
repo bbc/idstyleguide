@@ -1,215 +1,276 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>iD - Styleguide Demo</title>
-        <meta name="description" content="id Styleguide">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>iD - Styleguide Demo</title>
+<meta name="description" content="id Styleguide">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bbc-id.css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    </head>
-    <body>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/bbc-id.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
 
-    <nav class="bbcid-styleguide-nav">
-      iD StyleGuide
-      <a href="index.html">Patterns</a></li>
-      <a href="demos.html">Demos</a></li>
-    </nav>
+<nav class="bbcid-styleguide-nav">
+BBC iD Style Guide
+<a href="index.html">Patterns</a></li>
+<a href="demos.html">Demos</a></li>
+</nav>
 
 <div class="bbcid-styleguide-container">
 
-  <!-- 
+<!-- 
 
 
-        INDEX
+TABLE OF CONTENTS
 
 
-  -->
+-->
+<section class="bbcid-styleguide-section">
+	<h1>BBC iD Style Guide</h1>
+	<p>All the elements in this style guide must follow BBC Accessibility Guidelines, for both desktop and mobile devices.</p>
+	<h2>Index</h2>
+	<div class="bbcid-styleguide-menu">
+		<h3 class="bbcid-styleguide-menu-header">Foundation</h3>
+		<ul class="bbcid-styleguide-menu-list">
+			<li><a href="#typography">Typography</a></li>
+			<ul>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#paragraphs">Paragraphs</a></li>
+				<li><a href="#links">Links</a></li>
+				<li><a href="#double-check">Double Check</a></li>
+			</ul>
+			<li><a href="#colours">Colours</a></li>
+		</ul>
 
-  <section class="bbcid-styleguide-section">
-      <h1>BBC iD - Styleguide</h1>
-      <h2>Index</h2>
-      <div class="bbcid-styleguide-menu">
-      <h3 class="bbcid-styleguide-menu-header">Foundation</h3>
-      <ul class="bbcid-styleguide-menu-list">
-        <li><a href="#typography">Typography</a></li>
-        <li><a href="#colours">Colours</a></li>
-      </ul>
-      <h3 class="bbcid-styleguide-menu-header">Layout</h3>
-      <ul class="bbcid-styleguide-menu-list">
-        <li><a href="#headers">Headers</a></li>
-        <li><a href="#panels">Panels</a></li>
-      </ul>
-      <h3 class="bbcid-styleguide-menu-header">Form Components</h3>
-      <ul class="bbcid-styleguide-menu-list">
-        <li><a href="#inputs">Form Inputs &amp; labels</a></li>
-        <li><a href="#cta">CTA's</a></li>
-        <li><a href="#toggle">Toggle Buttons</a></li>
-        <li><a href="#radio">Radio Buttons</a></li>
-        <li><a href="#checkbox">Checkboxes</a></li>
-        <li><a href="#dropdown">Text Dropdown</a></li>
-      </ul>
-    </div>
-    <h2>Pages</h2>
-    <ul>
-        <li><a href="index.html">Patterns</a><br>
-        <li><a href="demos.html">Demos</a>
-    </ul>
-    <a href="#about">About this Styleguide</a>
-  </section>
+		<h3 class="bbcid-styleguide-menu-header">Layout</h3>
+		<ul class="bbcid-styleguide-menu-list">
+			<li><a href="#headers">Headers</a></li>
+			<li><a href="#panels">Panels</a></li>
+			<ul>
+				<li><a href="#one-column">One Column</a></li>
+				<li><a href="#two-columns">Two Columns</a></li>
+				<li><a href="#page-icons">Page Icons</a></li>
+			</ul>
+		</ul>
+		
+		<h3 class="bbcid-styleguide-menu-header">Form Components</h3>
+		<ul class="bbcid-styleguide-menu-list">
+			<li><a href="#inputs">Form Inputs &amp; labels</a></li>
+			<li><a href="#cta">CTA's</a></li>
+			<li><a href="#toggle">Toggle Buttons</a></li>
+			<li><a href="#radio">Radio Buttons</a></li>
+			<li><a href="#checkbox">Checkboxes</a></li>
+			<li><a href="#dropdown">Text Dropdown</a></li>
+		</ul>
+	</div>
+	<h2>Pages</h2>
+		<ul>
+		<li><a href="index.html">Patterns</a><br>
+		<li><a href="demos.html">Demos</a>
+		</ul>
+		<a href="#about">About this Styleguide</a>
+</section>
 
 
 <!-- 
 
 
-    FOUNDATION:
+FOUNDATION:
 
 
 -->
 
 
 <!-- TYPOGRAPHY -->
- <section id="typography" class="bbcid-styleguide-section grid-container">
-    
-    <h2>Typography</h2>
+<section id="typography" class="bbcid-styleguide-section grid-container">
 
-    <p>General font sizing for paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.<p>
-    
-    <div class="bbcid-styleguide-type">
-      <h2>This a headline for message pages.</h2>
-    </div>
+<h2>Typography</h2>
 
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-    <div>
+<p>General font sizing for paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.<p>
+
+
+
+<!--
+
+HEADINGS
+
+-->
+<h3 id="headings">Headings</h3>
+
+<code><pre>These headings need to be redefined according to GEL Guidelines for iD Visual Refresh. For h1, please visit <a href="#headers">Headers</a> section.</pre></code>
+
+<div class="bbcid-styleguide-type">
+<h2>This a heading h2.</h2>
+</div>
+
+<div class="bbcid-styleguide-type">
+<h3>This a heading h3.</h3>
+</div>
+
+<div class="bbcid-styleguide-type">
+<h4>This a heading h4.</h4>
+</div>
+
+<div class="bbcid-styleguide-type">
+<h5>This a heading h5.</h5>
+</div>
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>GEL Group 1a:</strong>
-font-size: 20px
-line-height: 20px
-letter-spacing: -1px
+<strong>This is how headings are CURRENTLY defined. They should follow GEL guidelines. </strong>
+
+<strong>GEL Group 1A:</strong>
+H2 &amp; H3 - font-size: 20px
+H4 - font-size: 16px;
+H5 - font-size: 13px;
+
+<strong>GEL Group 1B &amp; 2:</strong>
+H2 &amp; H3: font-size: 24px
+H4 - font-size: 16px;
+H5 - font-size: 13px;
+
+<strong>GEL Group 3A, 3B &amp 4:</strong>
+H2 &amp; H3: font-size: 32px
+H4 - font-size: 13px
+H5 - font-size: 10px;
+
+<strong>All GEL groups:</strong>
+padding-top: 4px
+padding-bottom: 4px
 margin-top: 8px
 margin-bottom: 8px
 
-<strong>GEL Group 1b / 2:</strong>
-font-size: 24px
-line-height: 24px
-margin-top: 8px
-margin-bottom: 8px
-
-<strong>GEL Group 3:</strong>
-font-size: 32em
-line-height: 32px
-padding-above: 4px
-padding-below: 4px
-margin-top: 8px
-margin-bottom: 8px
 </pre>
 </code>
-        </div>
-      </div>
+</div>
+</div>
 
-    <div class="bbcid-styleguide-type">
-      <p>This is an example of paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Here is a second paragraph. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p><strong>This is an example of bold text</strong></p>
-    </div>
 
-    
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
-        <code>
-          <pre>
-<strong>Feature Phone (Responsive group 1a)</strong>
-font-family: Arial, sans-serif
+
+<!--
+
+PARAGRAPHS
+
+-->
+<h3 id="paragraphs">Paragraphs</h3>
+
+<div class="bbcid-styleguide-type">
+<p>This is a paragraph. For GEL group 4, there are 20 words maximum per line of text, for accessibility reasons. <p>
+<p>This is the second paragraph, that has 9 words.</p>
+<p class="morethan20">This is the third paragraph. And because it has more than 20 words, it will split to a second line of text for 1007px+ devices.</p>
+<p><strong>This is an example of bold text in a paragraph.</strong></p>
+</div>
+
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
+<code>
+<pre>
+<strong>GEL Group 1A:</strong>
 font-size: 13px
 line-height: 16px
 margin-bottom: 8px
 
-<strong>Mobile Web (Responsive group 1b - 2)</strong>
-font-family: Arial, sans-serif
+<strong>GEL Group 1B &amp; 2:</strong>
 font-size: 16px
 line-height: 20px
 margin-bottom: 8px;      
 
-<strong>Desktop Web (Responsive group 3)</strong>
-font-family: Arial, sans-serif
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
 font-size: 13px
 line-height: 16px
-margin-bottom: 12px;      
-          </pre>
-        </code>
-      </div>
-    </div>
+margin-bottom: 12px;
+
+<strong>All GEL groups:</strong>
+font-family: Arial, sans-serif
+
+</pre>
+</code>
+</div>
+</div>
 
 
-    
+<!--
 
-    <div class="bbcid-styleguide-type">
-    <p><a href="#typography" class="">This is a standard text link.</a></p>
-    </div>
-    
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
+LINKS
+
+-->
+<h3 id="links">Links</h3>
+
+<div class="bbcid-styleguide-type">
+<p><a href="#typography" class="">This is a standard text link.</a></p>
+</div>
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>Link text - add the following rules:</strong>
-
-<strong>Feature Phone (Responsive group 1a)</strong>
+<strong>GEL Group 1A:</strong>
 color: #005383
 font-weight: bold
 text-decoration: none
 
-<strong>Mobile Web (Responsive group 1b - 2)</strong>
+<strong>GEL Group 1B &amp; 2:</strong>
 color: #005383
 font-weight: bold
 text-decoration: none
 
-<strong>Desktop Web (Responsive group 3)</strong>
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
 color: #005383
 font-weight: regular
 text-decoration: none
 
+<strong>All GEL groups:</strong>
 a:hover - text-decoration: underline
 
 </pre>
 </code>
-    </div>
-    </div>
+</div>
+</div>
 
 
-    <div>
-      <p class="email-doublecheck">an_email_address@domain.com</p>
-    </div>
-    
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
+<!--
+
+DOUBLE CHECK
+
+-->
+<h3 id="double-check">Double Check</h3>
+
+<div>
+<p class="email-doublecheck">email@email.com</p>
+</div>
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>Feature Phone (Responsive group 1a)</strong>
+<strong>GEL Group 1A:</strong>
 font-size: 13px
 line-height: 16px
 margin-bottom: 8px
 
-<strong>Mobile Web (Responsive group 1b - 2)</strong>
+<strong>GEL Group 1B &amp; 2:</strong>
 font-size: 16px
 line-height: 20px
 margin-bottom: 8px      
 
-<strong>Desktop Web (Responsive group 3)</strong>
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
 font-size: 24px
 line-height: 16px
 margin-bottom: 16px      
 </pre>
 </code>
-    </div>
-  </div>
+</div>
+</div>
 
 
 </section><!-- END TYPOGRAPHY -->
@@ -220,57 +281,57 @@ margin-bottom: 16px
 <!-- 
 
 
-      COLOURS
+COLOURS
 
 
 -->
 
 
 
-  <section id="colours" class="bbcid-styleguide-section">
-      <h2>Colours</h2>
-      
-      <div class="grid">
-        <div class="style-guide-colours__base mb">
-          <div class="style-guide-colours__inner">
-          
-            <ul class="grid">
-              <li class="style-guide-colours__colour">
-                <div class="style-guide-colour style-guide-colour--id-header">
-                <div class="style-guide-colour__circle"></div>
-                <span class="style-guide-colour__label"><p>iD Header</p></span>
-                </div>
-              </li>
-              <li class="style-guide-colours__colour">
-                <div class="style-guide-colour style-guide-colour--id-header-bbc-id">
-                <div class="style-guide-colour__circle"></div>
-                <span class="style-guide-colour__label"><p>iD Header - "BBC iD"</p></span>
-                </div>
-              </li>            
-              <li class="style-guide-colours__colour">
-                <div class="style-guide-colour style-guide-colour--secondary-cta">
-                <div class="style-guide-colour__circle"></div>
-                <span class="style-guide-colour__label"><p>Links &amp; Secondary CTA</p></span>
-                </div>
-              </li>
-              <li class="style-guide-colours__colour">
-                <div class="style-guide-colour style-guide-colour--links-hover">
-                <div class="style-guide-colour__circle"></div>
-                <span class="style-guide-colour__label"><p>Links (Hover)</p></span>
-                </div>
-              </li>
-              <li class="style-guide-colours__colour">
-                <div class="style-guide-colour style-guide-colour--inactive-cta">
-                <div class="style-guide-colour__circle"></div>
-                <span class="style-guide-colour__label"><p>Inactive CTA</p></span>
-                </div>
-              </li>
-            </ul>
+<section id="colours" class="bbcid-styleguide-section">
+<h2>Colours</h2>
 
-          </div> <!-- class="style-guide-colours__inner" -->
-        </div> <!-- class="style-guide-colours__base mb" -->
-      </div> <!-- class="grid" -->    
-  </section>
+<div class="grid">
+<div class="style-guide-colours__base mb">
+<div class="style-guide-colours__inner">
+
+<ul class="grid">
+<li class="style-guide-colours__colour">
+<div class="style-guide-colour style-guide-colour--id-header">
+<div class="style-guide-colour__circle"></div>
+<span class="style-guide-colour__label"><p>iD Header</p></span>
+</div>
+</li>
+<li class="style-guide-colours__colour">
+<div class="style-guide-colour style-guide-colour--id-header-bbc-id">
+<div class="style-guide-colour__circle"></div>
+<span class="style-guide-colour__label"><p>iD Header - "BBC iD"</p></span>
+</div>
+</li>            
+<li class="style-guide-colours__colour">
+<div class="style-guide-colour style-guide-colour--secondary-cta">
+<div class="style-guide-colour__circle"></div>
+<span class="style-guide-colour__label"><p>Links &amp; Secondary CTA</p></span>
+</div>
+</li>
+<li class="style-guide-colours__colour">
+<div class="style-guide-colour style-guide-colour--links-hover">
+<div class="style-guide-colour__circle"></div>
+<span class="style-guide-colour__label"><p>Links (Hover)</p></span>
+</div>
+</li>
+<li class="style-guide-colours__colour">
+<div class="style-guide-colour style-guide-colour--inactive-cta">
+<div class="style-guide-colour__circle"></div>
+<span class="style-guide-colour__label"><p>Inactive CTA</p></span>
+</div>
+</li>
+</ul>
+
+</div> <!-- class="style-guide-colours__inner" -->
+</div> <!-- class="style-guide-colours__base mb" -->
+</div> <!-- class="grid" -->    
+</section>
 
 
 <!-- END COLOURS -->
@@ -282,7 +343,7 @@ margin-bottom: 16px
 <!-- 
 
 
-    LAYOUT 
+LAYOUT 
 
 
 -->
@@ -291,66 +352,73 @@ margin-bottom: 16px
 <!-- 
 
 
-   HEADERS
+HEADERS
 
 
 -->
 
 <section id="headers" class="bbcid-styleguide-section">
-  <h2>Headers</h2>      
-  <p>iD-specific header with service name &amp; Logo.</p>
+<h2>Headers</h2>      
+<p>iD-specific header with service name &amp; Logo.</p>
 
-  <div class="bbcid-header">    
-    <h1>SERVICE NAME</h1>
-    <p class="subheader">BBC iD</p>
-  </div>
+<div class="bbcid-header">    
+<h1>SERVICE NAME</h1>
+<p class="subheader">BBC iD</p>
+</div>
 
- <!-- Notes -->
- <div class="bbcid-styleguide-notes">
-  <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-  <div>    
+<!-- Notes -->
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>    
 <code>
 <pre>
-<strong>GEL Group 1a</strong>
-<strong>header bar</strong>
-background: #1790CF
-padding: 0px 7px
-letter-spacing: -0.03em
-overflow: hidden
-max-height: 40px
-<strong>headline h1</strong>
-font-family: "Gill Sans"
-font-weight: 400
-font-size: 24px
-color: white
-line-height: 1.667em
-letter-spacing: -1px
+<strong>GEL Group 1A:</strong>
+	
+	<strong>Header Bar:</strong>
+	background: #1790CF
+	padding: 0px 7px
+	letter-spacing: -0.03em
+	overflow: hidden
+	max-height: 40px
+	
+	<strong>Heading H1:</strong>
+	font-family: "Gill Sans"
+	font-weight: 400
+	font-size: 24px
+	color: white
+	line-height: 1.667em
+	letter-spacing: -1px
 
-<strong>GEL Group 1b / 2</strong>
-<strong>header bar</strong>
-padding: 0px 7px
-letter-spacing: -0.03em
-max-height: 42px
-<strong>headline h1</strong>
-font-size: 26px
+<strong>GEL Group 1B &amp; 2:</strong>
 
-<strong>GEL Group 3 onwards.</strong>
-<strong>header bar</strong>
-padding: 0px 7px
-letter-spacing: -0.03em
-max-height: 42px
-<strong>headline h1</strong>
-font-size: 26px;
-<strong>subheader</strong>
-font-family: "Gill Sans", Arial, sans-serif
-font-size: 34px
-line-height: 2.25em
-letter-spacing: -0.01em
-color: #E0F4FF
-height: 66px
+	<strong>Header Bar:</strong>
+	padding: 0px 7px
+	letter-spacing: -0.03em
+	max-height: 42px
+	
+	<strong>Heading H1:</strong>
+	font-size: 26px
+
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
+	
+	<strong>Header Bar:</strong>
+	padding: 0px 7px
+	letter-spacing: -0.03em
+	max-height: 42px
+	
+	<strong>Heading H1:</strong>
+	font-size: 26px;
+	
+	<strong>Subheader:</strong>
+	font-family: "Gill Sans", Arial, sans-serif
+	font-size: 34px
+	line-height: 2.25em
+	letter-spacing: -0.01em
+	color: #E0F4FF
+	height: 66px
 </pre>
 </code>
-  </div>
+</div>
 </div>
 
 </section>
@@ -360,80 +428,63 @@ height: 66px
 <!-- 
 
 
-   PANELS
+PANELS
 
 -->
 
 <section id="panels" class="bbcid-styleguide-section">
-	
-  <h2>Panels</h2>
-	<p>Panels act as containers for content.</p>
+
+<h2>Panels</h2>
+<p>Panels act as containers for content.</p>
 <p>
 
 
 <p>Layouts fall into 2 types:</p>
 <ul>
-  <li>1 column, full-width layout.</li>
-  <li>2 column layout.</li>
+<li>1 column, full-width layout.</li>
+<li>2 column layout.</li>
 </ul>
 <p>Under GEL Responsive guidlines, all content uses a 1-column layout until breakpoint Group 3b (Content-reflow), at which point some content (eg. forms) can use 2-columns.</p>
 </p>
 <p>The sections below outline the containers required for each layout.</p>
 
-<h3>1-column, Full-width content</h3>
+<h3 id="one-column">One Column (Primary Column)</h3>
 <p>For content such as messages which stay full-width across all breakpoints.</p>
 
-  <!-- 1-column demo -->
-	<h3>Layout:</h3>
+<!-- 1-column demo -->
+<h3>Layout:</h3>
 
-  
-  <div class="bbcid-panel-bg">
-    <div class="bbcid-panel-1col">
-      <div class="bbcid-panel-message">
-        <p>Content</p>
-      </div>
-    </div>
-  </div>
+
+<div class="bbcid-panel-bg">
+<div class="bbcid-panel-1col">
+<div class="bbcid-panel-message">
+<p>Content</p>
+</div>
+</div>
+</div>
 
 <div class="bbcid-styleguide-notes">
-  <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-  <div>
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>GEL Group 1A: 240px - 319px</strong>
+<strong>GEL Group 1A &amp; 1B:</strong>
 width: 100%
 margin-left: <strong>8px</strong>
 margin-right: <strong>8px</strong>
 
-<strong>GEL Group 1B: 320px - 399px</strong>
-width: 100%
-margin-left: <strong>8px</strong>
-margin-right: <strong>8px</strong>
-
-<strong>GEL Group 2: 400px - 599px</strong>
+<strong>GEL Group 2, 3A &amp; 3B:</strong>
 width: 100%
 margin-left: <strong>16px</strong>
 margin-right: <strong>16px</strong>
 
-<strong>GEL Group 3A: 600px - 899px</strong>
-width: 100%
-margin-left: <strong>16px;</strong>
-margin-right: <strong>16px;</strong>
-
-<strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong>
-width: 100%
-margin-left: <strong>16px;</strong>
-margin-right: <strong>16px;</strong>
-
-<strong>GEL Group 4: 1008px+</strong>
+<strong>GEL Group 4:</strong>
 max-width: <strong>976px;</strong>&nbsp;<i>//1008px - 16px (left) - 16px (right)</i>
 margin-left: <strong>16px;</strong>
 margin-right: <strong>16px;</strong>
-
-<strong>nb. GEL Responsive guidelines at Group 4 are subject to change.</strong>
 </pre>
 </code>
-  </div>
+</div>
 </div>
 
 <h4>Examples:</h4>
@@ -448,145 +499,226 @@ margin-right: <strong>16px;</strong>
 
 
 
-<h3>2-column content panel</h3>
+<h3 id="two-columns">2 Columns (Primary &amp; Secondary Column)</h3>
 
 <p>For content such as forms which transform from 1 column to 2. Left-aligned.</p>
 
-  <!-- 2-column content demo -->
-  <h3>Layout:</h3>
+<!-- 2-columns demo -->
+<h3>Layout:</h3>
 
-    <div class="bbcid-panel-bg">
-    <div class="bbcid-panel-container blq-clearfix">
-      <div class="bbcid-panel-2col-content">
-        <div class="bbcid-panel-message">
-          <p>Content</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="bbcid-panel-bg">
+<div class="bbcid-panel-container blq-clearfix">
+<div class="bbcid-panel-2col-content">
+<div class="bbcid-panel-message">
+<p>Content</p>
+</div>
+</div>
+</div>
+</div>
 
 <!-- 2 column content notes -->
-  <div class="bbcid-styleguide-notes">
-    <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-    <div>
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>GEL Group 1A: 240px - 319px</strong>
+<strong>GEL Group 1A &amp; 1B:</strong>
 width: 100%
 padding-left: <strong>8px</strong>
 padding-right: <strong>8px</strong>
 
-<strong>GEL Group 1B: 320px - 399px</strong>
-width: 100%
-padding-left: <strong>8px</strong>
-padding-right: <strong>8px</strong>
-
-<strong>GEL Group 2: 400px - 599px</strong>
+<strong>GEL Group 2 &amp; 3A:</strong>
 width: 100%
 padding-left: <strong>16px</strong>
 padding-right: <strong>16px</strong>
 
-<strong>GEL Group 3A: 600px - 899px</strong>
-width: 100%
-padding-left: <strong>16px;</strong>
-padding-right: <strong>16px;</strong>
-
-<strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong>
+<strong>GEL Group 3B:</strong>
 width: <strong>62%;</strong> <i>(widths must be expressed as percentage at this breakpoint to allow panels to stretch in proportion.</i>
 padding-left: <strong>16px</strong>
 padding-right: <strong>16px</strong>
 margin-right: 16px
 
-<strong>GEL Group 4: 1008px+</strong>
+<strong>GEL Group 4:</strong>
 width: <strong>645px;</strong>&nbsp;
 padding-left: <strong>16px;</strong>
 padding-right: <strong>16px;</strong>
 </pre>
 </code>    
-  </div>
+</div>
 </div>
 
 
 <h4>Examples:</h4>
 
-<h4>Form</h4>
+<h4>Registration Form</h4>
 <img src="img/content-example1.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
-<h4>/settings.</h4>
+<h4>Settings</h4>
 <img src="img/content-example2.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
 
 
 
-<h3>2-column info panel</h3>
+<h3>Info Panel</h3>
 
 <p>For secondary content such as information boxes. Right-aligned.</p>
 
-  <!-- 2-column info demo -->
-  <h3>Layout:</h3>
+<!-- Info demo -->
+<h3>Layout:</h3>
 
-  
-  <div class="bbcid-panel-bg">
-    <div class="bbcid-panel-container blq-clearfix">
-      <div class="bbcid-panel-2col-info">
-        <div class="bbcid-panel-message">
-          <p>Content</p>
-        </div>
-      </div>
-    </div>
-  </div>
+
+<div class="bbcid-panel-bg">
+<div class="bbcid-panel-container blq-clearfix">
+<div class="bbcid-panel-2col-info">
+<div class="bbcid-panel-message">
+<p>Content</p>
+</div>
+</div>
+</div>
+</div>
 
 <!-- 2 column info notes -->
 
 <div class="bbcid-styleguide-notes">
-  <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-  <div>
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>GEL Group 1A: 240px - 319px</strong>
+<strong>GEL Group 1A &amp; 1B:</strong>
 width: 100%
 padding-left: <strong>8px</strong>
 padding-right: <strong>8px</strong>
 
-<strong>GEL Group 1B: 320px - 399px</strong>
-width: 100%
-padding-left: <strong>8px</strong>
-padding-right: <strong>8px</strong>
-
-<strong>GEL Group 2: 400px - 599px</strong>
+<strong>GEL Group 2, 3A &amp; 3B:</strong>
 width: 100%
 padding-left: <strong>16px</strong>
 padding-right: <strong>16px</strong>
 
-<strong>GEL Group 3A: 600px - 899px</strong>
-width: 100%
-padding-left: <strong>16px</strong>
-padding-right: <strong>16px</strong>
-
-<strong>GEL Group 3B: 900px - 1007px (Content Reflow)</strong>
+<strong>GEL Group 3B:</strong>
 width: <strong>36%;</strong> <i>(widths must be expressed as percentage at this breakpoint to allow panels to stretch in proportion.</i>
 margin-left: <strong>16px;</strong>
 margin-right: <strong>16px;</strong>
 float: right
 
-<strong>GEL Group 4: 1008px+</strong>
-width: 315px <i>fixed width panels at this point.</i>
+<strong>GEL Group 4:</strong>
+width: <strong>315px</strong> <i>fixed width panels at this point.</i>
 margin-left: <strong>16px;</strong>
 margin-right: <strong>16px;</strong>
 float: right
 </pre>
 </code>
-  </div>
+</div>
 </div>
 
 
-  <h4>Examples:</h4>
+<h4>Examples:</h4>
 
-  <h4>'About BBC iD' Info panel</h4>
-  <img src="img/info-example1.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
+<h4>About BBC iD</h4>
+<img src="img/info-example1.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
-  <h4>3rd party sign-in.</h4>
-  <img src="img/info-example2.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
+<!--
+
+PAGE ICONS
+
+-->
+<h3 id="page-icons">Page Icons</h3>
+
+<p>These icons appear in the primary column for message pages, only for GEL group 4.</p>
+
+<ul class="grid">
+	
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-captcha.png" alt="Captcha">
+			<span><p>Captcha</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-email.png" alt="Email">
+			<span><p>Email</p></span>
+		</div>
+	</li>            
+	
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-error.png" alt="Error">
+			<span><p>Error</p></span>
+		</div>
+	</li>
+	
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-locked.png" alt="Locked">
+			<span><p>Locked</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-mailproblem.png" alt="Mail Problem">
+			<span><p>Mail Problem</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-outofcapacity.png" alt="Out of Capacity">
+			<span><p>Out of Capacity</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-parental.png" alt="Parental">
+			<span><p>Parental</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-question.png" alt="Question">
+			<span><p>Question</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-signedout.png" alt="Signed Out">
+			<span><p>Signed Out</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-teapot.png" alt="Teapot">
+			<span><p>Teapot</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-valid.png" alt="Valid">
+			<span><p>Valid</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-warning.png" alt="Warning">
+			<span><p>Warning</p></span>
+		</div>
+	</li>
+
+	<li class="style-guide-pageicons">
+		<div class="style-guide-colour">
+			<img class="bbcid-styleguide-img-responsive" src="img/page-icons/pageicon-wrench.png" alt="Wrench">
+			<span><p>Wrench</p></span>
+		</div>
+	</li>
+
+</ul>
 
 </section> <!-- End Panels -->
 
@@ -594,7 +726,7 @@ float: right
 <!-- 
 
 
-    FORM ELEMENTS 
+FORM ELEMENTS 
 
 
 -->
@@ -602,166 +734,166 @@ float: right
 <!-- 
 
 
-   INPUTS
+INPUTS
 
 
 -->
 
 <section id="inputs" class="bbcid-styleguide-section">
-	<h2>Form Inputs &amp; Labels</h2>
-  <p>Responsive Text, Password and Date of Birth Fields.<br>
-  Fields stretch to 100% of viewport width until Group 3, where the form switches to a 'desktop' style layout with hints appearing to the right side of the fields.</p>
+<h2>Form Inputs &amp; Labels</h2>
+<p>Responsive Text, Password and Date of Birth Fields.<br>
+Fields stretch to 100% of viewport width until Group 3, where the form switches to a 'desktop' style layout with hints appearing to the right side of the fields.</p>
 
 
-	<form class="bbcid-form">	
-    <h3>Initial Presentation</h3>
+<form class="bbcid-form">	
+<h3>Initial Presentation</h3>
 
-    <h4>Text Input:</h4>
+<h4>Text Input:</h4>
 
-    <div class="bbcid-field-container unique-container">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
-    </div>
-    
-
-    <h4>Password Input:</h4>
-  		
-    <div class="bbcid-field-container unique-container">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
-    </div>
-
-
-<div class="bbcid-styleguide-notes">
-  <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-  <div>
-    
-<code>
-<pre>
-<strong>Labels</strong>
-
-<strong>GEL Group 1A: 240px - 319px</strong>
-color: #000
-font-size: 16px 
-font-weight: Bold
-margin-below: 0
-
-<strong>GEL Group 1B: 320px - 399px ONWARDS</strong>
-color: #000
-font-size: 20px
-font-weight: Bold
-margin-below: 8px
-
-<strong>Inputs</strong>
-
-<strong>All Sizes</strong>
-font-family: Arial,sans-serif
-border: 1px solid #a7a7a7
-
-<strong>GEL Group 1A: 240px - 319px</strong>
-width: 100%
-height: 33px
-padding: 8px
-
-<strong>GEL Group 1B: 320px - 399px ONWARDS</strong>
-width: 100%
-height: 42px
-padding: 10px
-
-<strong>GEL Group 3: 600px - 900px ONWARDS</strong>
-max-width: 252px
-</pre>
-</code>
-
-    
-  </div>
+<div class="bbcid-field-container unique-container">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 </div>
 
 
-    <h4>Date of Birth Input:</h4>
+<h4>Password Input:</h4>
 
-    <fieldset style="display: block; opacity: 1;" class="bbcid-field-container dateofbirthundersixteen-container">      
-      <legend>
-        <span class="bbcid_label_main">Date of birth</span>
-      </legend>
-        <input class="text" autocomplete="off" name="dateofbirthundersixteen_day" id="bbcid_dateofbirthundersixteen_day" value="" maxlength="2" type="text">
-        <input class="text" autocomplete="off" name="dateofbirthundersixteen_month" id="bbcid_dateofbirthundersixteen_month" value="" maxlength="2" type="text">
-        <input class="text" autocomplete="off" name="dateofbirthundersixteen_year" id="bbcid_dateofbirthundersixteen_year" value="" maxlength="4" type="text"> 
-    </fieldset>
-
-
-
-  <!-- INPUTS: NOTES -->
-
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
-          
-<code>
-<pre>
-<strong>Date of Birth Fields - ALL SIZES</strong>
-
-<strong>Day/Month Fields:</strong>
-width: 40px
-text-align: center
-margin-right: 8px
-
-<strong>Year Field:</strong>
-width: 52px
-text-align: center
-</pre>
-</code>
-
-      </div>
-    </div>
-
-
-
-  
-
-    <h3>Validation</h3>
-
-    <h4>Hint State</h4>
-
-    <div class="bbcid-field-container unique-container bbcid-hint">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
-
-      <div class="bbcid-hint-1col">
-        <strong>Primary hint message.</strong><br>
-        <span>Secondary hint message to add clarity.</span>
-      </div>
-      
-      <div class="bbcid-hint-2col">
-      <strong>Primary hint message.</strong><br>
-      <span>Secondary hint message to add clarity.</span>
-      </div>    
-
-    </div>
+<div class="bbcid-field-container unique-container">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="password" type="password">
+</div>
 
 
 <div class="bbcid-styleguide-notes">
-  <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-  <div>
-    
-        <code>
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
+
+<code>
 <pre>
-<strong>Hints</strong>
-<strong>GEL GROUP 1A</strong>
+<strong>Labels:</strong>
+
+	<strong>GEL Group 1A:</strong>
+	color: #000
+	font-size: 16px 
+	font-weight: Bold
+	margin-below: 0
+
+	<strong>GEL Group 1B, 2, 3A, 3B &amp; 4:</strong>
+	color: #000
+	font-size: 20px
+	font-weight: Bold
+	margin-below: 8px
+
+<strong>Inputs:</strong>
+
+	<strong>GEL Group 1A:</strong>
+	width: 100%
+	height: 33px
+	padding: 8px
+
+	<strong>GEL Group 1B onwards:</strong>
+	width: 100%
+	height: 42px
+	padding: 10px
+
+	<strong>GEL Group 3 onwards:</strong>
+	max-width: 252px
+
+	<strong>All GEL Groups:</strong>
+	font-family: Arial,sans-serif
+	border: 1px solid #a7a7a7
+
+</pre>
+</code>
+
+
+</div>
+</div>
+
+
+<h4>Date of Birth Input:</h4>
+
+<fieldset style="display: block; opacity: 1;" class="bbcid-field-container dateofbirthundersixteen-container">      
+<legend>
+<span class="bbcid_label_main">Date of birth</span>
+</legend>
+<input class="text" autocomplete="off" name="dateofbirthundersixteen_day" id="bbcid_dateofbirthundersixteen_day" value="" maxlength="2" type="text">
+<input class="text" autocomplete="off" name="dateofbirthundersixteen_month" id="bbcid_dateofbirthundersixteen_month" value="" maxlength="2" type="text">
+<input class="text" autocomplete="off" name="dateofbirthundersixteen_year" id="bbcid_dateofbirthundersixteen_year" value="" maxlength="4" type="text"> 
+</fieldset>
+
+
+
+<!-- INPUTS: NOTES -->
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
+
+<code>
+<pre>
+<strong>All GEL Groups:</strong>
+
+	<strong>Day/Month Fields:</strong>
+	width: 40px
+	text-align: center
+	margin-right: 8px
+
+	<strong>Year Field:</strong>
+	width: 52px
+	text-align: center
+</pre>
+</code>
+
+</div>
+</div>
+
+
+
+
+
+<h3>Validation</h3>
+
+<h4>Hint State</h4>
+
+<div class="bbcid-field-container unique-container bbcid-hint">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+
+<div class="bbcid-hint-1col">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
+
+<div class="bbcid-hint-2col">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>    
+
+</div>
+
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
+
+<code>
+<pre>
+<strong>GEL Group 1A:</strong>
 width: 100%
 color: #000
 font-size: 13px
 background-color: #FFAD01
 padding: 8px
 
-<strong>GEL GROUP 1B / 2</strong>
+<strong>GEL Group 1B &amp; 2:</strong>
 width: 100%
 color: #000
 font-size: 16px
 background-color: #FFAD01
 padding: 10px
 
-<strong>GEL GROUP 3 Onwards</strong>
+<strong>GEL GROUP 3A, 3B &amp; 4:</strong>
 background-color: #F5F7F6
 color: #525252
 font-size: 12px
@@ -770,122 +902,193 @@ letter-spacing: 0px
 width: 208px
 padding: 13px 16px 12px
 </pre>
-    </code>
-    </p>
-  </div>
+</code>
+</p>
+</div>
 </div>
 
 
 
-    <h4>Warning State</h4>
+<h4>Warning State</h4>
 
-    <div class="bbcid-field-container unique-container bbcid-warning">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+<div class="bbcid-field-container unique-container bbcid-warning">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 
-      <div class="bbcid-hint-1col bbcid-hint-1col-warning">
-        <strong>Primary hint message.</strong><br>
-        <span>Secondary hint message to add clarity.</span>
-      </div>
+<div class="bbcid-hint-1col bbcid-hint-1col-warning">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
 
-      <div class="bbcid-hint-2col bbcid-hint-2col-warning">
-      <strong>Primary hint message.</strong><br>
-      <span>Secondary hint message to add clarity.</span>
-      </div>
+<div class="bbcid-hint-2col bbcid-hint-2col-warning">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
 
-    </div>
+</div>
 
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 
 <code>
 <pre>
-<strong>GEL GROUP 1A</strong>
-<strong>Text:</strong>
-color: #000
-font-size: 13px
-<strong>Container:</strong>
-width: 100%
-background-color: #A61616 
-padding: 8px
+<strong>GEL Group 1A:</strong>
+	
+	<strong>Text:</strong>
+	color: #000
+	font-size: 13px
+	
+	<strong>Container:</strong>
+	width: 100%
+	background-color: #FFE141
+	padding: 8px
 
-<strong>GEL GROUP 1B/2</strong>
-<strong>Text:</strong>
-color: #FFF
-font-size: 16px
-<strong>Container:</strong>
-width: 100%
-background-color: #A61616 
-padding: 10px
+<strong>GEL Group 1B &amp; 2:</strong>
+	
+	<strong>Text:</strong>
+	color: #000
+	font-size: 16px
+	
+	<strong>Container:</strong>
+	width: 100%
+	background-color: #FFE141
+	padding: 10px
 
-<strong>GEL GROUP 3 Onwards</strong>
-<strong>Text:</strong>
-color: #000
-font-size: 12px
-<strong>Container:</strong>
-width: 208px
-background-color: #FFE141
-padding-top: 13px
-padding-right: 16px
-padding-bottom: 12px
-padding-left: 16px
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
+	
+	<strong>Text:</strong>
+	color: #000
+	font-size: 12px
+	
+	<strong>Container:</strong>
+	width: 208px
+	background-color: #FFE141
+	padding-top: 13px
+	padding-right: 16px
+	padding-bottom: 12px
+	padding-left: 16px
 </pre>
 </code>
 
-     </div>
-   </div>
+</div>
+</div>
 
 
-    <h4>Waiting State:</h4>
 
-    <div class="bbcid-field-container unique-container waiting">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
-    </div>
+<h4>Error State</h4>
 
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
+<div class="bbcid-field-container unique-container bbcid-error">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+
+<div class="bbcid-hint-1col bbcid-hint-1col-error">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
+
+<div class="bbcid-hint-2col bbcid-hint-2col-error">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
+
+</div>
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
+
 <code>
 <pre>
-<strong>Sizing</strong>
-Use input sizing as above, plus:
-background-image: url("../img/spinner_20px.gif");
-background-repeat: no-repeat;
-background-position: 220px 10px;
+<strong>GEL Group 1A</strong>
+	
+	<strong>Text:</strong>
+	color: #000
+	font-size: 13px
+	
+	<strong>Container:</strong>
+	width: 100%
+	background-color: #A61616 
+	padding: 8px
+
+<strong>GEL Group 1B &amp; 2:</strong>
+	
+	<strong>Text:</strong>
+	color: #FFF
+	font-size: 16px
+	
+	<strong>Container:</strong>
+	width: 100%
+	background-color: #A61616 
+	padding: 10px
+
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
+	
+	<strong>Text:</strong>
+	color: #000
+	font-size: 12px
+	
+	<strong>Container:</strong>
+	width: 208px
+	background-color: #FFE141
+	padding-top: 13px
+	padding-right: 16px
+	padding-bottom: 12px
+	padding-left: 16px
 </pre>
 </code>
-      </div>
-    </div>
+
+</div>
+</div>
 
 
+<h4>Waiting State:</h4>
 
-    <h4>Validated State:</h4>
+<div class="bbcid-field-container unique-container waiting">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+</div>
 
-    <div class="bbcid-field-container unique-container valid">
-      <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
-      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
-    </div>
-
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>Sizing</strong>
-Use input sizing as above, plus:
-border: 2px solid #169009;
-background-image: url("path/to/sprite.png");
-background-repeat: no-repeat;
-background-position: 216px -785px;
+<strong>Use input sizing as above, plus:</strong>
+	background-image: url("../img/spinner_20px.gif");
+	background-repeat: no-repeat;
+	background-position: 220px 10px;
 </pre>
 </code>
-     </div>
-   </div>
+</div>
+</div>
 
 
-	</form>
+
+<h4>Validated State:</h4>
+
+<div class="bbcid-field-container unique-container valid">
+<label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
+<input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
+</div>
+
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
+<code>
+<pre>
+<strong>Use input sizing as above, plus:</strong>
+	border: 2px solid #169009;
+	background-image: url("path/to/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 216px -785px;
+</pre>
+</code>
+</div>
+</div>
+
+
+</form>
 
 
 
@@ -895,85 +1098,90 @@ background-position: 216px -785px;
 <!-- 
 
 
-    CTA's 
+CTA's 
 
 
 -->
 
 <section id="cta" class="bbcid-styleguide-section">
-      
-  <h2>CTA's</h2>
-  <p class="bbcid-styleguide-note">CTA's for form panels. CTA buttons have extra spacing above above their container to space them away from content above.</p>
+
+<h2>CTA's</h2>
+<p class="bbcid-styleguide-note">CTA's for form panels. CTA buttons have extra spacing above above their container to space them away from content above.</p>
 
 
-  <h3>Initial Presentation</h3>
-  <div class="bbcid-actions blq-clearfix">
-    <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-    <a href="#cta" class="bbcid-button cancel">Cancel</a> 
-  </div>
+<h3>Inactive State</h3>
+<div class="bbcid-actions blq-clearfix">
+<input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Primary CTA" type="submit">
+<a href="#cta" class="bbcid-button cancel">Secondary CTA</a> 
+</div>
 
-  <div class="bbcid-styleguide-notes">
-    <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-    <div>
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>GEL Group 1a</strong>
-color: #FFF
-font-size: 16px
-font-weight: bold
-letter-spacing: -0.05em
-text-align: center
-line-height: 28px
-background-color: #C0C0C0
-padding-top: 0px
-padding-right: 10px
-padding-bottom: 0px
-padding-left: 10px
+<strong>GEL Group 1A:</strong>
 
-<strong>GEL Group 1b onwards.</strong>
-font-size: 20px
-font-weight: bold
-letter-spacing: -0.05em
-line-height: 28px
-padding-top: 3px 
-padding-right: 10px
-padding-bottom: 5px
-padding-left: 10px
+	<strong>Primary CTA</strong>
+	color: #FFF;
+	font-size: 16px;
+	background-color: #C0C0C0;
+	padding: 0px 10px 0px 10px;
+
+	<strong>Secondary CTA</strong>
+	color: #005383;
+	font-size: 16px;
+	padding: 0px 10px 0px 10px;
+
+<strong>GEL Group 1B, 2, 3A, 3B &amp; 4:</strong>
+
+	<strong>Primary CTA</strong>
+	color: #FFF;
+	font-size: 20px;
+	background-color: #C0C0C0;
+	padding: 3px 10px 5px 10px;
+
+	<strong>Secondary CTA</strong>
+	color: #005383;
+	font-size: 20px;
+	padding: 3px 10px 5px 10px;
 </pre>
 </code>
-        </div>
-    </div>
+</div>
+</div>
 
 
-  <h3>Active State</h3>
-  <div class="bbcid-actions blq-clearfix">
-    <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" type="submit">
-    <a href="#cta" class="bbcid-button cancel">Cancel</a> 
-  </div>
+<h3>Active State</h3>
+<div class="bbcid-actions blq-clearfix">
+<input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Primary CTA" type="submit">
+<a href="#cta" class="bbcid-button cancel">Secondary CTA</a> 
+</div>
 
-  <div class="bbcid-styleguide-notes">
-    <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-    <div>
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>Active State</strong>
+<strong>Active State (Primary CTA)</strong>
 color: #FFF
 background-color: #1790CF
 
-<strong>Hover State</strong>
+<strong>Hover State (Primary CTA)</strong>
 color: #FFF
 background-color: #005383
+
+<strong>Secondary CTA keeps the same style.</strong>
 </pre>
 </code>
-  </div>
+</div>
 </div>
 
-  <h3>Long buttons</h3>
-  <p>When the CTA text is too long, the buttons wrap onto 2 lines.</p>
-  <div class="bbcid-actions blq-clearfix">
-    <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="This is a long button" type="submit">
-    <a href="#cta" class="bbcid-button cancel">Long Cancel Text</a> 
-  </div>
+<h3>Long buttons</h3>
+<p>When the CTA text is too long, the buttons wrap onto 2 lines when it doesn't fit the width.</p>
+<div class="bbcid-actions blq-clearfix">
+<input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Primary CTA with long text" type="submit">
+<a href="#cta" class="bbcid-button cancel">Secondary CTA that wraps</a> 
+</div>
 
 
 </section>
@@ -982,92 +1190,90 @@ background-color: #005383
 <!-- 
 
 
-    TOGGLE BUTTONS
+TOGGLE BUTTONS
 
 
 -->
 <section id="toggle" class="bbcid-styleguide-section">
-  <h2>Toggle Buttons</h2>
-  
-  <form class="bbcid-form">
-  
-  <h3>Default State</h3>
+<h2>Toggle Buttons</h2>
 
-  <fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
-    <legend><span class="bbcid_label_main">This is a label</span></legend>
-    <div class="bbcid-radios-container bbcid-isageold-radios-container">
-      <div class="bbcid_false_container bbcid_isageold_false_container">
-        <input class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_false" value="0" type="radio">
-        <a id="bbcid_isageold_false_label_wrapper" href="#"><label for="bbcid_isageold_false" class="bbcid_isageold_false_label">  <span class="bbcid_label_main">Option 1</span></label></a>   
-      </div>
-      <div class="bbcid_true_container bbcid_isageold_true_container">
-        <input checked="checked" class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_true" value="1" type="radio">
-        <a id="bbcid_isageold_true_label_wrapper" href="#"><label for="bbcid_isageold_true" class="bbcid_isageold_true_label">  <span class="bbcid_label_main">Option 2</span></a>
-      </div>
-    </div>
-  </fieldset>
+<form class="bbcid-form">
 
+<h3>Default State</h3>
 
-  <h3>Selected State</h3>
-
-  <fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
-    <legend><span class="bbcid_label_main">This is a label</span></legend>
-    <div class="bbcid-radios-container bbcid-isageold-radios-container">
-      <div class="bbcid_false_container bbcid_isageold_false_container"> 
-        <input class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_false" value="0" type="radio">
-        <a id="bbcid_isageold_false_label_wrapper" href="#"><label for="bbcid_isageold_false" class="bbcid_isageold_false_label inactive"><span class="bbcid_label_main">Option 1</span></div>
-        <div class="bbcid_true_container bbcid_isageold_true_container">
-         <input checked="checked" class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_true" value="1" type="radio">
-         <a id="bbcid_isageold_true_label_wrapper" href="#"><label style="padding-left: 33px; padding-right: 10px;" for="bbcid_isageold_true" class="bbcid_isageold_true_label active"><span style="opacity: 1;" class="bbcid-toggle-tick"></span><span class="bbcid_label_main">Option 2</span></label></a>   
-        </div>
-     </div>
-   </fieldset>
+<fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
+<legend><span class="bbcid_label_main">This is a label</span></legend>
+<div class="bbcid-radios-container bbcid-isageold-radios-container">
+<div class="bbcid_false_container bbcid_isageold_false_container">
+<input class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_false" value="0" type="radio">
+<a id="bbcid_isageold_false_label_wrapper" href="#"><label for="bbcid_isageold_false" class="bbcid_isageold_false_label">  <span class="bbcid_label_main">Option 1</span></label></a>   
+</div>
+<div class="bbcid_true_container bbcid_isageold_true_container">
+<input checked="checked" class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_true" value="1" type="radio">
+<a id="bbcid_isageold_true_label_wrapper" href="#"><label for="bbcid_isageold_true" class="bbcid_isageold_true_label">  <span class="bbcid_label_main">Option 2</span></a>
+</div>
+</div>
+</fieldset>
 
 
+<h3>Selected State</h3>
 
-  <h3>Validation</h3>
-
-    <h4>Hint State</h4>
-
-  <fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
-    <legend><span class="bbcid_label_main">This is a label</span></legend>
-    <div class="bbcid-radios-container bbcid-isageold-radios-container">
-      <div class="bbcid_false_container bbcid_isageold_false_container"> 
-          <input checked="checked" class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_false" value="0" type="radio">
-          <a id="bbcid_isageold_false_label_wrapper" href="#"><label style="padding-left: 33px; padding-right: 10px;" for="bbcid_isageold_false" class="bbcid_isageold_false_label active"><span style="opacity: 1;" class="bbcid-toggle-tick"></span><span class="bbcid_label_main">Option 1</span>
-      </div>
-      <div class="bbcid_true_container bbcid_isageold_true_container">
-           <input class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_true" value="1" type="radio">
-           <a id="bbcid_isageold_true_label_wrapper" href="#"><label for="bbcid_isageold_true" class="bbcid_isageold_true_label inactive"><span class="bbcid_label_main">Option 2</span></label></a>   
-      </div>
-   
-     <div class="bbcid-hint-1col">
-      <strong>Primary hint message.</strong><br>
-      <span>Secondary hint message to add clarity.</span>
-    </div>
-    
-
-
-    <div class="bbcid-hint-2col togglefix">
-      <strong>Primary hint message.</strong><br>
-      <span>Secondary hint message to add clarity.</span>
-    </div>
-
-
-   </div>
-   </fieldset>
+<fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
+<legend><span class="bbcid_label_main">This is a label</span></legend>
+<div class="bbcid-radios-container bbcid-isageold-radios-container">
+<div class="bbcid_false_container bbcid_isageold_false_container"> 
+<input class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_false" value="0" type="radio">
+<a id="bbcid_isageold_false_label_wrapper" href="#"><label for="bbcid_isageold_false" class="bbcid_isageold_false_label inactive"><span class="bbcid_label_main">Option 1</span></div>
+<div class="bbcid_true_container bbcid_isageold_true_container">
+<input checked="checked" class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_true" value="1" type="radio">
+<a id="bbcid_isageold_true_label_wrapper" href="#"><label style="padding-left: 33px; padding-right: 10px;" for="bbcid_isageold_true" class="bbcid_isageold_true_label active"><span style="opacity: 1;" class="bbcid-toggle-tick"></span><span class="bbcid_label_main">Option 2</span></label></a>   
+</div>
+</div>
+</fieldset>
 
 
 
-  </form>
+<h3>Including Hint</h3>
 
-   <!-- Notes -->
-   <div class="bbcid-styleguide-notes">
-    <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-    <div>
+<fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
+<legend><span class="bbcid_label_main">This is a label</span></legend>
+<div class="bbcid-radios-container bbcid-isageold-radios-container">
+<div class="bbcid_false_container bbcid_isageold_false_container"> 
+<input checked="checked" class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_false" value="0" type="radio">
+<a id="bbcid_isageold_false_label_wrapper" href="#"><label style="padding-left: 33px; padding-right: 10px;" for="bbcid_isageold_false" class="bbcid_isageold_false_label active"><span style="opacity: 1;" class="bbcid-toggle-tick"></span><span class="bbcid_label_main">Option 1</span>
+</div>
+<div class="bbcid_true_container bbcid_isageold_true_container">
+<input class="radio" autocomplete="off" name="isageold" id="bbcid_isageold_true" value="1" type="radio">
+<a id="bbcid_isageold_true_label_wrapper" href="#"><label for="bbcid_isageold_true" class="bbcid_isageold_true_label inactive"><span class="bbcid_label_main">Option 2</span></label></a>   
+</div>
+
+<div class="bbcid-hint-1col">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
+
+
+
+<div class="bbcid-hint-2col togglefix">
+<strong>Primary hint message.</strong><br>
+<span>Secondary hint message to add clarity.</span>
+</div>
+
+
+</div>
+</fieldset>
+
+
+
+</form>
+
+<!-- Notes -->
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>Buttons (All GEL groups)</strong>
+<strong>All GEL Groups:</strong>
 font-size: 16px
 font-weight: bold
 text-align: center
@@ -1082,9 +1288,9 @@ padding-left: 22px
 <strong>Legend sizing is consistent with <a href="#inputs">input label</a> sizing.</strong>
 </pre>
 </code>
-      </p>    
-    </div>
-  </div>
+</p>    
+</div>
+</div>
 
 
 
@@ -1094,94 +1300,100 @@ padding-left: 22px
 <!-- 
 
 
-    RADIO BUTTONS
+RADIO BUTTONS
 
 
 -->
 <section id="radio" class="bbcid-styleguide-section">
-  <h2>Radio Buttons</h2>
-  <p>Javascript Disabled view of toggle buttons. At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
+<h2>Radio Buttons</h2>
+<p>Javascript Disabled view of toggle buttons. At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
 
-    <div class="bbc-radios-container">
-      <fieldset>
-          <div class="bbcid-radio-item"><input type="radio" name="bbcid" value="one" checked> <label class="bbcid-radio">Option 1</label></div>
-          <div class="bbcid-radio-item"><input type="radio" name="bbcid" value="one"> <label class="bbcid-radio">Option 2</label></div>
-      </fieldset>
-    </div>
+<div class="bbc-radios-container">
+<fieldset>
+<div class="bbcid-radio-item"><input type="radio" name="bbcid" value="one" checked> <label class="bbcid-radio">Option 1</label></div>
+<div class="bbcid-radio-item"><input type="radio" name="bbcid" value="one"> <label class="bbcid-radio">Option 2</label></div>
+</fieldset>
+</div>
 
 
-    <!-- Notes -->
-    <div class="bbcid-styleguide-notes">
-      <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-      <div>
+<!-- Notes -->
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
 <strong>Labels:</strong>
 
-<strong>group 1a</strong>
-font-size: 13px
-font-weight: bold
+	<strong>GEL Group 1A:</strong>
+	font-size: 13px
+	font-weight: bold
 
-<strong>group 1b onwards</strong>
-font-size: 16px
-font-weight: bold
+	<strong>GEL Group 1B, 2, 3A, 3B &amp; 4:</strong>
+	font-size: 16px
+	font-weight: bold
 </pre>
 </code>
-      </div>
-    </div>
+</div>
+</div>
 
 </section>
 
 <!-- 
 
 
-   CHECKBOXES
+CHECKBOXES
 
 
 -->
 <section id="checkbox" class="bbcid-styleguide-section">
-	<h2>Checkboxes</h2>
-      <p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
-  <div class="bbcid-form">
-    <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced">
-        <a class="checkbox checked" href="#checkbox"></a>
-        <input name="rememberme" id="bbcid_rememberme_default" value="1" type="hidden">
-        <label for="bbcid_rememberme" class="bbcid_rememberme_label">
-        <span class="bbcid_label_main">This is a label</span>
-        <span class="bbcid-label-hint bbcid-hide"></span>
-        </label>
-        <span class="description">With an optional note.</span>
-    </div>
-  </div>
+<h2>Checkboxes</h2>
+<p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
+<div class="bbcid-form">
+<div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced">
+<a class="checkbox checked" href="#checkbox"></a>
+<input name="rememberme" id="bbcid_rememberme_default" value="1" type="hidden">
+<label for="bbcid_rememberme" class="bbcid_rememberme_label">
+<span class="bbcid_label_main">This is a label</span>
+<span class="bbcid-label-hint bbcid-hide"></span>
+</label>
+<span class="description">With an optional note.</span>
+</div>
+</div>
 
-  <div class="bbcid-styleguide-notes">
-    <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-    <div>
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
 <pre>
-<strong>GEL Group 1a / 1b / 2;</strong>
-<strong>Container</strong>
-margin-below: 16px
-<strong>Label</strong>
-font-size: 16px
-font-weight: bold
-<strong>Note text</strong>
-font-size: 16px
-font-weight: Regular
+<strong>GEL Group 1A, 1B &amp; 2:</strong>
+	
+	<strong>Container:</strong>
+	margin-below: 16px
+	
+	<strong>Label:</strong>
+	font-size: 16px
+	font-weight: bold
+	
+	<strong>Optional Note Text:</strong>
+	font-size: 16px
+	font-weight: Regular
 
-<strong>GEL Group 3 onwards</strong>
-<strong>Container</strong>
-margin-below: 16px
-<strong>Label</strong>
-font-size: 16px
-font-weight: bold
-<strong>Note text</strong>
-font-size: 13px
-font-weight: Regular
+<strong>GEL Group 3A, 3B &amp; 4:</strong>
+	
+	<strong>Container:</strong>
+	margin-below: 16px
+	
+	<strong>Label:</strong>
+	font-size: 16px
+	font-weight: bold
+	
+	<strong>Optional Note Text:</strong>
+	font-size: 13px
+	font-weight: Regular
 </pre>
 </code>
-    </div>
-  </div>
+</div>
+</div>
 
 </section>
 
@@ -1189,55 +1401,55 @@ font-weight: Regular
 <!-- 
 
 
-   TEXT DROPDOWN
+TEXT DROPDOWN
 
 
 -->
 <section id="dropdown" class="bbcid-styleguide-section">
-  <h2>Text Dropdown</h2>
-  <p>Use progressive disclosure to reveal longer content as required.</p> 
-  <div class="bbcid-text-dropdown">
-    <a href="#">Click this link to reveal text <span class="caret"></span></a>
-    <div>
-    <p>This is some body text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />
-    <a href="#">Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
-    </p>
-    </div>
-  </div>
+<h2>Text Dropdown</h2>
+<p>Use progressive disclosure to reveal longer content as required.</p> 
+<div class="bbcid-text-dropdown">
+<a href="#">Click this link to reveal text <span class="caret"></span></a>
+<div>
+<p>This is some body text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />
+<a href="#">Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
+</p>
+</div>
+</div>
 
-  <!-- Notes -->
-  <div class="bbcid-styleguide-notes">
-  <h3>Show styles <span class="fa fa-toggle-down"></span></h3>
-  <div>
+<!-- Notes -->
+<div class="bbcid-styleguide-notes">
+<h3>Show styles <span class="fa fa-toggle-down"></span></h3>
+<div>
 <code>
-<pre>Use standard type styles from <a href="#typography">typography</a> section.</pre>
+<pre><strong>Use standard type styles from <a href="#typography">typography</a> section.</strong></pre>
 </code>
-  </div>
+</div>
 </div>
 </section>
 
-  <section id="about" class="bbcid-styleguide-section grid-container">
-    <h2>About this styleguide</h2>
-    <p>The purpose of the styleguide is to provide both a reference source for developers when constructing form and message interfaces, and a 'playground' for designers wishing to see their designs working in a live, responsive context.</p>
-    <p><strong>Note:</strong> This guide is not intended to be a source for production code. CSS specifications are expressed within the 'show styles' panel in each section.</p>
-    <p><a href="https://github.com/bbc/idstyleguide">View the Github Repo</a></p>
-  </section>
+<section id="about" class="bbcid-styleguide-section grid-container">
+<h2>About this styleguide</h2>
+<p>The purpose of the styleguide is to provide both a reference source for developers when constructing form and message interfaces, and a 'playground' for designers wishing to see their designs working in a live, responsive context.</p>
+<p><strong>Note:</strong> This guide is not intended to be a source for production code. CSS specifications are expressed within the 'show styles' panel in each section.</p>
+<p><a href="https://github.com/bbc/idstyleguide">View the Github Repo</a></p>
+</section>
 
 
 </div> <!-- / id_container -->
 
 
-        <!-- 
+<!-- 
 
-            SCRIPTS 
+SCRIPTS 
 
 
-        -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/vendor/jquery-ui.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/id.js"></script>
+-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/vendor/jquery-ui.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/id.js"></script>
 
-    </body>
+</body>
 </html>
