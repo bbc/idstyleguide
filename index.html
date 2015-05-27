@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 -->
 <section class="bbcid-styleguide-section">
 	<h1>BBC iD Style Guide</h1>
-	<p>All the elements in this style guide must follow BBC Accessibility Guidelines, for both desktop and mobile devices.</p>
+	<p>All the elements in this style guide must follow <a href="http://www.bbc.co.uk/guidelines/futuremedia/accessibility" target="_blank">BBC Accessibility Guidelines</a>, for both desktop and mobile devices.</p>
 	<h2>Index</h2>
 	<div class="bbcid-styleguide-menu">
 		<h3 class="bbcid-styleguide-menu-header">Foundation</h3>
@@ -52,6 +52,7 @@ TABLE OF CONTENTS
 			<ul>
 				<li><a href="#one-column">One Column</a></li>
 				<li><a href="#two-columns">Two Columns</a></li>
+				<li><a href="#info-panel">Info Panel</a></li>
 				<li><a href="#page-icons">Page Icons</a></li>
 			</ul>
 		</ul>
@@ -59,9 +60,20 @@ TABLE OF CONTENTS
 		<h3 class="bbcid-styleguide-menu-header">Form Components</h3>
 		<ul class="bbcid-styleguide-menu-list">
 			<li><a href="#inputs">Form Inputs &amp; labels</a></li>
-			<li><a href="#cta">CTA's</a></li>
-			<li><a href="#toggle">Toggle Buttons</a></li>
-			<li><a href="#radio">Radio Buttons</a></li>
+			<ul>
+				<li><a href="#default">Default</a></li>
+				<li><a href="#hints">Hints</a></li>
+				<ul>
+					<li><a href="#information-hint">Information</a></li>
+					<li><a href="#warning-hint">Warning</a></li>
+					<li><a href="#error-hint">Error</a></li>
+					<li><a href="#waiting-hint">Waiting</a></li>
+					<li><a href="#validated-hint">Validated</a></li>
+				</ul>
+			</ul>
+			<li><a href="#cta">CTAs</a></li>
+			<li><a href="#toggle-buttons">Toggle Buttons</a></li>
+			<li><a href="#radio-buttons">Radio Buttons</a></li>
 			<li><a href="#checkbox">Checkboxes</a></li>
 			<li><a href="#dropdown">Text Dropdown</a></li>
 		</ul>
@@ -89,7 +101,7 @@ FOUNDATION:
 
 <h2>Typography</h2>
 
-<p>General font sizing for paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines in a future iteration.<p>
+<p>General font sizing and style for headings, paragraph text and links. For the purposes of this styleguide, the existing iD font sizing is shown. The spec below shows sizing for desktop/mobile, mapped to the closest GEL breakpoint. This will be updated to correspond to GEL typography guidelines soon.<p>
 
 
 
@@ -100,22 +112,20 @@ HEADINGS
 -->
 <h3 id="headings">Headings</h3>
 
-<code><pre>These headings need to be redefined according to GEL Guidelines for iD Visual Refresh. For h1, please visit <a href="#headers">Headers</a> section.</pre></code>
-
 <div class="bbcid-styleguide-type">
-<h2>This a heading h2.</h2>
+<h2>This a heading h2</h2>
 </div>
 
 <div class="bbcid-styleguide-type">
-<h3>This a heading h3.</h3>
+<h3>This a heading h3</h3>
 </div>
 
 <div class="bbcid-styleguide-type">
-<h4>This a heading h4.</h4>
+<h4>This a heading h4</h4>
 </div>
 
 <div class="bbcid-styleguide-type">
-<h5>This a heading h5.</h5>
+<h5>This a heading h5</h5>
 </div>
 
 <div class="bbcid-styleguide-notes">
@@ -123,7 +133,7 @@ HEADINGS
 <div>
 <code>
 <pre>
-<strong>This is how headings are CURRENTLY defined. They should follow GEL guidelines. </strong>
+<strong>This is how headings are currently defined. They will be updating according to GEL guidelines. </strong>
 
 <strong>GEL Group 1A:</strong>
 H2 &amp; H3 - font-size: 20px
@@ -161,9 +171,9 @@ PARAGRAPHS
 <h3 id="paragraphs">Paragraphs</h3>
 
 <div class="bbcid-styleguide-type">
-<p>This is a paragraph. For GEL group 4, there are 20 words maximum per line of text, for accessibility reasons. <p>
+<p>This is a paragraph. For GEL group 4, there are 20 words maximum per line of text, to allow readability. <p>
 <p>This is the second paragraph, that has 9 words.</p>
-<p class="morethan20">This is the third paragraph. And because it has more than 20 words, it will split to a second line of text for 1007px+ devices.</p>
+<p class="morethan20">This is the third paragraph. And because it has more than 20 words, it must split to a second line of text for 1007px+ devices.</p>
 <p><strong>This is an example of bold text in a paragraph.</strong></p>
 </div>
 
@@ -205,7 +215,7 @@ LINKS
 <h3 id="links">Links</h3>
 
 <div class="bbcid-styleguide-type">
-<p><a href="#typography" class="">This is a standard text link.</a></p>
+<p><a href="#typography" class="">This is a standard text link</a>.</p>
 </div>
 
 <div class="bbcid-styleguide-notes">
@@ -299,19 +309,19 @@ COLOURS
 <li class="style-guide-colours__colour">
 <div class="style-guide-colour style-guide-colour--id-header">
 <div class="style-guide-colour__circle"></div>
-<span class="style-guide-colour__label"><p>iD Header</p></span>
+<span class="style-guide-colour__label"><p>iD Header (1)</p></span>
 </div>
 </li>
 <li class="style-guide-colours__colour">
 <div class="style-guide-colour style-guide-colour--id-header-bbc-id">
 <div class="style-guide-colour__circle"></div>
-<span class="style-guide-colour__label"><p>iD Header - "BBC iD"</p></span>
+<span class="style-guide-colour__label"><p>iD Header (2)</p></span>
 </div>
 </li>            
 <li class="style-guide-colours__colour">
 <div class="style-guide-colour style-guide-colour--secondary-cta">
 <div class="style-guide-colour__circle"></div>
-<span class="style-guide-colour__label"><p>Links &amp; Secondary CTA</p></span>
+<span class="style-guide-colour__label"><p>Links &amp; 2nd CTA</p></span>
 </div>
 </li>
 <li class="style-guide-colours__colour">
@@ -359,7 +369,7 @@ HEADERS
 
 <section id="headers" class="bbcid-styleguide-section">
 <h2>Headers</h2>      
-<p>iD-specific header with service name &amp; Logo.</p>
+<p>iD-specific header with service name &amp; logo.</p>
 
 <div class="bbcid-header">    
 <h1>SERVICE NAME</h1>
@@ -435,30 +445,25 @@ PANELS
 <section id="panels" class="bbcid-styleguide-section">
 
 <h2>Panels</h2>
-<p>Panels act as containers for content.</p>
-<p>
-
-
-<p>Layouts fall into 2 types:</p>
+<p>Panels act as containers for content. Layouts fall into 2 types:</p>
 <ul>
-<li>1 column, full-width layout.</li>
-<li>2 column layout.</li>
+<li>One column, full-width layout.</li>
+<li>Two columns layout.</li>
 </ul>
-<p>Under GEL Responsive guidlines, all content uses a 1-column layout until breakpoint Group 3b (Content-reflow), at which point some content (eg. forms) can use 2-columns.</p>
+<p>Under GEL Responsive guidelines, all content uses a one column layout until breakpoint GEL Group 3B (content reflow), at which point some content (eg. forms) will use two columns.</p>
 </p>
 <p>The sections below outline the containers required for each layout.</p>
 
 <h3 id="one-column">One Column (Primary Column)</h3>
-<p>For content such as messages which stay full-width across all breakpoints.</p>
+<p>For content such as messages, which stay full-width across all breakpoints.</p>
 
-<!-- 1-column demo -->
+<!-- One-column demo -->
 <h3>Layout:</h3>
-
 
 <div class="bbcid-panel-bg">
 <div class="bbcid-panel-1col">
 <div class="bbcid-panel-message">
-<p>Content</p>
+<p><i>Content</i></p>
 </div>
 </div>
 </div>
@@ -489,28 +494,28 @@ margin-right: <strong>16px;</strong>
 
 <h4>Examples:</h4>
 
-<h4>Message</h4>
-
+<h4>Message template</h4>
 <img src="img/message-example1.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
-<h4>Message with Form elements.</h4>
+<p></p>
+<h4>Message termplate with form elements</h4>
 <img src="img/message-example2.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
 
 
 
-<h3 id="two-columns">2 Columns (Primary &amp; Secondary Column)</h3>
+<h3 id="two-columns">Two Columns (Primary &amp; Secondary Column)</h3>
 
 <p>For content such as forms which transform from 1 column to 2. Left-aligned.</p>
 
-<!-- 2-columns demo -->
+<!-- Two-columns demo -->
 <h3>Layout:</h3>
 
 <div class="bbcid-panel-bg">
 <div class="bbcid-panel-container blq-clearfix">
 <div class="bbcid-panel-2col-content">
 <div class="bbcid-panel-message">
-<p>Content</p>
+<p><i>Content</i></p>
 </div>
 </div>
 </div>
@@ -550,18 +555,23 @@ padding-right: <strong>16px;</strong>
 
 <h4>Examples:</h4>
 
-<h4>Registration Form</h4>
+<h4>Registration form</h4>
 <img src="img/content-example1.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
+<p></p>
 <h4>Settings</h4>
 <img src="img/content-example2.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
 
 
 
+<!--
 
-<h3>Info Panel</h3>
+INFO PANEL
 
-<p>For secondary content such as information boxes. Right-aligned.</p>
+-->
+<h3 id="info-panel">Info Panel</h3>
+
+<p>For secondary content such as information sections. Right-aligned.</p>
 
 <!-- Info demo -->
 <h3>Layout:</h3>
@@ -571,7 +581,7 @@ padding-right: <strong>16px;</strong>
 <div class="bbcid-panel-container blq-clearfix">
 <div class="bbcid-panel-2col-info">
 <div class="bbcid-panel-message">
-<p>Content</p>
+<p><i>Content</i></p>
 </div>
 </div>
 </div>
@@ -611,10 +621,12 @@ float: right
 </div>
 
 
-<h4>Examples:</h4>
+<h4>Examples</h4>
 
 <h4>About BBC iD</h4>
 <img src="img/info-example1.png" class="bbcid-styleguide-img-responsive bbcid-styleguide-exampleimg">
+
+
 
 <!--
 
@@ -623,7 +635,7 @@ PAGE ICONS
 -->
 <h3 id="page-icons">Page Icons</h3>
 
-<p>These icons appear in the primary column for message pages, only for GEL group 4.</p>
+<p>These icons appear in the primary column for message templates, only for GEL Group 4.</p>
 
 <ul class="grid">
 	
@@ -741,12 +753,11 @@ INPUTS
 
 <section id="inputs" class="bbcid-styleguide-section">
 <h2>Form Inputs &amp; Labels</h2>
-<p>Responsive Text, Password and Date of Birth Fields.<br>
-Fields stretch to 100% of viewport width until Group 3, where the form switches to a 'desktop' style layout with hints appearing to the right side of the fields.</p>
+<p>Responsive form inputs (text, password and date of birth). Fields stretch to 100% of viewport width until Group 3, where the form switches to a 'desktop' style layout with hints appearing to the right side of the fields.</p>
 
 
 <form class="bbcid-form">	
-<h3>Initial Presentation</h3>
+<h3 id="default">Default</h3>
 
 <h4>Text Input:</h4>
 
@@ -849,24 +860,21 @@ Fields stretch to 100% of viewport width until Group 3, where the form switches 
 </div>
 
 
+<h3 id="hints">Hints</h3>
 
-
-
-<h3>Validation</h3>
-
-<h4>Hint State</h4>
+<h4 id="information-hint">Information</h4>
 
 <div class="bbcid-field-container unique-container bbcid-hint">
 <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
 <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 
 <div class="bbcid-hint-1col">
-<strong>Primary hint message.</strong><br>
+<strong>Primary hint message</strong><br>
 <span>Secondary hint message to add clarity.</span>
 </div>
 
 <div class="bbcid-hint-2col">
-<strong>Primary hint message.</strong><br>
+<strong>Primary hint message</strong><br>
 <span>Secondary hint message to add clarity.</span>
 </div>    
 
@@ -909,19 +917,19 @@ padding: 13px 16px 12px
 
 
 
-<h4>Warning State</h4>
+<h4 id="warning-hint">Warning</h4>
 
 <div class="bbcid-field-container unique-container bbcid-warning">
 <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
 <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 
 <div class="bbcid-hint-1col bbcid-hint-1col-warning">
-<strong>Primary hint message.</strong><br>
+<strong>Primary hint message</strong><br>
 <span>Secondary hint message to add clarity.</span>
 </div>
 
 <div class="bbcid-hint-2col bbcid-hint-2col-warning">
-<strong>Primary hint message.</strong><br>
+<strong>Primary hint message</strong><br>
 <span>Secondary hint message to add clarity.</span>
 </div>
 
@@ -976,19 +984,19 @@ padding: 13px 16px 12px
 
 
 
-<h4>Error State</h4>
+<h4 id="error-hint">Error</h4>
 
 <div class="bbcid-field-container unique-container bbcid-error">
 <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
 <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="example content" type="text">
 
 <div class="bbcid-hint-1col bbcid-hint-1col-error">
-<strong>Primary hint message.</strong><br>
+<strong>Primary hint message</strong><br>
 <span>Secondary hint message to add clarity.</span>
 </div>
 
 <div class="bbcid-hint-2col bbcid-hint-2col-error">
-<strong>Primary hint message.</strong><br>
+<strong>Primary hint message</strong><br>
 <span>Secondary hint message to add clarity.</span>
 </div>
 
@@ -1042,7 +1050,7 @@ padding: 13px 16px 12px
 </div>
 
 
-<h4>Waiting State:</h4>
+<h4 id="waiting-hint">Waiting</h4>
 
 <div class="bbcid-field-container unique-container waiting">
 <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
@@ -1065,7 +1073,7 @@ padding: 13px 16px 12px
 
 
 
-<h4>Validated State:</h4>
+<h4 id="validated-hint">Validated</h4>
 
 <div class="bbcid-field-container unique-container valid">
 <label for="bbcid_unique" class="bbcid_unique_label">This is a label</label> 
@@ -1105,11 +1113,11 @@ CTA's
 
 <section id="cta" class="bbcid-styleguide-section">
 
-<h2>CTA's</h2>
-<p class="bbcid-styleguide-note">CTA's for form panels. CTA buttons have extra spacing above above their container to space them away from content above.</p>
+<h2>CTAs</h2>
+<p class="bbcid-styleguide-note">CTAs are part of form templates. They have padding at the top of their container to space them away from the content above.</p>
 
 
-<h3>Inactive State</h3>
+<h3>Inactive</h3>
 <div class="bbcid-actions blq-clearfix">
 <input title="To submit the form, please complete all the fields." class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Primary CTA" type="submit">
 <a href="#cta" class="bbcid-button cancel">Secondary CTA</a> 
@@ -1151,7 +1159,7 @@ CTA's
 </div>
 
 
-<h3>Active State</h3>
+<h3>Active</h3>
 <div class="bbcid-actions blq-clearfix">
 <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Primary CTA" type="submit">
 <a href="#cta" class="bbcid-button cancel">Secondary CTA</a> 
@@ -1162,11 +1170,11 @@ CTA's
 <div>
 <code>
 <pre>
-<strong>Active State (Primary CTA)</strong>
+<strong>Active (Primary CTA)</strong>
 color: #FFF
 background-color: #1790CF
 
-<strong>Hover State (Primary CTA)</strong>
+<strong>Hover (Primary CTA)</strong>
 color: #FFF
 background-color: #005383
 
@@ -1176,8 +1184,8 @@ background-color: #005383
 </div>
 </div>
 
-<h3>Long buttons</h3>
-<p>When the CTA text is too long, the buttons wrap onto 2 lines when it doesn't fit the width.</p>
+<h3>Long Text</h3>
+<p>When the CTA text value is too long, the buttons wrap onto 2 lines when it doesn't fit the screen width.</p>
 <div class="bbcid-actions blq-clearfix">
 <input title="To submit the form, please complete all the fields." class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Primary CTA with long text" type="submit">
 <a href="#cta" class="bbcid-button cancel">Secondary CTA that wraps</a> 
@@ -1194,12 +1202,12 @@ TOGGLE BUTTONS
 
 
 -->
-<section id="toggle" class="bbcid-styleguide-section">
+<section id="toggle-buttons" class="bbcid-styleguide-section">
 <h2>Toggle Buttons</h2>
 
 <form class="bbcid-form">
 
-<h3>Default State</h3>
+<h3>Default</h3>
 
 <fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
 <legend><span class="bbcid_label_main">This is a label</span></legend>
@@ -1216,7 +1224,7 @@ TOGGLE BUTTONS
 </fieldset>
 
 
-<h3>Selected State</h3>
+<h3>Selected</h3>
 
 <fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
 <legend><span class="bbcid_label_main">This is a label</span></legend>
@@ -1233,7 +1241,7 @@ TOGGLE BUTTONS
 
 
 
-<h3>Including Hint</h3>
+<h3>Information Hint</h3>
 
 <fieldset class="bbcid-field-container isageold-container age-field bbcid-hint-grey radio-javascript-enabled">
 <legend><span class="bbcid_label_main">This is a label</span></legend>
@@ -1304,9 +1312,9 @@ RADIO BUTTONS
 
 
 -->
-<section id="radio" class="bbcid-styleguide-section">
+<section id="radio-buttons" class="bbcid-styleguide-section">
 <h2>Radio Buttons</h2>
-<p>Javascript Disabled view of toggle buttons. At smaller breakpoints (Group 1a &amp; b), the radio buttons should be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
+<p>Javascript disabled view of toggle buttons. At smaller breakpoints (GEL Groups 1A &amp; B), the radio buttons must be presented inline. At larger breakpoints they stack vertically with 10px gap.</p>
 
 <div class="bbc-radios-container">
 <fieldset>
@@ -1347,7 +1355,7 @@ CHECKBOXES
 -->
 <section id="checkbox" class="bbcid-styleguide-section">
 <h2>Checkboxes</h2>
-<p>Desktop (Group 3 onwards) view is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
+<p>Desktop view (Groups 3A, 3B &amp; 4) is currently achieved using spritesheet/CSS/jQuery. Smaller views use native checkbox element.</p>
 <div class="bbcid-form">
 <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced">
 <a class="checkbox checked" href="#checkbox"></a>
@@ -1431,9 +1439,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
 
 <section id="about" class="bbcid-styleguide-section grid-container">
 <h2>About this styleguide</h2>
-<p>The purpose of the styleguide is to provide both a reference source for developers when constructing form and message interfaces, and a 'playground' for designers wishing to see their designs working in a live, responsive context.</p>
+<p>The purpose of the styleguide is to provide both a reference source for developers when constructing BBC iD interfaces, and a 'playground' for designers wishing to see their designs working in a live, responsive context.</p>
 <p><strong>Note:</strong> This guide is not intended to be a source for production code. CSS specifications are expressed within the 'show styles' panel in each section.</p>
-<p><a href="https://github.com/bbc/idstyleguide">View the Github Repo</a></p>
+<p><a href="https://github.com/bbc/idstyleguide" target="_blank">View the Github repository</a></p>
 </section>
 
 

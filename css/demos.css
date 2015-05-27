@@ -675,11 +675,6 @@ padding-bottom: 1em;
 
 }
 
-@media only screen and (min-width: 400px) { /* GEL Group 2 */
-    
-   
-}
-
 @media only screen and (min-width: 600px) { /* GEL Group 3a */
 
   .bbcid-header {
@@ -1323,7 +1318,7 @@ MESSAGE
   }
 }
 
-@media only screen and (min-width: 600px) { /* GEL Group 3A */
+@media only screen and (min-width: 600px) { /* GEL Group 3B */
   .message-reflow {
     padding-left: 256px;
   }
@@ -1373,6 +1368,172 @@ FORM
   .minimal-id {
     display: none;
   }
+}
+
+/** 
+
+FORM + MESSAGE
+
+**/
+
+@media screen and (max-width: 899px) {
+  .page-icon-form-message {
+      display: none;
+    }
+
+  .message-reflow-form-message {
+    padding-left: 0px;
+  } 
+}
+
+@media screen and (min-width: 900px) {
+  .message-reflow-form-message {
+    padding-left: 256px;
+  } 
+}
+
+/**
+
+SETTINGS
+
+**/
+
+@media only screen and (max-width: 319px) { /* GEL Group 1A */
+  /* We only display 1A */
+  .settings-group-3b, .settings-group-3a, .settings-group-2, .settings-group-1b {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 399px) { /* GEL GROUP 1B */
+  /* We only display 1B */
+  .settings-group-3b, .settings-group-3a, .settings-group-2, .settings-group-1a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px) { /* GEL GROUP 2 */
+  /* We only display 2 */
+  .settings-group-3b, .settings-group-3a, .settings-group-1b, .settings-group-1a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) { /* GEL GROUP 3A */
+/* We only display 3A */
+.settings-group-3b, .settings-group-2, .settings-group-1b, .settings-group-1a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) { /* GEL GROUP 3B */
+  /* We only display 3B, that's also valid for GROUP 4 */
+  .settings-group-3a, .settings-group-2, .settings-group-1b, .settings-group-1a {
+    display: none;
+  }
+}
+
+.bbcid-display-field-container {
+  padding: 16px 0;
+  margin: 0px;
+  border-bottom: 1px solid #c8c8c8;
+  min-height: 40px;
+  position: relative;
+}
+
+.bbcid-pre-form-settings {
+    margin: 0px;
+    padding: 0 0 16px 0;
+    border-bottom: 1px solid #dceaf3;
+}
+
+.bbcid-display-field-container.last {
+  border-bottom: 0;
+}
+
+.bbcid-post-form-settings {
+    border-top: 1px solid #dceaf3;
+}
+
+.settings-hub {
+  padding: 16px 16px 0px 0px;
+}
+
+.bbcid-display-field-container .name {
+  color: #646464;
+  min-height: 32px;
+}
+
+.bbcid-display-field-container .name,
+.bbcid-display-field-container .value,
+.bbcid-display-field-container .email-verification,
+.bbcid-display-field-container .more-details-required {
+  display: block;
+  float: left;
+  width: 140px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.bbcid-display-field-container .value,
+.bbcid-display-field-container .email-verification a,
+.bbcid-display-field-container .action,
+.bbcid-display-field-container .more-details-required a {
+  font-weight: bold;
+}
+
+.bbcid-display-field-container .value,
+.bbcid-display-field-container .email-verification,
+.bbcid-display-field-container .more-details-required {
+  width: 350px;
+}
+
+.bbcid-display-field-container .action {
+  top: 16px;
+}
+
+.bbcid-display-field-container .action,
+.bbcid-unlink {
+  position: absolute;
+  right: 16px;
+  font-size: 1.231em;
+}
+
+.bbcid-display-field-container .value,
+.bbcid-display-field-container .email-verification a,
+.bbcid-display-field-container .action,
+.bbcid-display-field-container .more-details-required a {
+  font-weight: bold;
+}
+
+.bbcid-display-field-container .email-verification {
+  margin-top: 8px;
+}
+
+.primary-column h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 0 0 16px 0;
+}
+
+
+
+
+/*GROUP 3 & 4*/
+
+.bbcid-display-field-container .name,
+.bbcid-display-field-container .value,
+.bbcid-display-field-container .action a {
+  font-size: 16px;
+}
+
+.bbcid-display-field-container .email-verification {
+  font-size: 13px;
+}
+
+.bbcid-display-field-container .action a {
+  font-weight: bold;
 }
 
 

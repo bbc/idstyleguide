@@ -14,7 +14,7 @@
 <body>
 
 <nav class="bbcid-styleguide-nav">
-iD StyleGuide
+BBC iD Style Guide
 <a href="index.html">Patterns</a></li>
 <a href="demos.html">Demos</a></li>
 </nav>
@@ -30,16 +30,12 @@ INDEX
 -->
 
 <section class="bbcid-styleguide-section">
-<h1>BBC iD Styleguide - Demos</h1>
-<p>A selection of iD content to test the styleguide components.</p>
+<h1>BBC iD Style Guide</h1>
+<p>A selection of iD content to show the style guide patterns.</p>
 
-<a href="index.html">Return to Patterns.</a>
+<a href="index.html">Return to Patterns</a>
 
 </section>
-
-
-
-
 
 <!-- MESSAGE DEMO -->
 <section class="bbcid-styleguide-demosection">
@@ -67,7 +63,6 @@ INDEX
 <!-- END MESSAGE DEMO -->
 
 
-
 <!-- FORM DEMO (SIGN-IN) -->
 <section class="bbcid-styleguide-demosection">
 
@@ -84,9 +79,40 @@ INDEX
 
 <div class="bbcid-panel-2col-content bbcid-styleguide-type">
 
+<form action="#" method="post" class="bbcid-form" id="bbcid-signin-form" novalidate="true"> <div class="bbcid-fields blq-clearfix">
 
+  <div class="bbcid-field-container unique-container">
+    <label for="bbcid_unique" class="bbcid_unique_label">
+      <span class="bbcid_label_main">Email or username</span>
+      <span class="bbcid-hide"> </span>
+      <span class="bbcid-label-hint bbcid-hide"></span>
+    </label>
+    <input type="text" class="text" autocomplete="off" name="unique" id="bbcid_unique" value="email@email.com">
+  </div>
 
-<form action="https://ssl.bbc.co.uk/id/signin" method="post" class="bbcid-form" id="bbcid-signin-form" novalidate="true"> <div class="bbcid-fields blq-clearfix">       <div class="bbcid-field-container unique-container">  <label for="bbcid_unique" class="bbcid_unique_label">  <span class="bbcid_label_main">Email or username</span> <span class="bbcid-hide"> </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label> <input type="text" class="text" autocomplete="off" name="unique" id="bbcid_unique" value=""> </div>                                <div class="bbcid-field-container password-container">  <label for="bbcid_password" class="bbcid_password_label">  <span class="bbcid_label_main">Password</span> <span class="bbcid-hide"> </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label>  <input type="password" class="password" autocomplete="off" placeholder="" name="password" id="bbcid_password" value="">  <p class="bbcid-forgotpassword"><a href="#">Forgot your password?</a></p>  </div>                                <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced"><a href="#" class="checked"></a>   <input type="hidden" name="rememberme" id="bbcid_rememberme_default" value="1">    <label for="bbcid_rememberme" class="bbcid_rememberme_label">  <span class="bbcid_label_main">Remember me</span> <span class="bbcid-hide">. </span>  <span class="bbcid-label-hint bbcid-hide"></span>  </label>  <span class="description">Untick if you're using a shared computer.</span>  </div>                           </div> <div class="bbcid-actions blq-clearfix"> <input type="submit" class="bbcid-button submit disabled" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" title="To submit the form, please complete all the fields."> <a href="#" class="bbcid-button cancel">Cancel</a> </div> </form>
+  <div class="bbcid-field-container password-container">
+    <label for="bbcid_password" class="bbcid_password_label">
+      <span class="bbcid_label_main">Password</span>
+      <span class="bbcid-hide"></span>
+      <span class="bbcid-label-hint bbcid-hide"></span>
+    </label>
+    <input type="password" class="password" autocomplete="off" placeholder="" name="password" id="bbcid_password" value="password">
+    <p class="bbcid-forgotpassword"><a href="#">Forgot your password?</a></p>
+  </div>                                
+
+  <div class="bbcid-field-container rememberme-container bbcid-valid bbcid-checkbox-container blq-clearfix enhanced"><a href="#" class="checked"></a>
+    <input type="hidden" name="rememberme" id="bbcid_rememberme_default" value="1">
+    <label for="bbcid_rememberme" class="bbcid_rememberme_label">
+      <span class="bbcid_label_main">Remember me</span>
+      <span class="bbcid-hide">. </span>
+      <span class="bbcid-label-hint bbcid-hide"></span>
+    </label>
+    <span class="description">Untick if you're using a shared computer.</span>
+  </div></div>
+
+<div class="bbcid-actions blq-clearfix"> <input type="submit" class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Sign in" title="To submit the form, please complete all the fields."> <a href="#" class="bbcid-button cancel">Cancel</a> </div>
+
+</form>
 
 </div>
 
@@ -101,6 +127,119 @@ INDEX
 <div class="minimal-id">
   <div class="bbcid-section-info">
     <div class="bbcid-subsection-whatis-minimal">
+      <a style="float:left; font-weight: bold;" href="#">About BBC iD</a>
+      <img class="right-arrow" src="img/right-arrow.png">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</section>
+<!-- END FORM DEMO (SIGN-IN) -->
+
+
+<!-- FORM+MESSAGE DEMO -->
+<section class="bbcid-styleguide-demosection">
+<h2>Form + Message</h2>
+
+<div class="bbcid-panel-bg">
+<div class="bbcid-panel-1col bbcid-styleguide-type">
+
+<img style="float: left; margin-left: 40px;" class="bbcid-styleguide-img-responsive page-icon-form-message" src="img/page-icons/pageicon-email.png">
+
+<div class="message-reflow-form-message">
+  <h2>Wrong email address?</h2>
+  <p class="bbcid-styleguide-type">Enter a new email address to update your account details.</p>
+
+  <form action="#" method="post" class="bbcid-form" id="bbcid-changeeemail-form" novalidate="true">
+    
+    <div class="bbcid-fields blq-clearfix">
+      <div class="bbcid-field-container unique-container bbcid-warning">
+      <input class="text" autocomplete="off" name="unique" id="bbcid_unique" value="email@" type="text">
+
+      <div class="bbcid-hint-1col bbcid-hint-1col-warning">
+      <strong>This email address is not valid</strong><br>
+      <span>Please check you have typed it correctly.</span>
+      </div>
+
+      <div class="bbcid-hint-2col bbcid-hint-2col-warning">
+      <strong>This email address is not valid</strong><br>
+      <span>Please check you have typed it correctly.</span>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="bbcid-actions blq-clearfix">
+      <input type="submit" class="bbcid-button submit" name="bbcid_submit_button" id="bbcid_submit_button" value="Save">
+      <a href="#" class="bbcid-button cancel">Cancel</a>
+    </div>
+
+  </form>
+
+</div>
+
+</div>
+</div>
+
+</section>
+<!-- END FORM+MESSAGE DEMO -->
+
+
+<!-- SETTINGS DEMO (SIGN-IN) -->
+<section class="bbcid-styleguide-demosection">
+
+<h2>Settings</h2>
+
+<div class="bbcid-panel-bg blq-clearfix">
+<div class="bbcid-panel-container blq-clearfix">
+
+<div class="bbcid-panel-2col-content bbcid-styleguide-type primary-column">
+  
+  <h3 class="bbcid-pre-form-settings">Your details</h3>
+  
+  <div class="blq-clearfix bbcid-display-field-container" id="bbcid-display-email-field-container">
+    <p class="name">Email</p>
+    <p class="value">email@email.com</p>
+    <p class="email-verification"> unconfirmed </p>
+    <p class="action"><a href="#">Edit</a></p>
+  </div>
+
+  <div class="blq-clearfix bbcid-display-field-container" id="bbcid-display-is_over_sixteen-field-container">
+    <p class="name">Age</p>
+    <p class="value">You are over sixteen</p>
+  </div>
+
+  <div class="blq-clearfix bbcid-display-field-container" id="bbcid-display-displayname-field-container">
+    <p class="name">Display name</p>
+    <p class="value">myDisplayName</p>
+    <p class="action"><a href="#">Edit</a></p>
+  </div>
+
+  <div class="blq-clearfix bbcid-display-field-container last" id="bbcid-display-externalaccounts-field-container">
+    <p class="name">Linked accounts</p>
+    <p class="value">Facebook</p>
+    <p class="action"><a href="#">Edit</a></p>
+  </div>
+
+  <p class="bbcid-post-form-settings settings-hub" style="margin-bottom: 0px;"> Close your account and delete your information <a href="#">Delete your BBC iD</a> </p>
+
+</div>
+
+
+<!-- INFO PANEL -->
+
+<div class="bbcid-panel-2col-info" style="padding-top: 0px;">
+<div class="bbcid-panel-message">
+
+<img 
+class="bbcid-styleguide-img-responsive about-bbc-id" src="img/aboutBBCiD.png" class="bbcid-styleguide-img-responsive">
+
+<div class="minimal-id">
+  <div class="bbcid-section-info">
+    <div class="bbcid-subsection-whatis-minimal">
       <a style="float:left; font-weight: bold;" href="https://ssl.bbc.co.uk/id/info">About BBC iD</a>
       <img class="right-arrow" src="img/right-arrow.png">
     </div>
@@ -110,26 +249,6 @@ INDEX
 </div>
 </div>
 
-
-</div>
-
-
-
-</div>
-</section>
-<!-- END FORM DEMO (SIGN-IN) -->
-
-
-<!-- FORM+MESSAGE DEMO -->
-<section class="bbcid-styleguide-demosection">
-  <h2>Form + Message</h2>
-</section>
-<!-- END FORM+MESSAGE DEMO -->
-
-
-<!-- SETTINGS DEMO -->
-<section class="bbcid-styleguide-demosection">
-  <h2>Settings</h2>
 </section>
 <!-- END SETTINGS DEMO -->
 
