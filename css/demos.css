@@ -592,22 +592,22 @@ padding-bottom: 1em;
 
 }
 
-@media only screen and (min-width: 1008px) { /* GEL Group 4 */
+/*@media only screen and (min-width: 1008px) { /* GEL Group 4 
 
   .bbcid-panel-2col-content {
-    /* this panel is fixed 645 at group 4*/
+    /* this panel is fixed 645 at group 4
     width: 630px;
     max-width: 645px;
     margin-right: 16px;
   }
 
   .bbcid-panel-2col-info {
-    /* this panel is fixed 315 at group 4*/
+    /* this panel is fixed 315 at group 4
     width: 315px;
     max-width: 315px;
   }
 
-}
+}*/
 
 
 
@@ -1342,7 +1342,7 @@ FORM
     margin-left: 0px;
   }
 
-  .right-arrow {
+  .chevron {
     float: right;
     padding: 16px 0px 16px 0px;
   }
@@ -1358,7 +1358,7 @@ FORM
 }
 
 @media screen and (max-width: 319px) {
-  .right-arrow {
+  .chevron {
     float: right;
     padding: 0px;
   }
@@ -1534,6 +1534,56 @@ SETTINGS
 
 .bbcid-display-field-container .action a {
   font-weight: bold;
+}
+
+/* ABOUT BBC iD - Real Code */
+.bbcid-subsection-whatis,
+.bbcid-subsection-whatis-minimal,
+.bbcid-subsection-additionalinfo,
+.bbcid-subsection-help {
+  margin-left: 40px;
+  padding-left: 4px;
+  position: relative;
+}
+
+.bbcid-subsection-whatis h2,
+.bbcid-subsection-whatis h4,
+.bbcid-subsection-whatis p {
+  color: #646464;
+}
+
+.bbcid-subsection-whatis h2 {
+  font-size: 20px;
+  margin: 8px 0 0 0;
+  padding: 4px 0 4px 0;
+}
+
+.bbcid-subsection-whatis h4 {
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.bbcid-subsection-whatis p {
+  font-size: 13px;
+}
+
+.bbcid-section-info- hr {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: #9dd0f0;
+  height: 1px;
+  border: 0;
+}
+
+.bbcid-subsection-help p {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 899px) {
+  .bbcid-section-info-{
+    display: none;
+  }
 }
 
 
